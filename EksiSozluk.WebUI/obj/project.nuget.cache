@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "MMNR3bOEFcwTgQOZkERcXznJ+Ot0IC7/KcF+E3SWXtJvU33y+GfG6wsV8/LNX7IGqiOEKVoisDMBYI5WAPl2eQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk\\EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512"
+  ],
+  "logs": []
+}

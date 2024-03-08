@@ -1,0 +1,451 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "Autofac/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.DiagnosticSource": "7.0.2"
+        },
+        "compile": {
+          "lib/net7.0/Autofac.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Autofac.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MediatR/12.2.0": {
+        "type": "package",
+        "dependencies": {
+          "MediatR.Contracts": "[2.0.1, 3.0.0)",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MediatR.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MediatR.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MediatR.Contracts/2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MediatR.Extensions.Autofac.DependencyInjection/12.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "8.0.0",
+          "MediatR": "12.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MediatR.Extensions.Autofac.DependencyInjection.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Extensions.Autofac.DependencyInjection.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Primitives": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Diagnostics.DiagnosticSource/7.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Autofac/8.0.0": {
+      "sha512": "qxVqJcl3fixxa5aZc9TmIuYTwooI9GCL5RzfUiTZtTlbAF3NcWz7bPeEyJEAyS/0qGhSyGnXeku2eiu/7L+3qw==",
+      "type": "package",
+      "path": "autofac/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "autofac.8.0.0.nupkg.sha512",
+        "autofac.nuspec",
+        "icon.png",
+        "lib/net6.0/Autofac.dll",
+        "lib/net6.0/Autofac.xml",
+        "lib/net7.0/Autofac.dll",
+        "lib/net7.0/Autofac.xml",
+        "lib/net8.0/Autofac.dll",
+        "lib/net8.0/Autofac.xml",
+        "lib/netstandard2.0/Autofac.dll",
+        "lib/netstandard2.0/Autofac.xml",
+        "lib/netstandard2.1/Autofac.dll",
+        "lib/netstandard2.1/Autofac.xml"
+      ]
+    },
+    "MediatR/12.2.0": {
+      "sha512": "8TUFrHapKi6D74PhnSNEguRsH91HNGyP3R4ZQdgDorJgl9Wac5Prh0vA33QfrniAaS6L2xNNhc6vxzg+5AIbwA==",
+      "type": "package",
+      "path": "mediatr/12.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/net6.0/MediatR.dll",
+        "lib/net6.0/MediatR.xml",
+        "lib/netstandard2.0/MediatR.dll",
+        "lib/netstandard2.0/MediatR.xml",
+        "mediatr.12.2.0.nupkg.sha512",
+        "mediatr.nuspec"
+      ]
+    },
+    "MediatR.Contracts/2.0.1": {
+      "sha512": "FYv95bNT4UwcNA+G/J1oX5OpRiSUxteXaUt2BJbRSdRNiIUNbggJF69wy6mnk2wYToaanpdXZdCwVylt96MpwQ==",
+      "type": "package",
+      "path": "mediatr.contracts/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/netstandard2.0/MediatR.Contracts.dll",
+        "lib/netstandard2.0/MediatR.Contracts.xml",
+        "mediatr.contracts.2.0.1.nupkg.sha512",
+        "mediatr.contracts.nuspec"
+      ]
+    },
+    "MediatR.Extensions.Autofac.DependencyInjection/12.0.0": {
+      "sha512": "cyLHAmsAaST4hw+r9AOFtS8VQAdLjQbQqN97t9+90ifSPFsGdlmiTc1MP7ow68dJHRtS36BpcoKuvHN1R4P5+g==",
+      "type": "package",
+      "path": "mediatr.extensions.autofac.dependencyinjection/12.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/MediatR.Extensions.Autofac.DependencyInjection.dll",
+        "lib/netstandard2.0/MediatR.Extensions.Autofac.DependencyInjection.pdb",
+        "mediatr.extensions.autofac.dependencyinjection.12.0.0.nupkg.sha512",
+        "mediatr.extensions.autofac.dependencyinjection.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration/7.0.0": {
+      "sha512": "tldQUBWt/xeH2K7/hMPPo5g8zuLc3Ro9I5d4o/XrxvxOCA2EZBtW7bCHHTc49fcBtvB8tLAb/Qsmfrq+2SJ4vA==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Configuration.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Configuration.targets",
+        "lib/net462/Microsoft.Extensions.Configuration.dll",
+        "lib/net462/Microsoft.Extensions.Configuration.xml",
+        "lib/net6.0/Microsoft.Extensions.Configuration.dll",
+        "lib/net6.0/Microsoft.Extensions.Configuration.xml",
+        "lib/net7.0/Microsoft.Extensions.Configuration.dll",
+        "lib/net7.0/Microsoft.Extensions.Configuration.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
+        "microsoft.extensions.configuration.7.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/7.0.0": {
+      "sha512": "f34u2eaqIjNO9YLHBz8rozVZ+TcFiFs0F3r7nUJd7FRkVSxk8u4OpoK226mi49MwexHOR2ibP9MFvRUaLilcQQ==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.abstractions/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Configuration.Abstractions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Configuration.Abstractions.targets",
+        "lib/net462/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "lib/net7.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/net7.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+      "sha512": "cjWrLkJXK0rs4zofsK4bSdg+jhDLTaxrkXu4gS6Y7MAlCvRyNNgwY/lJi5RDlQOnSZweHqoyvgvbdvQsRIW+hg==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Primitives/7.0.0": {
+      "sha512": "um1KU5kxcRp3CNuI8o/GrZtD4AIOXDk+RLsytjZ9QPok3ttLUelLKpilVPuaFT3TFjOhSibUAso0odbOaCDj3Q==",
+      "type": "package",
+      "path": "microsoft.extensions.primitives/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Primitives.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Primitives.targets",
+        "lib/net462/Microsoft.Extensions.Primitives.dll",
+        "lib/net462/Microsoft.Extensions.Primitives.xml",
+        "lib/net6.0/Microsoft.Extensions.Primitives.dll",
+        "lib/net6.0/Microsoft.Extensions.Primitives.xml",
+        "lib/net7.0/Microsoft.Extensions.Primitives.dll",
+        "lib/net7.0/Microsoft.Extensions.Primitives.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
+        "microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+        "microsoft.extensions.primitives.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Diagnostics.DiagnosticSource/7.0.2": {
+      "sha512": "hYr3I9N9811e0Bjf2WNwAGGyTuAFbbTgX1RPLt/3Wbm68x3IGcX5Cl75CMmgT6WlNwLQ2tCCWfqYPpypjaf2xA==",
+      "type": "package",
+      "path": "system.diagnostics.diagnosticsource/7.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Diagnostics.DiagnosticSource.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Diagnostics.DiagnosticSource.targets",
+        "lib/net462/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net462/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net6.0/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net6.0/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net7.0/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net7.0/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.xml",
+        "system.diagnostics.diagnosticsource.7.0.2.nupkg.sha512",
+        "system.diagnostics.diagnosticsource.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "MediatR >= 12.2.0",
+      "MediatR.Extensions.Autofac.DependencyInjection >= 12.0.0",
+      "Microsoft.Extensions.Configuration >= 7.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk\\EksiSozluk.Application\\EksiSozluk.Application.csproj",
+      "projectName": "EksiSozluk.Application",
+      "projectPath": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk\\EksiSozluk.Application\\EksiSozluk.Application.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk\\EksiSozluk.Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "dependencies": {
+          "MediatR": {
+            "target": "Package",
+            "version": "[12.2.0, )"
+          },
+          "MediatR.Extensions.Autofac.DependencyInjection": {
+            "target": "Package",
+            "version": "[12.0.0, )"
+          },
+          "Microsoft.Extensions.Configuration": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
