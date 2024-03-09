@@ -13,7 +13,7 @@ ___
 
 **Proje Ekibi** : Kadir YALÇIN, Alper KÖŞGEROĞLU
 
-1. [Proje Planı](https://eksisozluk.com/)
+1. [Proje Planı](/Docs/OtherReadMe's/Proje_Plani.md)
 2. [Gereksinim Analizi](/Docs/OtherReadMe's/Gereksinim_Analizi.md)
 3. [Durum Diyagramı](https://eksisozluk.com/)
 4. [Durum Senaryoları](https://eksisozluk.com/)
