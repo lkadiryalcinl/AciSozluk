@@ -10,3 +10,15 @@ C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Domain\obj\Debug\net7.0
 C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Domain\obj\Debug\net7.0\refint\EksiSozluk.Domain.dll
 C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Domain\obj\Debug\net7.0\EksiSozluk.Domain.pdb
 C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Domain\obj\Debug\net7.0\ref\EksiSozluk.Domain.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Domain\bin\Debug\net7.0\EksiSozluk.Domain.deps.json
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Domain\bin\Debug\net7.0\EksiSozluk.Domain.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Domain\bin\Debug\net7.0\EksiSozluk.Domain.pdb
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Domain\obj\Debug\net7.0\EksiSozluk.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Domain\obj\Debug\net7.0\EksiSozluk.Domain.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Domain\obj\Debug\net7.0\EksiSozluk.Domain.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Domain\obj\Debug\net7.0\EksiSozluk.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Domain\obj\Debug\net7.0\EksiSozluk.Domain.sourcelink.json
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Domain\obj\Debug\net7.0\EksiSozluk.Domain.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Domain\obj\Debug\net7.0\refint\EksiSozluk.Domain.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Domain\obj\Debug\net7.0\EksiSozluk.Domain.pdb
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Domain\obj\Debug\net7.0\ref\EksiSozluk.Domain.dll

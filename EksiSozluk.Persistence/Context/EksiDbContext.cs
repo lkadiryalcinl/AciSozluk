@@ -4,15 +4,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EksiSozluk.Persistence.Context
 {
-    public class DbContext:IdentityDbContext
+    public class EksiDbContext:IdentityDbContext
     {
-        public DbContext(DbContextOptions<DbContext> context) : base(context)
+        public EksiDbContext(DbContextOptions<EksiDbContext> context) : base(context)
         {
-            
-            
         }
-
-       
-
     }
 }

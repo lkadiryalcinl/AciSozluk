@@ -6,7 +6,6 @@ using EksiSozluk.WebAPI.IOC.DependencyInjection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -23,7 +22,7 @@ builder.Services.AddSwaggerGen();
 // Add db context db context türünden parametre istiyor Domain içerisinde kalýtým aldýðýmýz
 //db context dolaylý yoldan db oluyor getconnection string içerisinde yazdýðýmýz dburl 
 // bizim appsettingsten geldi
-builder.Services.AddDbContext<EksiSozluk.Persistence.Context.DbContext>(options =>
+builder.Services.AddDbContext<EksiDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DbUrl"));
 });
@@ -31,7 +30,7 @@ builder.Services.AddDbContext<EksiSozluk.Persistence.Context.DbContext>(options 
 //Add identity
 builder.Services
     .AddIdentity<IdentityUser, IdentityRole>()
-    .AddEntityFrameworkStores<EksiSozluk.Persistence.Context.DbContext>()
+    .AddEntityFrameworkStores<EksiDbContext>()
     .AddDefaultTokenProviders();
 //Config Identity
 builder.Services.Configure<IdentityOptions>(options =>
@@ -59,7 +58,7 @@ builder.Services
     {
         options.SaveToken = true;
         options.RequireHttpsMetadata = false;
-        options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
+        options.TokenValidationParameters = new TokenValidationParameters()
         {
             ValidateIssuer = true,
             ValidateAudience = true,
@@ -70,7 +69,7 @@ builder.Services
     });
 
 
-
+//Add Cors
 builder.Services.AddCors(opt =>
 {
     opt.AddPolicy("EksiSozukCors", opts =>
