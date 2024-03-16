@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "F/Kgy2vbuQPZbQ0MrS32PypD/UogzN7f/2E1eblyhJi5cbYtl9Ym4xhKPxSyTHCaqOcg3BFuy27b8Leq7MMkwA==",
+  "dgSpecHash": "0/9JOkTDHjRxclW+xvt98FvYP3A/gpSv67b49UAHSjkTcI3i7iuNApLdnsV9lei6AY2S7CJV2JJcKtLLA7OMow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk\\EksiSozluk.Domain\\EksiSozluk.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.Domain\\EksiSozluk.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\akosk\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\akosk\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\akosk\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
+  ],
   "logs": []
 }

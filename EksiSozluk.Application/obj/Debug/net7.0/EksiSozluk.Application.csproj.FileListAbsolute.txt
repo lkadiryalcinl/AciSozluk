@@ -1,0 +1,13 @@
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Application\bin\Debug\net7.0\EksiSozluk.Application.deps.json
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Application\bin\Debug\net7.0\EksiSozluk.Application.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Application\bin\Debug\net7.0\EksiSozluk.Application.pdb
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Application\obj\Debug\net7.0\EksiSozluk.Application.csproj.AssemblyReference.cache
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Application\obj\Debug\net7.0\EksiSozluk.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Application\obj\Debug\net7.0\EksiSozluk.Application.AssemblyInfoInputs.cache
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Application\obj\Debug\net7.0\EksiSozluk.Application.AssemblyInfo.cs
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Application\obj\Debug\net7.0\EksiSozluk.Application.csproj.CoreCompileInputs.cache
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Application\obj\Debug\net7.0\EksiSozluk.Application.sourcelink.json
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Application\obj\Debug\net7.0\EksiSozluk.Application.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Application\obj\Debug\net7.0\refint\EksiSozluk.Application.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Application\obj\Debug\net7.0\EksiSozluk.Application.pdb
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Application\obj\Debug\net7.0\ref\EksiSozluk.Application.dll

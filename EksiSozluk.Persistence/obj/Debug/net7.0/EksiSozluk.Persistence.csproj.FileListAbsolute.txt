@@ -1,0 +1,15 @@
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Persistence\bin\Debug\net7.0\EksiSozluk.Persistence.deps.json
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Persistence\bin\Debug\net7.0\EksiSozluk.Persistence.runtimeconfig.json
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Persistence\bin\Debug\net7.0\EksiSozluk.Persistence.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Persistence\bin\Debug\net7.0\EksiSozluk.Persistence.pdb
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Persistence\obj\Debug\net7.0\EksiSozluk.Persistence.csproj.AssemblyReference.cache
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Persistence\obj\Debug\net7.0\EksiSozluk.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Persistence\obj\Debug\net7.0\EksiSozluk.Persistence.AssemblyInfoInputs.cache
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Persistence\obj\Debug\net7.0\EksiSozluk.Persistence.AssemblyInfo.cs
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Persistence\obj\Debug\net7.0\EksiSozluk.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Persistence\obj\Debug\net7.0\EksiSozluk.Persistence.sourcelink.json
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Persistence\obj\Debug\net7.0\EksiSozluk.Persistence.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Persistence\obj\Debug\net7.0\refint\EksiSozluk.Persistence.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Persistence\obj\Debug\net7.0\EksiSozluk.Persistence.pdb
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Persistence\obj\Debug\net7.0\EksiSozluk.Persistence.genruntimeconfig.cache
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Persistence\obj\Debug\net7.0\ref\EksiSozluk.Persistence.dll
