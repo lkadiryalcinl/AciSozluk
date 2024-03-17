@@ -2,6 +2,7 @@ using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using EksiSozluk.Application.Service;
 using EksiSozluk.Persistence.Context;
+using EksiSozluk.Domain.Entities;
 using EksiSozluk.WebAPI.IOC.DependencyInjection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -29,7 +30,7 @@ builder.Services.AddDbContext<EksiDbContext>(options =>
 
 //Add identity
 builder.Services
-    .AddIdentity<IdentityUser, IdentityRole>()
+    .AddIdentity<User, IdentityRole>()
     .AddEntityFrameworkStores<EksiDbContext>()
     .AddDefaultTokenProviders();
 //Config Identity

@@ -1,4 +1,8 @@
 ﻿using Autofac;
+using EksiSozluk.Application.Interfaces;
+using EksiSozluk.Application.Interfaces.AuthInterfaces;
+using EksiSozluk.Persistence.Repositories;
+using EksiSozluk.Persistence.Repositories.AuthRepositories;
 
 namespace EksiSozluk.WebAPI.IOC.DependencyInjection
 {
@@ -6,7 +10,9 @@ namespace EksiSozluk.WebAPI.IOC.DependencyInjection
     {
         protected override void Load(ContainerBuilder builder)
         {
+            builder.RegisterGeneric(typeof(Repository<>)).As(typeof(IRepository<>)).InstancePerLifetimeScope();
 
+            builder.RegisterType<AuthRepository>().As<IAuthRepository>().InstancePerLifetimeScope();
         }
     }
 }

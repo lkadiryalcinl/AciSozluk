@@ -1393,10 +1393,25 @@
           "bin/placeholder/EksiSozluk.Application.dll": {}
         }
       },
+      "EksiSozluk.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.17"
+        },
+        "compile": {
+          "bin/placeholder/EksiSozluk.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EksiSozluk.Domain.dll": {}
+        }
+      },
       "EksiSozluk.Persistence/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "EksiSozluk.Application": "1.0.0",
+          "EksiSozluk.Domain": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.17",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.17",
           "Microsoft.EntityFrameworkCore": "7.0.17",
@@ -3928,6 +3943,11 @@
       "type": "project",
       "path": "../EksiSozluk.Application/EksiSozluk.Application.csproj",
       "msbuildProject": "../EksiSozluk.Application/EksiSozluk.Application.csproj"
+    },
+    "EksiSozluk.Domain/1.0.0": {
+      "type": "project",
+      "path": "../EksiSozluk.Domain/EksiSozluk.Domain.csproj",
+      "msbuildProject": "../EksiSozluk.Domain/EksiSozluk.Domain.csproj"
     },
     "EksiSozluk.Persistence/1.0.0": {
       "type": "project",
