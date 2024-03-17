@@ -33,3 +33,8 @@ C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Persistence\bin\Debug\net7.0\EksiSoz
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Persistence\obj\Debug\net7.0\EksiSozluk.Persistence.csproj.CopyComplete
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Persistence\bin\Debug\net7.0\EksiSozluk.Application.dll
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Persistence\bin\Debug\net7.0\EksiSozluk.Application.pdb
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Persistence\bin\Debug\net7.0\EksiSozluk.Application.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Persistence\bin\Debug\net7.0\EksiSozluk.Domain.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Persistence\bin\Debug\net7.0\EksiSozluk.Application.pdb
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Persistence\bin\Debug\net7.0\EksiSozluk.Domain.pdb
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Persistence\obj\Debug\net7.0\EksiSozl.47907FE4.Up2Date

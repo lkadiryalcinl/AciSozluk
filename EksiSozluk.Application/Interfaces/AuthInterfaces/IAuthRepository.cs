@@ -7,5 +7,6 @@ namespace EksiSozluk.Application.Interfaces.AuthInterfaces
         Task<AuthServiceResponseDto> SeedRolesAsync();
         Task<AuthServiceResponseDto> LoginAsync(LoginDto loginDto);
         Task<AuthServiceResponseDto> MakeAuthorAsync(UpdatePermissionDto updatePermissionDto);
+        Task<AuthServiceResponseDto> RegisterAsync(RegisterDto registerDto);
     }
 }

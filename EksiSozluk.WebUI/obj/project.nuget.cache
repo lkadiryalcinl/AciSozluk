@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "mjxgTfp4owGRlbTJBuSpIGDO8UWZC5CtG1we5aUDoX7cbYmrpCOZRwW3UXoV2NF/+NllmoNlP3oGhXzlI66WgA==",
+  "dgSpecHash": "u3qRA8bH4VyuB5rDIyPtqr8W+CLgB8v4n1dlXpsTqZGn65QgCc02+gyz5yiqowoBLu3uXCWlF+T1CRS/2XONCw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj",
+  "projectFilePath": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512"
+    "C:\\Users\\akosk\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
+    "C:\\Users\\akosk\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\akosk\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\akosk\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\akosk\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
   ],
   "logs": []
 }

@@ -15,7 +15,6 @@ namespace EksiSozluk.WebAPI.Controllers
             _authRepository = authRepository;
         }
 
-
         //Route for Seeding My roles to Db
         [HttpPost]
         [Route("seed-roles")]
@@ -24,6 +23,20 @@ namespace EksiSozluk.WebAPI.Controllers
             var seedRoles = await _authRepository.SeedRolesAsync();
             return Ok(seedRoles);
         }
+
+
+        [HttpPost]
+        [Route("register")]
+        public async Task<IActionResult> Register([FromBody] RegisterDto registerDto)
+        {
+            var registerResult = await _authRepository.RegisterAsync(registerDto);
+
+            if (registerResult.IsSucceed)
+                return Ok(registerResult);
+
+            return BadRequest(registerResult);
+        }
+
 
         //Route ---> login
         [HttpPost]

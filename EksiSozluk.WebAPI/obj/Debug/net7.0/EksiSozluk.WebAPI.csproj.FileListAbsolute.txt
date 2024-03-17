@@ -183,3 +183,10 @@ C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\obj\Debug\net7.0\EksiSozluk.W
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\obj\Debug\net7.0\ref\EksiSozluk.WebAPI.dll
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\EksiSozluk.Domain.dll
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\EksiSozluk.Domain.pdb
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\Humanizer.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\EksiSozluk.Domain.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\EksiSozluk.Domain.pdb

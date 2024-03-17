@@ -90,6 +90,61 @@ namespace EksiSozluk.Persistence.Repositories.AuthRepositories
             };
         }
 
+
+        public async Task<AuthServiceResponseDto> RegisterAsync(RegisterDto registerDto)
+        {
+            var isEmailExist = await _userManager.FindByEmailAsync(registerDto.Email);
+            var isNameExist = await _userManager.FindByNameAsync(registerDto.UserName);
+
+            if (isEmailExist != null)
+                return new AuthServiceResponseDto()
+                {
+                    IsSucceed = false,
+                    Message = "Email Already Exists"
+                };
+
+            if (isNameExist != null)
+                return new AuthServiceResponseDto()
+                {
+                    IsSucceed = false,
+                    Message = "UserName Already Exists"
+                };
+
+            User newUser = new()
+            {
+                FirstName = registerDto.FirstName,
+                LastName = registerDto.LastName,
+                Email = registerDto.Email,
+                UserName = registerDto.UserName,
+                SecurityStamp = Guid.NewGuid().ToString(),
+            };
+
+            var createUserResult = await _userManager.CreateAsync(newUser, registerDto.Password);
+
+            if (!createUserResult.Succeeded)
+            {
+                var errorString = "User Creation Failed Beacause: ";
+                foreach (var error in createUserResult.Errors)
+                {
+                    errorString += " # " + error.Description;
+                }
+                return new AuthServiceResponseDto()
+                {
+                    IsSucceed = false,
+                    Message = errorString
+                };
+            }
+
+            // Add a Default USER Role to all users
+            await _userManager.AddToRoleAsync(newUser, StaticUserRoles.NOOB);
+
+            return new AuthServiceResponseDto()
+            {
+                IsSucceed = true,
+                Message = "User Created Successfully"
+            };
+        }
+
         public async Task<AuthServiceResponseDto> SeedRolesAsync()
         {
             bool isAdminRoleExist = await _roleManager.RoleExistsAsync(StaticUserRoles.ADMIN);
@@ -129,5 +184,9 @@ namespace EksiSozluk.Persistence.Repositories.AuthRepositories
 
             return token;
         }
+
+
+
+
     }
 }

@@ -23,3 +23,4 @@ C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Domain\obj\Debug\net7.0\refint\EksiS
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Domain\obj\Debug\net7.0\EksiSozluk.Domain.pdb
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Domain\obj\Debug\net7.0\ref\EksiSozluk.Domain.dll
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Domain\obj\Debug\net7.0\EksiSozluk.Domain.csproj.AssemblyReference.cache
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Domain\obj\Debug\net7.0\EksiSozluk.Domain.csproj.AssemblyReference.cache
