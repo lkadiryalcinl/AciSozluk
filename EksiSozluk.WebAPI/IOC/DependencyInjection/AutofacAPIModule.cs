@@ -13,6 +13,7 @@ namespace EksiSozluk.WebAPI.IOC.DependencyInjection
             builder.RegisterGeneric(typeof(Repository<>)).As(typeof(IRepository<>)).InstancePerLifetimeScope();
 
             builder.RegisterType<AuthRepository>().As<IAuthRepository>().InstancePerLifetimeScope();
+            // adscope alternative
         }
     }
 }

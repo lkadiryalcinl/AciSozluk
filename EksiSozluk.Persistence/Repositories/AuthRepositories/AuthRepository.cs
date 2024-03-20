@@ -14,7 +14,9 @@ namespace EksiSozluk.Persistence.Repositories.AuthRepositories
     public class AuthRepository : IAuthRepository
     {
         private readonly UserManager<User> _userManager;
+        //came from identiy
         private readonly RoleManager<IdentityRole> _roleManager;
+        //came from identiy
         private readonly IConfiguration _configuration;
 
         public AuthRepository(UserManager<User> userManager,
@@ -29,7 +31,6 @@ namespace EksiSozluk.Persistence.Repositories.AuthRepositories
         public async Task<AuthServiceResponseDto> LoginAsync(LoginDto loginDto)
         {
             var user = await _userManager.FindByEmailAsync(loginDto.Email);
-
             if (user is null)
                 return new AuthServiceResponseDto()
                 {
@@ -39,6 +40,8 @@ namespace EksiSozluk.Persistence.Repositories.AuthRepositories
 
             var isPasswordCorrect = await _userManager.CheckPasswordAsync(user, loginDto.Password);
 
+
+
             if (!isPasswordCorrect)
                 return new AuthServiceResponseDto()
                 {
@@ -46,8 +49,14 @@ namespace EksiSozluk.Persistence.Repositories.AuthRepositories
                     Message = "Invalid Credentials"
                 };
 
+
             var userRoles = await _userManager.GetRolesAsync(user);
 
+
+            //claim : jwt içeriğindeki her bir yapı  
+            //jwt content
+            //        new Claim("FirstName", user.FirstName), string içerisine tanımlamak 
+            // için istediğimizi yazabiliriz.
             var authClaims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, user.UserName),
@@ -55,15 +64,21 @@ namespace EksiSozluk.Persistence.Repositories.AuthRepositories
                 new Claim("JWTID", Guid.NewGuid().ToString()),
                 new Claim("FirstName", user.FirstName),
                 new Claim("LastName", user.LastName),
-            };
 
+            };
+            // "parellel" thread kullanılıyor
+            // normal foreachten farkını görebilirsin
+            Parallel.ForEach(userRoles, role =>
+            {
+                authClaims.Add(new Claim(ClaimTypes.Role, role));
+            });
+            /*
             foreach (var userRole in userRoles)
             {
                 authClaims.Add(new Claim(ClaimTypes.Role, userRole));
             }
-
+            */
             var token = GenerateNewJsonWebToken(authClaims);
-
             return new AuthServiceResponseDto()
             {
                 IsSucceed = true,
@@ -82,14 +97,13 @@ namespace EksiSozluk.Persistence.Repositories.AuthRepositories
                 };
 
             await _userManager.AddToRoleAsync(user, StaticUserRoles.AUTHOR);
-
             return new AuthServiceResponseDto()
             {
                 IsSucceed = true,
                 Message = "User is now an Author"
+            
             };
         }
-
 
         public async Task<AuthServiceResponseDto> RegisterAsync(RegisterDto registerDto)
         {
@@ -118,12 +132,12 @@ namespace EksiSozluk.Persistence.Repositories.AuthRepositories
                 UserName = registerDto.UserName,
                 SecurityStamp = Guid.NewGuid().ToString(),
             };
-
+            // Security stamp? güvenlik bariyeri
             var createUserResult = await _userManager.CreateAsync(newUser, registerDto.Password);
 
             if (!createUserResult.Succeeded)
             {
-                var errorString = "User Creation Failed Beacause: ";
+                var errorString = "User Creation Failed Because: ";
                 foreach (var error in createUserResult.Errors)
                 {
                     errorString += " # " + error.Description;
@@ -134,7 +148,6 @@ namespace EksiSozluk.Persistence.Repositories.AuthRepositories
                     Message = errorString
                 };
             }
-
             // Add a Default USER Role to all users
             await _userManager.AddToRoleAsync(newUser, StaticUserRoles.NOOB);
 
@@ -168,6 +181,8 @@ namespace EksiSozluk.Persistence.Repositories.AuthRepositories
             };
         }
 
+
+
         private string GenerateNewJsonWebToken(List<Claim> claims)
         {
             var authSecret = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:Secret"]));
@@ -184,9 +199,6 @@ namespace EksiSozluk.Persistence.Repositories.AuthRepositories
 
             return token;
         }
-
-
-
 
     }
 }

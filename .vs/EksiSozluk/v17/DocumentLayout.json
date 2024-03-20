@@ -3,64 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6CB135EC-0161-4FFA-AC13-7D5443F3A3E4}|EksiSozluk.WebAPI\\EksiSozluk.WebAPI.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CB135EC-0161-4FFA-AC13-7D5443F3A3E4}|EksiSozluk.WebAPI\\EksiSozluk.WebAPI.csproj|solutionrelative:eksisozluk.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6CB135EC-0161-4FFA-AC13-7D5443F3A3E4}|EksiSozluk.WebAPI\\EksiSozluk.WebAPI.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.webapi\\ioc\\dependencyinjection\\autofacapimodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CB135EC-0161-4FFA-AC13-7D5443F3A3E4}|EksiSozluk.WebAPI\\EksiSozluk.WebAPI.csproj|solutionrelative:eksisozluk.webapi\\ioc\\dependencyinjection\\autofacapimodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D4709D4-3F01-4F27-9070-0C23F1AC67BE}|EksiSozluk.Persistence\\EksiSozluk.Persistence.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.persistence\\repositories\\authrepositories\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D4709D4-3F01-4F27-9070-0C23F1AC67BE}|EksiSozluk.Persistence\\EksiSozluk.Persistence.csproj|solutionrelative:eksisozluk.persistence\\repositories\\authrepositories\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D4709D4-3F01-4F27-9070-0C23F1AC67BE}|EksiSozluk.Persistence\\EksiSozluk.Persistence.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.persistence\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D4709D4-3F01-4F27-9070-0C23F1AC67BE}|EksiSozluk.Persistence\\EksiSozluk.Persistence.csproj|solutionrelative:eksisozluk.persistence\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D4709D4-3F01-4F27-9070-0C23F1AC67BE}|EksiSozluk.Persistence\\EksiSozluk.Persistence.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.persistence\\context\\eksidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D4709D4-3F01-4F27-9070-0C23F1AC67BE}|EksiSozluk.Persistence\\EksiSozluk.Persistence.csproj|solutionrelative:eksisozluk.persistence\\context\\eksidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{476E8F5F-19C5-411A-898F-C8A2A535C21F}|EksiSozluk.Domain\\EksiSozluk.Domain.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{476E8F5F-19C5-411A-898F-C8A2A535C21F}|EksiSozluk.Domain\\EksiSozluk.Domain.csproj|solutionrelative:eksisozluk.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.application\\service\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|solutionrelative:eksisozluk.application\\service\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.application\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|solutionrelative:eksisozluk.application\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.application\\interfaces\\authinterfaces\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|solutionrelative:eksisozluk.application\\interfaces\\authinterfaces\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.application\\dtos\\authdtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|solutionrelative:eksisozluk.application\\dtos\\authdtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.application\\dtos\\authdtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|solutionrelative:eksisozluk.application\\dtos\\authdtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.application\\dtos\\authdtos\\authserviceresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|solutionrelative:eksisozluk.application\\dtos\\authdtos\\authserviceresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.application\\dtos\\authdtos\\updatepermissiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|solutionrelative:eksisozluk.application\\dtos\\authdtos\\updatepermissiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D4709D4-3F01-4F27-9070-0C23F1AC67BE}|EksiSozluk.Persistence\\EksiSozluk.Persistence.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.persistence\\otherfile\\staticuserroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D4709D4-3F01-4F27-9070-0C23F1AC67BE}|EksiSozluk.Persistence\\EksiSozluk.Persistence.csproj|solutionrelative:eksisozluk.persistence\\otherfile\\staticuserroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6CB135EC-0161-4FFA-AC13-7D5443F3A3E4}|EksiSozluk.WebAPI\\EksiSozluk.WebAPI.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CB135EC-0161-4FFA-AC13-7D5443F3A3E4}|EksiSozluk.WebAPI\\EksiSozluk.WebAPI.csproj|solutionrelative:eksisozluk.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6CB135EC-0161-4FFA-AC13-7D5443F3A3E4}|EksiSozluk.WebAPI\\EksiSozluk.WebAPI.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6CB135EC-0161-4FFA-AC13-7D5443F3A3E4}|EksiSozluk.WebAPI\\EksiSozluk.WebAPI.csproj|solutionrelative:eksisozluk.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,201 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EksiDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Persistence\\Context\\EksiDbContext.cs",
-              "RelativeDocumentMoniker": "EksiSozluk.Persistence\\Context\\EksiDbContext.cs",
-              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Persistence\\Context\\EksiDbContext.cs",
-              "RelativeToolTip": "EksiSozluk.Persistence\\Context\\EksiDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T17:07:10.691Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Service\\ServiceRegistration.cs",
-              "RelativeDocumentMoniker": "EksiSozluk.Application\\Service\\ServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Service\\ServiceRegistration.cs",
-              "RelativeToolTip": "EksiSozluk.Application\\Service\\ServiceRegistration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T16:58:02.889Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Domain\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "EksiSozluk.Domain\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Domain\\Entities\\User.cs",
-              "RelativeToolTip": "EksiSozluk.Domain\\Entities\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T17:03:51.789Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebAPI\\Program.cs",
-              "RelativeDocumentMoniker": "EksiSozluk.WebAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebAPI\\Program.cs",
-              "RelativeToolTip": "EksiSozluk.WebAPI\\Program.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAAAFkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T17:01:32.669Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Interfaces\\IRepository.cs",
-              "RelativeDocumentMoniker": "EksiSozluk.Application\\Interfaces\\IRepository.cs",
-              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Interfaces\\IRepository.cs",
-              "RelativeToolTip": "EksiSozluk.Application\\Interfaces\\IRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T17:04:07.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AutofacAPIModule.cs",
-              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebAPI\\IOC\\DependencyInjection\\AutofacAPIModule.cs",
-              "RelativeDocumentMoniker": "EksiSozluk.WebAPI\\IOC\\DependencyInjection\\AutofacAPIModule.cs",
-              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebAPI\\IOC\\DependencyInjection\\AutofacAPIModule.cs",
-              "RelativeToolTip": "EksiSozluk.WebAPI\\IOC\\DependencyInjection\\AutofacAPIModule.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T17:01:09.364Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IAuthRepository.cs",
-              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Interfaces\\AuthInterfaces\\IAuthRepository.cs",
-              "RelativeDocumentMoniker": "EksiSozluk.Application\\Interfaces\\AuthInterfaces\\IAuthRepository.cs",
-              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Interfaces\\AuthInterfaces\\IAuthRepository.cs",
-              "RelativeToolTip": "EksiSozluk.Application\\Interfaces\\AuthInterfaces\\IAuthRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T16:58:07.256Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RegisterDto.cs",
-              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Dtos\\AuthDtos\\RegisterDto.cs",
-              "RelativeDocumentMoniker": "EksiSozluk.Application\\Dtos\\AuthDtos\\RegisterDto.cs",
-              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Dtos\\AuthDtos\\RegisterDto.cs",
-              "RelativeToolTip": "EksiSozluk.Application\\Dtos\\AuthDtos\\RegisterDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T16:57:36.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthRepository.cs",
-              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Persistence\\Repositories\\AuthRepositories\\AuthRepository.cs",
-              "RelativeDocumentMoniker": "EksiSozluk.Persistence\\Repositories\\AuthRepositories\\AuthRepository.cs",
-              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Persistence\\Repositories\\AuthRepositories\\AuthRepository.cs",
-              "RelativeToolTip": "EksiSozluk.Persistence\\Repositories\\AuthRepositories\\AuthRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T16:58:16.246Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Persistence\\Repositories\\Repository.cs",
-              "RelativeDocumentMoniker": "EksiSozluk.Persistence\\Repositories\\Repository.cs",
-              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Persistence\\Repositories\\Repository.cs",
-              "RelativeToolTip": "EksiSozluk.Persistence\\Repositories\\Repository.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T16:58:14.79Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Dtos\\AuthDtos\\LoginDto.cs",
-              "RelativeDocumentMoniker": "EksiSozluk.Application\\Dtos\\AuthDtos\\LoginDto.cs",
-              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Dtos\\AuthDtos\\LoginDto.cs",
-              "RelativeToolTip": "EksiSozluk.Application\\Dtos\\AuthDtos\\LoginDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T16:57:41.636Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AuthServiceResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Dtos\\AuthDtos\\AuthServiceResponseDto.cs",
-              "RelativeDocumentMoniker": "EksiSozluk.Application\\Dtos\\AuthDtos\\AuthServiceResponseDto.cs",
-              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Dtos\\AuthDtos\\AuthServiceResponseDto.cs",
-              "RelativeToolTip": "EksiSozluk.Application\\Dtos\\AuthDtos\\AuthServiceResponseDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T16:57:37.39Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UpdatePermissionDto.cs",
-              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Dtos\\AuthDtos\\UpdatePermissionDto.cs",
-              "RelativeDocumentMoniker": "EksiSozluk.Application\\Dtos\\AuthDtos\\UpdatePermissionDto.cs",
-              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Dtos\\AuthDtos\\UpdatePermissionDto.cs",
-              "RelativeToolTip": "EksiSozluk.Application\\Dtos\\AuthDtos\\UpdatePermissionDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T16:57:40.184Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "StaticUserRoles.cs",
-              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Persistence\\OtherFile\\StaticUserRoles.cs",
-              "RelativeDocumentMoniker": "EksiSozluk.Persistence\\OtherFile\\StaticUserRoles.cs",
-              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Persistence\\OtherFile\\StaticUserRoles.cs",
-              "RelativeToolTip": "EksiSozluk.Persistence\\OtherFile\\StaticUserRoles.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T16:58:37.632Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebAPI\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "EksiSozluk.WebAPI\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebAPI\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "EksiSozluk.WebAPI\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T17:02:11.541Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "EksiSozluk.WebAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebAPI\\appsettings.json",
+              "RelativeToolTip": "EksiSozluk.WebAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-20T21:09:23.386Z",
               "EditorCaption": ""
             }
           ]

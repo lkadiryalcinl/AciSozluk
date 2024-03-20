@@ -24,7 +24,6 @@ namespace EksiSozluk.WebAPI.Controllers
             return Ok(seedRoles);
         }
 
-
         [HttpPost]
         [Route("register")]
         public async Task<IActionResult> Register([FromBody] RegisterDto registerDto)
@@ -37,17 +36,14 @@ namespace EksiSozluk.WebAPI.Controllers
             return BadRequest(registerResult);
         }
 
-
         //Route ---> login
         [HttpPost]
         [Route("login")]
         public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
         {
             var loginResult = await _authRepository.LoginAsync(loginDto);
-
             if (loginResult.IsSucceed)
                 return Ok(loginResult);
-
             return Unauthorized(loginResult);
         }
 

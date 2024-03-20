@@ -28,6 +28,7 @@ builder.Services.AddDbContext<EksiDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DbUrl"));
 });
 
+
 //Add identity
 builder.Services
     .AddIdentity<User, IdentityRole>()
@@ -83,9 +84,10 @@ builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 
 builder.Services.AddApplicationService(builder.Configuration);
 
+
 builder.Host.ConfigureContainer<ContainerBuilder>(
 builder => builder.RegisterModule(new AutofacAPIModule()));
-
+//autofac implementation
 
 
 var app = builder.Build();
@@ -100,7 +102,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseAuthentication();
 
-app.UseCors("CarBookCors");
+app.UseCors("EksiSozukCors");
 
 app.UseHttpsRedirection();
 
