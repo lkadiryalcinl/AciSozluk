@@ -22,6 +22,41 @@ namespace EksiSozluk.Persistence.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("EksiSozluk.Domain.Entities.Channel", b =>
+                {
+                    b.Property<Guid>("ChannelID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ChannelName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ChannelID");
+
+                    b.ToTable("Channels");
+                });
+
+            modelBuilder.Entity("EksiSozluk.Domain.Entities.Title", b =>
+                {
+                    b.Property<Guid>("TitleID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("ChannelId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("TitleName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("TitleID");
+
+                    b.HasIndex("ChannelId");
+
+                    b.ToTable("Titles");
+                });
+
             modelBuilder.Entity("EksiSozluk.Domain.Entities.User", b =>
                 {
                     b.Property<string>("Id")
@@ -228,6 +263,17 @@ namespace EksiSozluk.Persistence.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("EksiSozluk.Domain.Entities.Title", b =>
+                {
+                    b.HasOne("EksiSozluk.Domain.Entities.Channel", "Channel")
+                        .WithMany("Titles")
+                        .HasForeignKey("ChannelId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Channel");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -277,6 +323,11 @@ namespace EksiSozluk.Persistence.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("EksiSozluk.Domain.Entities.Channel", b =>
+                {
+                    b.Navigation("Titles");
                 });
 #pragma warning restore 612, 618
         }

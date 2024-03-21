@@ -9,5 +9,7 @@ namespace EksiSozluk.Persistence.Context
         public EksiDbContext(DbContextOptions<EksiDbContext> context) : base(context)
         {
         }
+        public DbSet<Channel> Channels { get; set; }
+        public DbSet<Title> Titles { get; set; }
     }
 }

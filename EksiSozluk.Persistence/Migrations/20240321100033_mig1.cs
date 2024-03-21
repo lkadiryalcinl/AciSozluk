@@ -53,6 +53,18 @@ namespace EksiSozluk.Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Channels",
+                columns: table => new
+                {
+                    ChannelID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    ChannelName = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Channels", x => x.ChannelID);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "AspNetRoleClaims",
                 columns: table => new
                 {
@@ -158,6 +170,25 @@ namespace EksiSozluk.Persistence.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Titles",
+                columns: table => new
+                {
+                    TitleID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    TitleName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ChannelID = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Titles", x => x.TitleID);
+                    table.ForeignKey(
+                        name: "FK_Titles_Channels_ChannelID",
+                        column: x => x.ChannelID,
+                        principalTable: "Channels",
+                        principalColumn: "ChannelID",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -196,6 +227,11 @@ namespace EksiSozluk.Persistence.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Titles_ChannelID",
+                table: "Titles",
+                column: "ChannelID");
         }
 
         /// <inheritdoc />
@@ -217,10 +253,16 @@ namespace EksiSozluk.Persistence.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "Titles");
+
+            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "Channels");
         }
     }
 }
