@@ -20,6 +20,6 @@ namespace EksiSozluk.Domain.Entities
 
         public User User { get; set; }
 
-        public ICollection<Title> Titles { get; set; }
+       public List<Title> Titles { get; set; }
     }
 }

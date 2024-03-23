@@ -35,6 +35,7 @@ namespace EksiSozluk.Domain.Entities
         public User User { get; set; }
         // Entry has to belong to one title
         public Guid TitleId { get; set; }
+
         public Title Title { get; set; }
     }
 }
