@@ -15,9 +15,9 @@ ___
 
 1. [Proje Planı](/Docs/OtherReadMe's/Proje_Plani.md)
 2. [Gereksinim Analizi](/Docs/OtherReadMe's/Gereksinim_Analizi.md)
-3. [Durum Diyagramı](https://eksisozluk.com/)
-4. [Durum Senaryoları](https://eksisozluk.com/)
-5. [Veritabanı Diyagramı](https://eksisozluk.com/)
+3. [Durum Diyagramı](/Docs/OtherReadMe's/Durum_Diyagrami.md)
+4. [Durum Senaryoları](/Docs/OtherReadMe's/Durum_Senaryolari.md)
+5. [Veritabanı Diyagramı](/Docs/OtherReadMe's/Veritabani_Diyagrami.md)
 6. [Front-End](https://eksisozluk.com/)
 7. [Back-End](https://eksisozluk.com/)
 8. [Test](https://eksisozluk.com/)
