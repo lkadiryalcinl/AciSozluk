@@ -200,3 +200,13 @@ C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0
 C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\ru\Microsoft.Data.SqlClient.resources.dll
 C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
