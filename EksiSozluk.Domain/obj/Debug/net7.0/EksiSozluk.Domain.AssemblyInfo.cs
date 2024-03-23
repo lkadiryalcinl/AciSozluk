@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EksiSozluk.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac8a58ae13dc97bcee4c1d62e19e1d5e99e3e27d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e6dadeea9739a5a12c837fc8935b1672f597011")]
 [assembly: System.Reflection.AssemblyProductAttribute("EksiSozluk.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EksiSozluk.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
