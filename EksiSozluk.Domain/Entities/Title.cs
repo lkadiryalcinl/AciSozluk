@@ -7,15 +7,15 @@
         public string TitleName { get; set; }
 
         public bool IsFollowed { get; set; } = false;
-        // the title has to belong one user 
+        // The followed title list has to belong to one user 
         public string UserId { get; set; }
 
         public User User { get; set; }
-        // the title has to belong one channel
+        // The title has to belong to one channel
         public Guid ChannelId { get; set; }
 
         public Channel Channel { get; set; }
-        // the title can have many entries
+        // The title can have many entries
         public List<Entry> Entries { get; set; }
     }
 }

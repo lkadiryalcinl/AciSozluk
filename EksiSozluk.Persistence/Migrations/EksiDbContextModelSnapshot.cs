@@ -358,6 +358,21 @@ namespace EksiSozluk.Persistence.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("UserUser", b =>
+                {
+                    b.Property<string>("FollowersId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("FollowingsId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("FollowersId", "FollowingsId");
+
+                    b.HasIndex("FollowingsId");
+
+                    b.ToTable("UserUser");
+                });
+
             modelBuilder.Entity("EksiSozluk.Domain.Entities.Channel", b =>
                 {
                     b.HasOne("EksiSozluk.Domain.Entities.User", "User")
@@ -378,7 +393,7 @@ namespace EksiSozluk.Persistence.Migrations
                         .IsRequired();
 
                     b.HasOne("EksiSozluk.Domain.Entities.User", "User")
-                        .WithMany("Entries")
+                        .WithMany("UserEntries")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
@@ -458,6 +473,21 @@ namespace EksiSozluk.Persistence.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("UserUser", b =>
+                {
+                    b.HasOne("EksiSozluk.Domain.Entities.User", null)
+                        .WithMany()
+                        .HasForeignKey("FollowersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EksiSozluk.Domain.Entities.User", null)
+                        .WithMany()
+                        .HasForeignKey("FollowingsId")
+                        .OnDelete(DeleteBehavior.ClientCascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("EksiSozluk.Domain.Entities.Channel", b =>
                 {
                     b.Navigation("Titles");
@@ -470,11 +500,11 @@ namespace EksiSozluk.Persistence.Migrations
 
             modelBuilder.Entity("EksiSozluk.Domain.Entities.User", b =>
                 {
-                    b.Navigation("Entries");
-
                     b.Navigation("FollowedChannels");
 
                     b.Navigation("FollowedTitles");
+
+                    b.Navigation("UserEntries");
                 });
 #pragma warning restore 612, 618
         }

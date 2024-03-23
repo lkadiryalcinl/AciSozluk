@@ -31,7 +31,9 @@ namespace EksiSozluk.Domain.Entities
         public bool IsEntryFavorited { get; set; } = false;
 
         // Entry has to belong to one user
+        // Followed Entry list belong to one user
         public string UserId { get; set; }
+
         public User User { get; set; }
         // Entry has to belong to one title
         public Guid TitleId { get; set; }

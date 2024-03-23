@@ -15,11 +15,11 @@ namespace EksiSozluk.Domain.Entities
         public string ChannelDescription { get; set; }
 
         public bool IsFollowed { get; set; } = false;
-
+        // The following channel list belong to one user
         public string UserId { get; set; }
 
         public User User { get; set; }
-
+        // The channel can have many titles
        public List<Title> Titles { get; set; }
     }
 }
