@@ -15,10 +15,6 @@ namespace EksiSozluk.Domain.Entities
 
         public bool UserStatus { get; set; }
 
-        public int FollowingCount { get; set; }
-
-        public int FollowerCount { get; set; }
-
         public DateTime RegistrationDate { get; set; }
         public EntryTransactionRelation EntryTransactionRelation { get; set; }
         // The user can write many entries
