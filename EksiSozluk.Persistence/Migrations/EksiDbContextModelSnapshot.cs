@@ -186,6 +186,27 @@ namespace EksiSozluk.Persistence.Migrations
                     b.ToTable("FollowTitles");
                 });
 
+            modelBuilder.Entity("EksiSozluk.Domain.Entities.FollowUser", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("FollowedId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FollowingId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FollowingId");
+
+                    b.ToTable("FollowUsers");
+                });
+
             modelBuilder.Entity("EksiSozluk.Domain.Entities.Title", b =>
                 {
                     b.Property<Guid>("Id")
@@ -516,6 +537,17 @@ namespace EksiSozluk.Persistence.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("EksiSozluk.Domain.Entities.FollowUser", b =>
+                {
+                    b.HasOne("EksiSozluk.Domain.Entities.User", "Following")
+                        .WithMany("FollowUsers")
+                        .HasForeignKey("FollowingId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("Following");
+                });
+
             modelBuilder.Entity("EksiSozluk.Domain.Entities.Title", b =>
                 {
                     b.HasOne("EksiSozluk.Domain.Entities.Channel", "Channel")
@@ -613,6 +645,8 @@ namespace EksiSozluk.Persistence.Migrations
                     b.Navigation("FollowChannels");
 
                     b.Navigation("FollowTitles");
+
+                    b.Navigation("FollowUsers");
 
                     b.Navigation("UserEntries");
                 });

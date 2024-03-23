@@ -8,6 +8,7 @@ namespace EksiSozluk.Persistence.Context
     {
         public EksiDbContext(DbContextOptions<EksiDbContext> options) : base(options) { }
 
+        public DbSet<FollowUser> FollowUsers { get; set; }
         public DbSet<Channel> Channels { get; set; }
         public DbSet<FollowChannel> FollowChannels { get; set; }
         public DbSet<Title> Titles { get; set; }
@@ -143,6 +144,17 @@ namespace EksiSozluk.Persistence.Context
                 .HasOne(e => e.EntryTransactionRelation)
                 .WithOne(e => e.User)
                 .HasForeignKey<EntryTransactionRelation>(e => e.UserId);
+
+            //Follow User <<- User
+            modelBuilder.Entity<User>()
+                .HasMany(e => e.FollowUsers)
+                .WithOne(e => e.Following)
+                .HasForeignKey(e => e.FollowingId).OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<FollowUser>()
+                .HasOne(e => e.Following)
+                .WithMany(e => e.FollowUsers)
+                .HasForeignKey(e => e.FollowingId).OnDelete(DeleteBehavior.NoAction);
 
             // There is UserUser table on the sql now.
             // This table automatically created by the entity framework

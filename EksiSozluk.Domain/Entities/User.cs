@@ -25,5 +25,6 @@ namespace EksiSozluk.Domain.Entities
         public List<Entry> UserEntries { get; set; }
         public List<FollowChannel> FollowChannels { get; set; }
         public List<FollowTitle> FollowTitles { get; set; }
+        public List<FollowUser> FollowUsers { get; set; }
     }
 }
