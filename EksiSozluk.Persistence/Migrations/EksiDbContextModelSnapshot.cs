@@ -24,35 +24,110 @@ namespace EksiSozluk.Persistence.Migrations
 
             modelBuilder.Entity("EksiSozluk.Domain.Entities.Channel", b =>
                 {
-                    b.Property<Guid>("ChannelID")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ChannelDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ChannelName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ChannelID");
+                    b.Property<bool>("IsFollowed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Channels");
                 });
 
+            modelBuilder.Entity("EksiSozluk.Domain.Entities.Entry", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("EntryContent")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("FavoriteCount")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsEntryDelete")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsEntryDisliked")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsEntryFavorited")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsEntryLiked")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsEntryUpdated")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("LikeCount")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("TitleId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TitleId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Entries");
+                });
+
             modelBuilder.Entity("EksiSozluk.Domain.Entities.Title", b =>
                 {
-                    b.Property<Guid>("TitleID")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("ChannelId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<bool>("IsFollowed")
+                        .HasColumnType("bit");
+
                     b.Property<string>("TitleName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("TitleID");
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
 
                     b.HasIndex("ChannelId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Titles");
                 });
@@ -79,6 +154,12 @@ namespace EksiSozluk.Persistence.Migrations
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("FollowerCount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("FollowingCount")
+                        .HasColumnType("int");
 
                     b.Property<string>("LastName")
                         .IsRequired()
@@ -107,15 +188,29 @@ namespace EksiSozluk.Persistence.Migrations
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<DateTime>("RegistrationDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
 
+                    b.Property<string>("UserBiography")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
+
+                    b.Property<byte[]>("UserPicture")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<bool>("UserStatus")
+                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 
@@ -209,22 +304,19 @@ namespace EksiSozluk.Persistence.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.Property<string>("LoginProvider")
+                    b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("ProviderKey")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<string>("ProviderKey")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("LoginProvider", "ProviderKey");
-
-                    b.HasIndex("UserId");
+                    b.HasKey("UserId");
 
                     b.ToTable("AspNetUserLogins", (string)null);
                 });
@@ -263,6 +355,51 @@ namespace EksiSozluk.Persistence.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("UserFollowers", b =>
+                {
+                    b.Property<string>("FollowerId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("FollowingId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("FollowerId", "FollowingId");
+
+                    b.HasIndex("FollowingId");
+
+                    b.ToTable("UserFollowers");
+                });
+
+            modelBuilder.Entity("EksiSozluk.Domain.Entities.Channel", b =>
+                {
+                    b.HasOne("EksiSozluk.Domain.Entities.User", "User")
+                        .WithMany("FollowedChannels")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("EksiSozluk.Domain.Entities.Entry", b =>
+                {
+                    b.HasOne("EksiSozluk.Domain.Entities.Title", "Title")
+                        .WithMany("Entries")
+                        .HasForeignKey("TitleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EksiSozluk.Domain.Entities.User", "User")
+                        .WithMany("Entries")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Title");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("EksiSozluk.Domain.Entities.Title", b =>
                 {
                     b.HasOne("EksiSozluk.Domain.Entities.Channel", "Channel")
@@ -271,7 +408,15 @@ namespace EksiSozluk.Persistence.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("EksiSozluk.Domain.Entities.User", "User")
+                        .WithMany("FollowedTitles")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Channel");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -325,9 +470,38 @@ namespace EksiSozluk.Persistence.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("UserFollowers", b =>
+                {
+                    b.HasOne("EksiSozluk.Domain.Entities.User", null)
+                        .WithMany()
+                        .HasForeignKey("FollowerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EksiSozluk.Domain.Entities.User", null)
+                        .WithMany()
+                        .HasForeignKey("FollowingId")
+                        .OnDelete(DeleteBehavior.ClientCascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("EksiSozluk.Domain.Entities.Channel", b =>
                 {
                     b.Navigation("Titles");
+                });
+
+            modelBuilder.Entity("EksiSozluk.Domain.Entities.Title", b =>
+                {
+                    b.Navigation("Entries");
+                });
+
+            modelBuilder.Entity("EksiSozluk.Domain.Entities.User", b =>
+                {
+                    b.Navigation("Entries");
+
+                    b.Navigation("FollowedChannels");
+
+                    b.Navigation("FollowedTitles");
                 });
 #pragma warning restore 612, 618
         }
