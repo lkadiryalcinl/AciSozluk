@@ -1,1 +1,1 @@
-![Proje_Planı](https://github.com/lkadiryalcinl/EksiSozluk/assets/96176339/98b829a9-be87-4223-96ec-574225c3fee7)
+![image](https://github.com/lkadiryalcinl/EksiSozluk/assets/96176339/d6dbea9a-d021-42a8-b9f3-31bdc7a99880)
