@@ -42,12 +42,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -56,7 +52,7 @@
               "RelativeDocumentMoniker": "EksiSozluk.WebAPI\\appsettings.json",
               "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebAPI\\appsettings.json",
               "RelativeToolTip": "EksiSozluk.WebAPI\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAKAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-03-25T12:59:11.839Z",
               "EditorCaption": ""
@@ -71,8 +67,7 @@
               "RelativeToolTip": "EksiSozluk.Domain\\Entities\\EntryTransactionRelation.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T12:58:08.622Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T12:58:08.622Z"
             },
             {
               "$type": "Document",
@@ -120,8 +115,7 @@
               "RelativeToolTip": "EksiSozluk.Domain\\Entities\\Entry.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-23T03:20:20.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-23T03:20:20.488Z"
             },
             {
               "$type": "Document",
@@ -145,8 +139,7 @@
               "RelativeToolTip": "EksiSozluk.Persistence\\Context\\EksiDbContext.cs",
               "ViewState": "AQIAAI0AAAAAAAAAAAAAAC4AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-23T01:41:45.198Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-23T01:41:45.198Z"
             }
           ]
         }
