@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EksiSozluk.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a21539afb0ba6a55da50f0ee0320085a7662cd84")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78bfb683d0606754539cce50ac779c0a5ab31d61")]
 [assembly: System.Reflection.AssemblyProductAttribute("EksiSozluk.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EksiSozluk.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
