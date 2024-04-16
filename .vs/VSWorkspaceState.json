@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\EksiSozluk.Domain",
-    "\\EksiSozluk.Domain\\Entities"
+    "\\EksiSozluk.Application"
   ],
-  "SelectedNode": "\\EksiSozluk.Domain\\Entities\\FollowChannel.cs",
+  "SelectedNode": "\\EksiSozluk.Application\\EksiSozluk.Application.csproj",
   "PreviewInSolutionExplorer": false
 }
