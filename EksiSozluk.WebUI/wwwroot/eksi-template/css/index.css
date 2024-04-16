@@ -294,19 +294,14 @@
     color: #636161;
 }
 
-.date-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 50px auto;
-}
+
 
 .button-color {
     text-decoration: none;
-    background-color: rgb(198, 198, 26);
+    background-color: #78c056;
 }
 
-.button-color:hover {
-    text-decoration: none;
-    color: #78c056;
-}
+    .button-color:hover {
+        text-decoration: none;
+        background-color: #5fa042;
+    }

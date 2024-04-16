@@ -8,5 +8,14 @@ namespace EksiSozluk.WebUI.Controllers
         {
             return View();
         }
+        
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+
+
+
     }
 }
