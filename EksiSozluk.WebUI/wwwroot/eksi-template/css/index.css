@@ -1,0 +1,312 @@
+@media only screen and (max-width: 1200px) {
+    .hidden-custom {
+        display: none;
+    }
+
+    .col-custom {
+        width: 100%;
+    }
+
+    .full {
+        width: 100%;
+    }
+
+    .pena {
+        max-width: 20px;
+    }
+
+    .eksi-seyler {
+        max-width: 30px;
+        margin-top: -4px !important;
+    }
+}
+
+.text-area-custom {
+    resize: both;
+    width: 300px;
+    height: 200px;
+}
+
+.eksi-nav-top-line {
+    border: 2px solid #81C14B;
+}
+
+.auth-entrance-link {
+    display: inline-block;
+    text-align: center;
+    border-radius: 10%;
+}
+
+    .auth-entrance-link:hover {
+        text-decoration: underline;
+        text-decoration-color: black;
+    }
+
+.auth-entrance-link-text {
+    text-decoration: none;
+    color: black;
+}
+
+.auth-entrance-link-green {
+    display: inline-block;
+    background-color: #81C14B;
+    text-align: center;
+    border-radius: 10%;
+    justify-content: center;
+}
+
+    .auth-entrance-link-green:hover {
+        text-decoration: underline;
+        text-decoration-color: white;
+    }
+
+.auth-entrance-link-green-text {
+    text-decoration: none;
+    color: white;
+}
+
+.auth-entrance-link-dropdown {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.auth-entrance-link-dropdown-text {
+    color: black;
+}
+
+.eksi-nav-bottom-line {
+    border-bottom: 1px solid gray;
+    margin-top: -12px;
+}
+
+.btn-eksi {
+    background-color: #81C14B;
+    border: #81C14B;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 0 4px 4px 0;
+}
+
+    .btn-eksi:hover {
+        background-color: #81C14B;
+    }
+
+.input-eksi {
+    border: 1px solid;
+    border-color: #81C14B;
+    border-radius: 4px 0 0 4px;
+}
+
+    .input-eksi:focus {
+        outline: 0px solid #81C14B;
+        font-size: 14px;
+    }
+
+    .input-eksi::placeholder {
+        font-size: 14px;
+        padding-left: 2px;
+    }
+
+    .input-eksi:focus::placeholder {
+        font-size: 14px;
+        padding-left: 2px;
+    }
+
+
+.auth-link {
+    text-decoration: none;
+    color: #4e4e4e;
+    font-size: 14px;
+}
+
+    .auth-link:hover {
+        text-decoration: underline;
+        text-decoration-color: black;
+    }
+
+.nav-link-custom {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: gray;
+    margin-bottom: -10px;
+}
+
+    .nav-link-custom:hover {
+        color: #81C14B;
+        font-weight: bolder;
+        border-bottom: 6px solid #81C14B;
+        margin-bottom: -16px;
+    }
+
+.ul-custom {
+    list-style-type: none;
+}
+
+
+.white {
+    color: white;
+}
+
+.bg-eksi {
+    background-color: #2D2D2D;
+}
+
+.pena {
+    width: 80px;
+    margin-top: -4px;
+}
+
+.eksi-seyler {
+    width: 120px;
+    margin-top: -12px;
+}
+
+
+.card-link {
+    color: gray;
+    text-decoration: none;
+}
+
+    .card-link:hover {
+        background-color: #f4f4f4;
+    }
+
+.title-content {
+    height: auto;
+    max-height: 100px;
+    font-size: 14px;
+    color: #4e4e4e;
+}
+
+.entry-number-aside {
+}
+
+.fav, .up,
+.down {
+    color: #2d2d2d;
+}
+
+    .fav:hover,
+    .up:hover {
+        color: #78c056;
+    }
+
+.entry-number {
+    text-decoration: none;
+    color: #2d2d2d;
+}
+
+    .entry-number:hover {
+        text-decoration: #78c056 underline;
+        color: #78c056;
+    }
+
+.person-name {
+    text-decoration: none;
+    color: #78c056;
+}
+
+    .person-name:hover {
+        text-decoration: #78c056 underline;
+    }
+
+
+.person-cycle {
+    font-size: 32px;
+    color: #141313;
+    text-align: justify;
+}
+
+
+
+.down:hover {
+    color: #ff572a
+}
+
+.entry-title {
+    text-decoration: none;
+    color: #2d2d2d;
+}
+
+    .entry-title:hover {
+        text-decoration: #2d2d2d underline;
+        color: #2d2d2d;
+    }
+
+.follow-number {
+    text-decoration: none;
+    color: #2d2d2d;
+}
+
+    .follow-number:hover {
+        text-decoration: #78c056 underline;
+        color: #78c056;
+    }
+
+.author {
+    text-decoration: none;
+    color: #2d2d2d;
+}
+
+    .author:hover {
+        text-decoration: #2d2d2d underline;
+        color: #2d2d2d;
+    }
+
+.noob {
+    text-decoration: none;
+    color: #2d2d2d;
+    background-color: #FFB96E;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+    .noob:hover {
+        text-decoration: #2d2d2d underline;
+        color: #2d2d2d;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+
+.get-circle {
+    color: #1a1818;
+    font-size: 70px;
+}
+
+.get-circle2 {
+    display: inline-block;
+    border-radius: 30px;
+    box-shadow: 0 0 2px #000000;
+    padding: 0.25em 0.3em;
+}
+
+.size2 {
+    width: 300px;
+    height: 300px;
+    color: #636161;
+}
+
+.date-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.button-color {
+    text-decoration: none;
+    background-color: rgb(198, 198, 26);
+}
+
+.button-color:hover {
+    text-decoration: none;
+    color: #78c056;
+}
