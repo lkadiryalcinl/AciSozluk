@@ -1,4 +1,11 @@
-﻿<section>
+﻿@using Microsoft.AspNetCore.Http
+
+@{
+    var user = Context.User;
+    var isLoggedIn = user.Identity.IsAuthenticated;
+    var username = user.Identity.Name;
+}
+<section>
     <div class="eksi-nav-top-line"></div>
     <div class="container">
         <nav class="container-fluid-custom">
@@ -19,42 +26,48 @@
                 </div>
                 <div class="col-6 hidden-custom">
 
-                    @*      giriş öncesi  *@
-                    <div class="d-flex container-fluid-custom justify-content-end mt-1">
-                        <a class="me-4 auth-link" href="/Auth/SignIn">giriş</a>
-                        <a class="me-4 auth-link" href="/Auth/Register">kayıt ol</a>
-                    </div>
-                    @* giriş öncesi bitiş *@
+                    @if (!isLoggedIn)
+                    {
+                        @*      giriş öncesi  *@
+                        <div class="d-flex container-fluid-custom justify-content-end mt-1">
+                            <a class="me-4 auth-link" href="/Auth/SignIn">giriş</a>
+                            <a class="me-4 auth-link" href="/Auth/Register">kayıt ol</a>
+                        </div>
+                        @* giriş öncesi bitiş *@
 
+                    }
+
+                    else{
 
                     @*giriş sonrası *@
-                    @*  <div class="col-12 d-flex justify-content-end">
-                    <div class="col-lg-6 col-md-12 d-flex">
-                    <div class="col d-flex justify-content-center align-items-center auth-entrance-link me-1">
-                    <a class="auth-entrance-link-text" href="/Profile/Index"><i class="bi bi-person"></i> ben</a>
+                    <div class="col-12 d-flex justify-content-end">
+                        <div class="col-lg-6 col-md-12 d-flex">
+                            <div class="col d-flex justify-content-center align-items-center auth-entrance-link me-1">
+                                <a class="auth-entrance-link-text" href="/Profile/Index"><i class="bi bi-person"></i> ben</a>
+                            </div>
+                            <div class="col d-flex justify-content-center align-items-center auth-entrance-link-green me-1">
+                                <a class="auth-entrance-link-green-text" href="#"><i class="bi bi-chat-right"></i> mesaj</a>
+                            </div>
+                            <div class="col d-flex justify-content-center align-items-center auth-entrance-link-green me-1">
+                                <a class="auth-entrance-link-green-text" href="#"><i class="bi bi-activity"></i> olay</a>
+                            </div>
+                            <div class="col d-flex justify-content-center align-items-center auth-entrance-link-dropdown dropdown me-1">
+                                <a asp-action="Logout" asp-controller="Auth" class="dropdown-toggle pb-2" type="button">
+                                    <i class="bi bi-three-dots"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><button class="dropdown-item" type="button">consectetur</button></li>
+                                    <li><button class="dropdown-item" type="button">adipisicing</button></li>
+                                    <li>
+                                        <button class="dropdown-item" type="button">elit</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col d-flex justify-content-center align-items-center auth-entrance-link-green me-1">
-                    <a class="auth-entrance-link-green-text" href="#"><i class="bi bi-chat-right"></i> mesaj</a>
-                    </div>
-                    <div class="col d-flex justify-content-center align-items-center auth-entrance-link-green me-1">
-                    <a class="auth-entrance-link-green-text" href="#"><i class="bi bi-activity"></i> olay</a>
-                    </div>
-                    <div class="col d-flex justify-content-center align-items-center auth-entrance-link-dropdown dropdown me-1">
-                    <a class="dropdown-toggle pb-2" type="button">
-                    <i class="bi bi-three-dots"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li><button class="dropdown-item" type="button">consectetur</button></li>
-                    <li><button class="dropdown-item" type="button">adipisicing</button></li>
-                    <li>
-                    <button class="dropdown-item" type="button">elit</button>
-                    </li>
-                    </ul>
-                    </div>
-                    </div>
-                    </div>  *@
 
                     @*giriş sonrası bitiş*@
+                    }
 
                 </div>
             </div>

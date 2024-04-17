@@ -6,11 +6,11 @@ namespace EksiSozluk.WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AuthController : ControllerBase
+    public class AuthsController : ControllerBase
     {
         private readonly IAuthRepository _authRepository;
 
-        public AuthController(IAuthRepository authRepository)
+        public AuthsController(IAuthRepository authRepository)
         {
             _authRepository = authRepository;
         }

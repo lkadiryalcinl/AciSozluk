@@ -9,13 +9,13 @@ namespace EksiSozluk.Domain.Entities
 
         public string LastName { get; set; }
 
-        public byte[] UserPicture { get; set; }
+        public byte[]? UserPicture { get; set; }
 
-        public string UserBiography { get; set; }
+        public string? UserBiography { get; set; }
 
-        public bool UserStatus { get; set; }
+        public bool? UserStatus { get; set; }
 
-        public DateTime RegistrationDate { get; set; }
+        public DateTime RegistrationDate { get; set; } = DateTime.Now;
         public EntryTransactionRelation EntryTransactionRelation { get; set; }
         // The user can write many entries
         public List<Entry> UserEntries { get; set; }

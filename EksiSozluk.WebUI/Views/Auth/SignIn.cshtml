@@ -1,4 +1,5 @@
-﻿@{
+﻿@model LoginDto
+@{
     ViewData["Title"] = "SignIn";
     Layout = "~/Views/UILayout/Index.cshtml";
 }
@@ -8,27 +9,29 @@
             <div class="col-2 mb-4">
                 <h4>giriş</h4>
             </div>
-            <div class="col-10">
-                <div class="col-lg-6">
-                    <div class="col-12 mb-2">
-                        <label class="col-12 mb-2 mt-2">e-mail adresi</label>
-                        <input class="col-12 py-1" type="email" />
+            <form method="post" asp-action="SignIn">
+                <div class="col-10">
+                    <div class="col-lg-6">
+                        <div class="col-12 mb-2">
+                            <label class="col-12 mb-2 mt-2">e-mail adresi</label>
+                            <input class="col-12 py-1" type="email" name="Email"/>
+                        </div>
+                        <div class="col-12 mb-2">
+                            <label class="col-12 mb-2">şifre</label>
+                            <input class="col-12 py-1" type="password" name="Password" />
+                        </div>
                     </div>
-                    <div class="col-12 mb-2">
-                        <label class="col-12 mb-2">şifre</label>
-                        <input class="col-12 py-1" type="password" />
+                    <div class="col-lg-6">
+                        <div class="col-12 mb-4">
+                            <input name="remember-checkbox" type="checkbox" />
+                            <label for="remember-checkbox">unutma bunları sorucam sonra</label>
+                        </div>
+                        <div class="col-12">
+                            <button id="sign" class="btn btn-eksi white col-12 py-2">giriş yapmaya çabala</button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="col-12 mb-4">
-                        <input name="remember-checkbox" type="checkbox"></input>
-                        <label for="remember-checkbox">unutma bunları sorucam sonra</label>
-                    </div>
-                    <div class="col-12">
-                        <button id="sign" class="btn btn-eksi white col-12 py-2">giriş yapmaya çabala</button>
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
         <div class="col-12">
             <div class="col-2">

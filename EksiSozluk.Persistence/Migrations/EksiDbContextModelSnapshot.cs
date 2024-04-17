@@ -287,7 +287,6 @@ namespace EksiSozluk.Persistence.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("UserBiography")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserName")
@@ -295,10 +294,9 @@ namespace EksiSozluk.Persistence.Migrations
                         .HasColumnType("nvarchar(256)");
 
                     b.Property<byte[]>("UserPicture")
-                        .IsRequired()
                         .HasColumnType("varbinary(max)");
 
-                    b.Property<bool>("UserStatus")
+                    b.Property<bool?>("UserStatus")
                         .HasColumnType("bit");
 
                     b.HasKey("Id");
