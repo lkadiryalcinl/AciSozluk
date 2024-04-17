@@ -1,40 +1,41 @@
-﻿@{
+﻿@model RegisterDto
+
+@{
     ViewData["Title"] = "Register";
     Layout = "~/Views/UILayout/Index.cshtml";
 }
-
-
 
 <div class="contanier">
     <div class="contanier-fluid">
         <div class="col-9">
             <h4>yeni kullanıcı adı</h4>
-            <br>
+            <form asp-action="Register" method="post">
+
+                <div class="col-12 mb-2 mt-2">
+                    <label class="col-12 mb-2 mt-2">nick</label>
+                    <input class="col-6 py-1" type="text" asp-for="UserName" />
+
+                </div>
+
+                <div class="col-12 mb-2">
+                    <label class="col-12 mb-2 mt-2">e-mail adresi</label>
+                    <input class="col-6 py-1" type="email" asp-for="Email" />
+                </div>
 
 
-            <div class="col-12 mb-2">
-                <label class="col-12 mb-2 mt-2">nick</label>
-                <input class="col-6 py-1" type="text" />
-            </div>
-
-            <div class="col-12 mb-2">
-                <label class="col-12 mb-2 mt-2">e-mail adresi</label>
-                <input class="col-6 py-1" type="email" />
-            </div>
-
-
-            <div class="col-12 mb-2">
-                <label class="col-12 mb-2">doğum tarihi</label>
-                <input type="date" class="col-4 py-1" id="date">
+                <div class="col-12 mb-2">
+                    <label class="col-12 mb-2">doğum tarihi</label>
+                    <input type="date" class="col-4 py-1" id="date" asp-for="BirthDate">
+                </div>
 
                 <div class="col-12 mb-4 mt-2">
                     <label class="col-12 mb-2">cinsiyet</label>
                     <div class="col-4">
-                        <select class="form-select">
-                            <option value="0">seçiniz</option>
-                            <option value="1">erkek</option>
-                            <option value="2">kadın</option>
-                            <option value="3">diğer</option>
+                        <select class="form-select" asp-for="Gender">
+                            <option value="seçiniz">seçiniz</option>
+                            <option value="erkek">erkek</option>
+                            <option value="kadın">kadın</option>
+                            <option value="diğer">diğer</option>
                         </select>
                     </div>
                 </div>
@@ -51,7 +52,7 @@
 
                 <div class="col-12 mb-2">
                     <label class="col-12 mb-2">şifre</label>
-                    <input class="col-6 py-1" type="password" />
+                    <input class="col-6 py-1" type="password" asp-for="Password" />
                     <div class="col-2" style="color:r#888888; font-size:small;">
                         şifre en az 8 karakter
                         en az bir büyük harf
@@ -62,7 +63,7 @@
 
                 <div class="col-12 mb-2">
                     <label class="col-12 mb-2">şifre</label>
-                    <input class="col-6 py-1" type="password" />
+                    <input class="col-6 py-1" type="password" asp-for="PasswordAgain" />
                     <div class="col-2" style="color:r#888888; font-size:small;">
                         en az 1 küçük harf
                         en az 1 büyük harf
@@ -71,30 +72,17 @@
                     </div>
                 </div>
 
-
-
                 <div class="form-check mt-4 mb-4">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" id="flexCheckDefault" asp-for="isAggrCheck">
                     <label class="form-check-label" for="flexCheckDefault">
                         ekşi sözlük kullanıcı sözleşmesini okudum ve kabul ediyorum
                     </label>
                 </div>
 
                 <div class="col-12 mb-2">
-                    <button class="col-6 btn button-color" type="button">kayıt ol işte böyle</button>
+                    <button class="col-6 btn button-color" type="submit">kayıt ol işte böyle</button>
                 </div>
-
-            </div>
+            </form>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
+</div>

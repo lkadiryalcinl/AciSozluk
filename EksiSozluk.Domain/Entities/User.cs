@@ -5,9 +5,6 @@ namespace EksiSozluk.Domain.Entities
     public class User : IdentityUser
     {
         //Id came from IdentityUserLibrary.
-        public string FirstName { get; set; }
-
-        public string LastName { get; set; }
 
         public byte[]? UserPicture { get; set; }
 
@@ -15,7 +12,14 @@ namespace EksiSozluk.Domain.Entities
 
         public bool? UserStatus { get; set; }
 
+        public string Gender { get; set; }
+
+        public DateTime  BirthDate { get; set; } 
+
+
         public DateTime RegistrationDate { get; set; } = DateTime.Now;
+
+
         public EntryTransactionRelation EntryTransactionRelation { get; set; }
         // The user can write many entries
         public List<Entry> UserEntries { get; set; }

@@ -25,6 +25,20 @@ namespace EksiSozluk.WebUI.Controllers
             return View();
         }
 
+
+        [HttpPost]
+        public async Task<IActionResult> Register(RegisterDto registerDto)
+        {
+            if (registerDto.Password == registerDto.PasswordAgain && registerDto.isAggrCheck==true)
+            {
+                var isSucceded = await _httpClientServiceAction.CreateAsync<RegisterDto>("Auths/register", registerDto);
+                return isSucceded ? RedirectToAction("SignIn", "Auth") : View();
+            }
+            return View();
+        }
+
+
+
         [HttpGet]
         public IActionResult SignIn()
         {

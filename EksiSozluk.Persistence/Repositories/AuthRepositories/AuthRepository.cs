@@ -62,9 +62,6 @@ namespace EksiSozluk.Persistence.Repositories.AuthRepositories
                 new Claim(ClaimTypes.Name, user.UserName),
                 new Claim(ClaimTypes.NameIdentifier, user.Id),
                 new Claim("JWTID", Guid.NewGuid().ToString()),
-                new Claim("FirstName", user.FirstName),
-                new Claim("LastName", user.LastName),
-
             };
             // "parellel" thread kullanılıyor
             // normal foreachten farkını görebilirsin
@@ -126,10 +123,10 @@ namespace EksiSozluk.Persistence.Repositories.AuthRepositories
 
             User newUser = new()
             {
-                FirstName = registerDto.FirstName,
-                LastName = registerDto.LastName,
                 Email = registerDto.Email,
                 UserName = registerDto.UserName,
+                BirthDate= registerDto.BirthDate,
+                Gender = registerDto.Gender,
                 SecurityStamp = Guid.NewGuid().ToString(),
             };
             // Security stamp? güvenlik bariyeri
