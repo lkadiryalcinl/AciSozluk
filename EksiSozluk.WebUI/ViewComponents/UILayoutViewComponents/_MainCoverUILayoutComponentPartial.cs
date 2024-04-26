@@ -1,12 +1,24 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using EksiSozluk.WebUI.Dto.TitleDtos;
+using EksiSozluk.WebUI.Services;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 
 namespace EksiSozluk.WebUI.ViewComponents.UILayoutViewComponents
 {
     public class _MainCoverUILayoutComponentPartial : ViewComponent
     {
-        public IViewComponentResult Invoke()
+        private readonly HttpClientServiceViewComponent _httpClientServiceVC;
+
+        public _MainCoverUILayoutComponentPartial(HttpClientServiceViewComponent httpClientServiceVC)
         {
-            return View();
+            _httpClientServiceVC = httpClientServiceVC;
+        }
+
+        public async Task<IViewComponentResult> InvokeAsync(string channelName)
+        {
+            channelName = ViewBag.ChannelName;
+            return channelName.IsNullOrEmpty() ? await _httpClientServiceVC.InvokeAsync<List<TitleDto>>("Titles?channelName=gündem") 
+                : await _httpClientServiceVC.InvokeAsync<List<TitleDto>>($"Titles?channelName={channelName}");
         }
     }
 }

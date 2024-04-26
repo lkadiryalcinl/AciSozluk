@@ -32,7 +32,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.Domain\\EksiSozluk.Domain.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.Domain\\EksiSozluk.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

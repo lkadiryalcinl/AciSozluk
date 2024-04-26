@@ -4,8 +4,9 @@ namespace EksiSozluk.WebUI.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public async Task<IActionResult> Index(string channelName)
         {
+            ViewBag.ChannelName = channelName;
             return View();
         }
     }

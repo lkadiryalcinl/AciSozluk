@@ -13,4 +13,8 @@
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EksiSozluk.Domain\EksiSozluk.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -2,13 +2,8 @@ using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using EksiSozluk.Application.Service;
 using EksiSozluk.Persistence.Context;
-using EksiSozluk.Domain.Entities;
 using EksiSozluk.WebAPI.IOC.DependencyInjection;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
 using CarBook.WebAPI.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -50,11 +45,10 @@ builder.Services.AddCors(opt =>
 
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 
-builder.Services.AddApplicationService(builder.Configuration);
-
+builder.Services.AddApplicationService();
 
 builder.Host.ConfigureContainer<ContainerBuilder>(
-builder => builder.RegisterModule(new AutofacAPIModule()));
+    builder => builder.RegisterModule(new AutofacAPIModule()));
 //autofac implementation
 
 

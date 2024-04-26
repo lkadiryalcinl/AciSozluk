@@ -1,22 +1,27 @@
-﻿<section>
+﻿@model List<TitleDto>
+<section>
     <div class="container">
         <div class="container-fluid-custom">
             <div class="row">
                 <div class="col-12 hidden-custom overflow-y-scroll">
-                    <div class="aside-card mb-2 mx-2">
-                        <a href="#" class="card-link">
-                            <div class="row pt-2 pb-2 card-link">
-                                <div class="col-10">
-                                    <p class="title-content m-0">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    </p>
+                    @foreach (var item in Model)
+                    {
+                        <div class="aside-card mx-2">
+                            <a href="#" class="card-link">
+                                <div class="row pt-2 pb-2 card-link">
+
+                                    <div class="col-10">
+                                        <p class="title-content m-0">
+                                            @item.TitleName
+                                        </p>
+                                    </div>
+                                    <div class="col-2 entry-number-aside" style="text-align: right;">
+                                        <span>15</span>
+                                    </div>
                                 </div>
-                                <div class="col-2 entry-number-aside" style="text-align: right;">
-                                    <span>15</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
+                    }
                 </div>
             </div>
         </div>

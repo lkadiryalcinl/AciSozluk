@@ -1,8 +1,10 @@
 ﻿using Autofac;
 using EksiSozluk.Application.Interfaces;
 using EksiSozluk.Application.Interfaces.AuthInterfaces;
+using EksiSozluk.Application.Interfaces.TopicInterfaces;
 using EksiSozluk.Persistence.Repositories;
 using EksiSozluk.Persistence.Repositories.AuthRepositories;
+using EksiSozluk.Persistence.Repositories.TopicRepositories;
 
 namespace EksiSozluk.WebAPI.IOC.DependencyInjection
 {
@@ -13,6 +15,7 @@ namespace EksiSozluk.WebAPI.IOC.DependencyInjection
             builder.RegisterGeneric(typeof(Repository<>)).As(typeof(IRepository<>)).InstancePerLifetimeScope();
 
             builder.RegisterType<AuthRepository>().As<IAuthRepository>().InstancePerLifetimeScope();
+            builder.RegisterType<TopicRepository>().As<ITopicRepository>().InstancePerLifetimeScope();
             // adscope alternative
         }
     }
