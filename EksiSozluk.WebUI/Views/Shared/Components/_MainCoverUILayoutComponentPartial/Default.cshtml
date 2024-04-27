@@ -7,7 +7,7 @@
                     @foreach (var item in Model)
                     {
                         <div class="aside-card mx-2">
-                            <a href="#" class="card-link">
+                            <a asp-controller="Home" asp-action="Index" asp-route-channelName=@item.ChannelName asp-route-titleId=@item.Id class ="card-link">
                                 <div class="row pt-2 pb-2 card-link">
 
                                     <div class="col-10">

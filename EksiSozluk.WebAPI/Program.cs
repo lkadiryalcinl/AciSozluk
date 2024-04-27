@@ -5,11 +5,19 @@ using EksiSozluk.Persistence.Context;
 using EksiSozluk.WebAPI.IOC.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using CarBook.WebAPI.Extensions;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
 // Add services to the container.
+
+builder.Services.AddControllersWithViews().
+    AddJsonOptions(opt =>
+    {
+        opt.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+        opt.JsonSerializerOptions.WriteIndented = true;
+    });
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

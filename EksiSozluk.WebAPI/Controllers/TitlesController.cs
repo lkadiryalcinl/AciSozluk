@@ -15,8 +15,8 @@ namespace EksiSozluk.WebAPI.Controllers
             _mediator = mediator;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetRentACarListByLocation(string channelName)
+        [HttpGet("GetTitleByFilter")]
+        public async Task<IActionResult> GetTitleByFilter(string channelName)
         {
             GetTitleByFilterQuery getTitleByFilterQuery = new()
             {
@@ -25,5 +25,17 @@ namespace EksiSozluk.WebAPI.Controllers
             var values = await _mediator.Send(getTitleByFilterQuery);
             return Ok(values);
         }
+        
+        [HttpGet("GetTitleByFilterWithEntries")]
+        public async Task<IActionResult> GetTitleByFilterWithEntries(string id)
+        {
+            GetTitleByFilterWithEntriesQuery getTitleByFilterWithEntriesQuery = new()
+            {
+                Id = id
+            };
+            var values = await _mediator.Send(getTitleByFilterWithEntriesQuery);
+            return Ok(values);
+        }
+
     }
 }

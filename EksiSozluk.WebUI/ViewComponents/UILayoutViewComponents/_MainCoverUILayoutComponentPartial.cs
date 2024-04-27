@@ -17,8 +17,15 @@ namespace EksiSozluk.WebUI.ViewComponents.UILayoutViewComponents
         public async Task<IViewComponentResult> InvokeAsync(string channelName)
         {
             channelName = ViewBag.ChannelName;
-            return channelName.IsNullOrEmpty() ? await _httpClientServiceVC.InvokeAsync<List<TitleDto>>("Titles?channelName=gündem") 
-                : await _httpClientServiceVC.InvokeAsync<List<TitleDto>>($"Titles?channelName={channelName}");
+            var values = channelName.IsNullOrEmpty() ? await _httpClientServiceVC.InvokeAsyncVal<List<TitleDto>>("Titles/GetTitleByFilter?channelName=gündem") 
+                : await _httpClientServiceVC.InvokeAsyncVal<List<TitleDto>>($"Titles/GetTitleByFilter?channelName={channelName}");
+            
+            Parallel.ForEach(values, value =>
+            {
+                value.ChannelName = channelName;
+            });
+            
+            return View(values);
         }
     }
 }

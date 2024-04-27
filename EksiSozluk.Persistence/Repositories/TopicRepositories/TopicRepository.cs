@@ -19,5 +19,11 @@ namespace EksiSozluk.Persistence.Repositories.TopicRepositories
             var values = await _context.Titles.Where(filter).ToListAsync();
             return values;
         }
+
+        public async Task<Title> GetByFilterWithEntriesAsync(Expression<Func<Title, bool>> filter)
+        {
+            var values = await _context.Titles.Where(filter).Include(x => x.Entries).FirstOrDefaultAsync();
+            return values;
+        }
     }
 }
