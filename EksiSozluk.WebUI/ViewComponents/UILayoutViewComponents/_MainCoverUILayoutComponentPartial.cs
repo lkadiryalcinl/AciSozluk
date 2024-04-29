@@ -20,11 +20,6 @@ namespace EksiSozluk.WebUI.ViewComponents.UILayoutViewComponents
             var values = channelName.IsNullOrEmpty() ? await _httpClientServiceVC.InvokeAsyncVal<List<TitleDto>>("Titles/GetTitleByFilter?channelName=gündem") 
                 : await _httpClientServiceVC.InvokeAsyncVal<List<TitleDto>>($"Titles/GetTitleByFilter?channelName={channelName}");
             
-            foreach (var value in values)
-            {
-                value.ChannelName = channelName;
-            }
-            
             return View(values);
         }
     }

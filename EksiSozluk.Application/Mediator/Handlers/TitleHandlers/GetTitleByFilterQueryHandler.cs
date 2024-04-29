@@ -20,7 +20,8 @@ namespace EksiSozluk.Application.Mediator.Handlers.TitleHandlers
             var results = values.Select(y => new GetTitleByFilterQueryResult
             {
                 Id = y.Id,
-                TitleName = y.TitleName
+                TitleName = y.TitleName,
+                ChannelName = y.Channel.ChannelName
             }).ToList();
             return results;
         }

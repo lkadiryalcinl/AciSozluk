@@ -16,7 +16,7 @@ namespace EksiSozluk.Persistence.Repositories.TopicRepositories
         }
         public async Task<List<Title>> GetByFilterAsync(Expression<Func<Title, bool>> filter)
         {
-            var values = await _context.Titles.Where(filter).ToListAsync();
+            var values = await _context.Titles.Where(filter).Include(x => x.Channel).ToListAsync();
             return values;
         }
 

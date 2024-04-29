@@ -4,5 +4,6 @@
     {
         public Guid Id { get; set; }
         public string TitleName { get; set; }
+        public string ChannelName { get; set; }
     }
 }
