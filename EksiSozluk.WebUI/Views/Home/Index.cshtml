@@ -1,5 +1,5 @@
 ﻿@using Microsoft.AspNetCore.Http
-@model TitleWithEntriesDto
+@model List<TitlesWithFirstEntryDto>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/UILayout/Index.cshtml";
@@ -13,21 +13,19 @@
         <div class="row">
             <div class="col-10 full">
                 <div class="row">
-
-                    <!-- Entry başladığı yer  -->
-                    <div class="container-fluid">
-                        <div class="row ms-2 mt-4">
-                            <div class="col mb-2">
-                                <h5>
-                                    <a href="#" type="button" class="entry-title">@Model.TitleName</a>
-                                </h5>
-                            </div>
-                            @foreach (var entry in Model.EntryList)
-                            {
-
+                    @foreach (var titleWFirstEntry in Model)
+                    {
+                        <!-- Entry başladığı yer  -->
+                        <div class="container-fluid">
+                            <div class="row ms-2 mt-4">
+                                <div class="col mb-2">
+                                    <h5>
+                                        <a asp-controller="TitleDetail" asp-action="Index" asp-route-channelName=@titleWFirstEntry.ChannelName asp-route-titleId=@titleWFirstEntry.Id type="button" class="entry-title">@titleWFirstEntry.TitleName</a>
+                                    </h5>
+                                </div>
                                 <div class="row">
                                     <p>
-                                        @entry.EntryContent
+                                        @titleWFirstEntry.FirstEntry.EntryContent
                                     </p>
                                 </div>
                                 <div class="row">
@@ -69,12 +67,12 @@
                                             <div class="col-9">
                                                 <div class="row">
                                                     <div class="col d-flex justify-content-end">
-                                                        <a href="#" type="button" class="person-name">hasan</a>
+                                                        <a href="#" type="button" class="person-name text-eksi">hasan</a>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col d-flex justify-content-end">
-                                                        <a href="#" type="button" class="person-name">@entry.CreatedDate.Date</a>
+                                                        <a href="#" type="button" class="person-name text-eksi-gray">@titleWFirstEntry.FirstEntry.CreatedDate.Date</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -84,10 +82,10 @@
                                         </div>
                                     </div>
                                 </div>
-                            }
+                            </div>
                         </div>
-                    </div>
-                    <!-- Entry bitişi  -->
+                        <!-- Entry bitişi  -->
+                    }
                 </div>
             </div>
             <!-- col-9 bitişi  -->
@@ -95,3 +93,4 @@
 
     </div>
 }
+

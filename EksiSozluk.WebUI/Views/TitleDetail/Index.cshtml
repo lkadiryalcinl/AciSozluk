@@ -1,0 +1,98 @@
+﻿@using Microsoft.AspNetCore.Http
+@model TitleWithEntriesDto
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/UILayout/Index.cshtml";
+    var user = Context.User;
+    var isLoggedIn = user.Identity.IsAuthenticated;
+}
+
+@if (Model != null)
+{
+        <div class="container">
+            <div class="row">
+                <div class="col-10 full">
+                    <div class="row">
+
+                        <!-- Entry başladığı yer  -->
+                        <div class="container-fluid">
+                            <div class="row ms-2 mt-4">
+                                <div class="col mb-2">
+                                    <h5>
+                                        <a href="#" type="button" class="entry-title">@Model.TitleName</a>
+                                    </h5>
+                                </div>
+                            @foreach (var entry in Model.EntryList)
+                            {
+
+                                        <div class="row">
+                                            <p>
+                                        @entry.EntryContent
+                                            </p>
+                                        </div>
+                                        <div class="row">
+                                            <!-- Sol taraftaki elemanlar -->
+                                            <div class="col-8 d-flex justify-content-start">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <a href="#" type="button"><i class="bi bi-arrow-up-square up"></i></a>
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="#" type="button"><i class="bi bi-arrow-down-square down"></i></a>
+                                                    </div>
+                                            @if (isLoggedIn)
+                                            {
+                                                            <div class="col">
+                                                                <a href="#" type="button"><i class="bi bi-droplet fav" id="icon"></i></a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <a href="#" type="button" class="entry-number">250</a>
+                                                            </div>
+                                            }
+                                                </div>
+                                            </div>
+                                            <!-- Sağ taraftaki elemanlar -->
+                                            <div class="col-4 d-flex justify-content-end">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <a href="#" type="button"><i class="bi bi-box-arrow-up up"></i></a>
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="#" type="button"><i class="bi bi-three-dots up"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 d-flex justify-content-end">
+                                                <div class="row ">
+                                                    <div class="col-9">
+                                                        <div class="row">
+                                                            <div class="col d-flex justify-content-end">
+                                                                <a href="#" type="button" class="person-name text-eksi">hasan</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col d-flex justify-content-end">
+                                                                <a href="#" type="button" class="person-name text-eksi-gray">@entry.CreatedDate.Date</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="#" type="button"><i class="bi bi-person-circle person-cycle"></i> </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                            }
+                            </div>
+                        </div>
+                        <!-- Entry bitişi  -->
+                    </div>
+                </div>
+                <!-- col-9 bitişi  -->
+            </div>
+
+        </div>
+}
+}

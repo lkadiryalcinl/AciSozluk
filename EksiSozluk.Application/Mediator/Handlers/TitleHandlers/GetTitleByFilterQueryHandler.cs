@@ -21,7 +21,8 @@ namespace EksiSozluk.Application.Mediator.Handlers.TitleHandlers
             {
                 Id = y.Id,
                 TitleName = y.TitleName,
-                ChannelName = y.Channel.ChannelName
+                ChannelName = y.Channel.ChannelName,
+                EntryCount = y.Entries.Count
             }).ToList();
             return results;
         }

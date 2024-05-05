@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EksiSozluk.WebUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e8812952183785496ce76f31d3d1c0e090dd5d0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31187cc94662b09c8b1f4a9dbfea39f015ecd031")]
 [assembly: System.Reflection.AssemblyProductAttribute("EksiSozluk.WebUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EksiSozluk.WebUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

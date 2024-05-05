@@ -165,15 +165,30 @@
     margin-top: -12px;
 }
 
+.text-eksi {
+    color: #81C14B;
+}
+
+.text-eksi-gray {
+    color: gray;
+}
+
+.text-eksi:hover {
+    text-decoration: #81C14B underline;
+}
+
+.text-eksi-gray:hover {
+    text-decoration: gray underline;
+}
 
 .card-link {
     color: gray;
     text-decoration: none;
 }
 
-    .card-link:hover {
-        background-color: #f4f4f4;
-    }
+.card-link:hover {
+    background-color: #f4f4f4;
+}
 
 .title-content {
     height: auto;
@@ -201,19 +216,14 @@
 }
 
     .entry-number:hover {
-        text-decoration: #78c056 underline;
-        color: #78c056;
+        text-decoration: #81C14B underline;
+        color: #81C14B;
     }
 
 .person-name {
     text-decoration: none;
-    color: #78c056;
+    font-size: 12px;
 }
-
-    .person-name:hover {
-        text-decoration: #78c056 underline;
-    }
-
 
 .person-cycle {
     font-size: 32px;

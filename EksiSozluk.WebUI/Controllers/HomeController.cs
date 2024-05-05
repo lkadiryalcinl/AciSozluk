@@ -14,12 +14,13 @@ namespace EksiSozluk.WebUI.Controllers
             _httpClientServiceAction = httpClientServiceAction;
         }
 
-        public async Task<IActionResult> Index(string channelName,string titleId)
+        public async Task<IActionResult> Index(string channelName)
         {
             ViewBag.ChannelName = channelName;
-            ViewBag.TitleId = titleId;
-            var values = await _httpClientServiceAction.InvokeAsync<TitleWithEntriesDto>($"Titles/GetTitleByFilterWithEntries?id={titleId}");
-            return titleId.IsNullOrEmpty() ? View() : View(values);
+            var values = channelName.IsNullOrEmpty() ? 
+                await _httpClientServiceAction.InvokeAsync<List<TitlesWithFirstEntryDto>>($"Titles/GetTitlesByFilterWithFirstEntry?id=gündem") 
+                : await _httpClientServiceAction.InvokeAsync<List<TitlesWithFirstEntryDto>>($"Titles/GetTitlesByFilterWithFirstEntry?id={channelName}");
+            return View(values);
         }
     }
 }

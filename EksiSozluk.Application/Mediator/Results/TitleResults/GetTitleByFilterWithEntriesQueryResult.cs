@@ -8,5 +8,6 @@ namespace EksiSozluk.Application.Mediator.Results.TitleResults
         public Guid Id { get; set; }
         public string TitleName { get; set; }
         public List<EntryWithoutTitleInfoDto> EntryList { get; set; }
+
     }
 }
