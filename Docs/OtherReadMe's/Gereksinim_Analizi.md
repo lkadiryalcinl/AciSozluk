@@ -3,7 +3,7 @@
 1. Giriş yapma (Kadir Yalçın)
 2. Kaydolma (Alper Köşgeroğlu)
 3. Arama yapma (Alper Köşgeroğlu)
-4. Gündemi Başlığı : Gün içerisinde girilen entrylerin sayısına göre getirilmesi. (Kadir Yalçın)
+4. Gündem Başlığı : Gün içerisinde girilen entrylerin sayısına göre getirilmesi. (Kadir Yalçın)
 5. Bugün Başlığı : En son entry girilen başlıkların getirilmesi. (Kadir Yalçın)
 6. Debe Başlığı : Dünün en beğenilen entrylerini başlığıklarıyla getirme. (Kadir Yalçın)
 7. Çaylaklar Başlığı : Yazar olmayan üyelerin entrylerinin getirildiği yer. (Kadir Yalçın)
