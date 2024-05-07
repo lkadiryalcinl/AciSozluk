@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\EksiSozluk.WebUI.bundle.scp.css",
-      "PackagePath": "staticwebassets\\EksiSozluk.WebUI.bundle.scp.css"
-    },
-    {
       "Id": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\css\\bootstrap-icons.min.css",
       "PackagePath": "staticwebassets\\eksi-template\\css\\bootstrap-icons.min.css"
     },

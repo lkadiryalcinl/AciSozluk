@@ -37,36 +37,37 @@
 
                     }
 
-                    else{
+                    else
+                    {
 
-                    @*giriş sonrası *@
-                    <div class="col-12 d-flex justify-content-end">
-                        <div class="col-lg-6 col-md-12 d-flex">
-                            <div class="col d-flex justify-content-center align-items-center auth-entrance-link me-1">
-                                <a class="auth-entrance-link-text" href="/Profile/Index"><i class="bi bi-person"></i> ben</a>
-                            </div>
-                            <div class="col d-flex justify-content-center align-items-center auth-entrance-link-green me-1">
-                                <a class="auth-entrance-link-green-text" href="#"><i class="bi bi-chat-right"></i> mesaj</a>
-                            </div>
-                            <div class="col d-flex justify-content-center align-items-center auth-entrance-link-green me-1">
-                                <a class="auth-entrance-link-green-text" href="#"><i class="bi bi-activity"></i> olay</a>
-                            </div>
-                            <div class="col d-flex justify-content-center align-items-center auth-entrance-link-dropdown dropdown me-1">
-                                <a asp-action="Logout" asp-controller="Auth" class="dropdown-toggle pb-2" type="button">
-                                    <i class="bi bi-three-dots"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><button class="dropdown-item" type="button">consectetur</button></li>
-                                    <li><button class="dropdown-item" type="button">adipisicing</button></li>
-                                    <li>
-                                        <button class="dropdown-item" type="button">elit</button>
-                                    </li>
-                                </ul>
+                        @*giriş sonrası *@
+                        <div class="col-12 d-flex justify-content-end">
+                            <div class="col-lg-6 col-md-12 d-flex">
+                                <div class="col d-flex justify-content-center align-items-center auth-entrance-link me-1">
+                                    <a class="auth-entrance-link-text" href="/Profile/Index"><i class="bi bi-person"></i> ben</a>
+                                </div>
+                                <div class="col d-flex justify-content-center align-items-center auth-entrance-link-green me-1">
+                                    <a class="auth-entrance-link-green-text" href="#"><i class="bi bi-chat-right"></i> mesaj</a>
+                                </div>
+                                <div class="col d-flex justify-content-center align-items-center auth-entrance-link-green me-1">
+                                    <a class="auth-entrance-link-green-text" href="#"><i class="bi bi-activity"></i> olay</a>
+                                </div>
+                                <div class="col d-flex justify-content-center align-items-center auth-entrance-link-dropdown dropdown me-1">
+                                    <a asp-action="Logout" asp-controller="Auth" class="dropdown-toggle pb-2" type="button">
+                                        <i class="bi bi-three-dots"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><button class="dropdown-item" type="button">consectetur</button></li>
+                                        <li><button class="dropdown-item" type="button">adipisicing</button></li>
+                                        <li>
+                                            <button class="dropdown-item" type="button">elit</button>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    @*giriş sonrası bitiş*@
+                        @*giriş sonrası bitiş*@
                     }
 
                 </div>
@@ -74,6 +75,12 @@
             <div class="row mt-3 pt-2">
                 <div class="col-12 full">
                     <ul class="d-flex justify-content-between ul-custom">
+                        @if (isLoggedIn)
+                        {
+                            <li class="col text-center">
+                                <a asp-controller="Home" asp-action="Index" asp-route-channelName="bugün" class="nav-link-custom pb-2">bugün</a>
+                            </li>
+                        }
                         <li class="col text-center">
                             <a asp-controller="Home" asp-action="Index" asp-route-channelName="gündem" class="nav-link-custom pb-2">gündem</a>
                         </li>
@@ -83,6 +90,21 @@
                         <li class="col text-center">
                             <a asp-controller="Home" asp-action="Index" asp-route-channelName="sorunsallar" class="nav-link-custom pb-2">sorunsallar</a>
                         </li>
+                        @if (isLoggedIn)
+                        {
+                            <li class="col text-center">
+                                <a asp-controller="Home" asp-action="Index" asp-route-channelName="takip" class="nav-link-custom pb-2">takip</a>
+                            </li>
+                            <li class="col text-center">
+                                <a asp-controller="Home" asp-action="Index" asp-route-channelName="son" class="nav-link-custom pb-2">son</a>
+                            </li>
+                            <li class="col text-center">
+                                <a asp-controller="Home" asp-action="Index" asp-route-channelName="kenar" class="nav-link-custom pb-2">kenar</a>
+                            </li>
+                            <li class="col text-center">
+                                <a asp-controller="Home" asp-action="Index" asp-route-channelName="çaylaklar" class="nav-link-custom pb-2">çaylaklar</a>
+                            </li>
+                        }
                         <li class="col text-center">
                             <a asp-controller="Home" asp-action="Index" asp-route-channelName="spor" class="nav-link-custom pb-2">#spor</a>
                         </li>
