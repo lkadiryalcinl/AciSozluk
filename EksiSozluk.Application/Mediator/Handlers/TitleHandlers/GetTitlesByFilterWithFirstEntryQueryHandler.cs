@@ -3,11 +3,8 @@ using EksiSozluk.Application.Interfaces.TopicInterfaces;
 using EksiSozluk.Application.Mediator.Queries.TitleQueries;
 using EksiSozluk.Application.Mediator.Results.TitleResults;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+
 
 namespace EksiSozluk.Application.Mediator.Handlers.TitleHandlers
 {

@@ -21,9 +21,7 @@ C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebUI\obj\Debug\net7.0\
 C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebUI\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.EksiSozluk.WebUI.props
 C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebUI\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.EksiSozluk.WebUI.props
 C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebUI\obj\Debug\net7.0\staticwebassets.pack.json
-C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebUI\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebUI\obj\Debug\net7.0\scopedcss\bundle\EksiSozluk.WebUI.styles.css
-C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebUI\obj\Debug\net7.0\scopedcss\projectbundle\EksiSozluk.WebUI.bundle.scp.css
 C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebUI\obj\Debug\net7.0\EksiSozluk.WebUI.dll
 C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebUI\obj\Debug\net7.0\refint\EksiSozluk.WebUI.dll
 C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebUI\obj\Debug\net7.0\EksiSozluk.WebUI.pdb
@@ -510,3 +508,14 @@ C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebUI\obj\Debug\net7.0\refint\EksiSo
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebUI\obj\Debug\net7.0\EksiSozluk.WebUI.pdb
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebUI\obj\Debug\net7.0\EksiSozluk.WebUI.genruntimeconfig.cache
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebUI\obj\Debug\net7.0\ref\EksiSozluk.WebUI.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebUI\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebUI\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebUI\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebUI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebUI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebUI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebUI\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebUI\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebUI\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebUI\bin\Debug\net7.0\EksiSozluk.Domain.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebUI\bin\Debug\net7.0\EksiSozluk.Domain.pdb

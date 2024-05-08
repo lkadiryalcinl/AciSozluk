@@ -14,6 +14,7 @@ namespace EksiSozluk.Persistence.Repositories.TopicRepositories
         {
             _context = context;
         }
+
         public async Task<List<Title>> GetByFilterAsync(Expression<Func<Title, bool>> filter)
         {
             var values = await _context.Titles.Where(filter).Include(x => x.Channel).Include(x => x.Entries).ToListAsync();
@@ -28,7 +29,7 @@ namespace EksiSozluk.Persistence.Repositories.TopicRepositories
 
         public async Task<List<Title>> GetByFilterWithFirstEntryAsync(Expression<Func<Title, bool>> filter)
         {
-            var values = await _context.Titles.Where(filter).Include(x => x.Channel).Include(x => x.Entries).ToListAsync();
+            var values = await _context.Titles.Where(filter).Include(x => x.Channel).ToListAsync();
             return values;
         }
     }

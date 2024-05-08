@@ -2,7 +2,7 @@
 {
     public class GetTitleByFilterQueryResult
     {
-        public Guid Id { get; set; }
+       public Guid Id { get; set; }
         public string TitleName { get; set; }
         public string ChannelName { get; set; }
         public int EntryCount { get; set; }

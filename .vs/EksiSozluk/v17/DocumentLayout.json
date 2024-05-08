@@ -3,16 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{996A2383-880C-4A41-BEDE-E028DF3997B2}|EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.webui\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{996A2383-880C-4A41-BEDE-E028DF3997B2}|EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj|solutionrelative:eksisozluk.webui\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.application\\mediator\\handlers\\entryhandlers\\getentrybyfilterqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|solutionrelative:eksisozluk.application\\mediator\\handlers\\entryhandlers\\getentrybyfilterqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.application\\mediator\\results\\entryresults\\getentriesbyfilterqueryresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|solutionrelative:eksisozluk.application\\mediator\\results\\entryresults\\getentriesbyfilterqueryresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{476E8F5F-19C5-411A-898F-C8A2A535C21F}|EksiSozluk.Domain\\EksiSozluk.Domain.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.domain\\entities\\entry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{476E8F5F-19C5-411A-898F-C8A2A535C21F}|EksiSozluk.Domain\\EksiSozluk.Domain.csproj|solutionrelative:eksisozluk.domain\\entities\\entry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CB135EC-0161-4FFA-AC13-7D5443F3A3E4}|EksiSozluk.WebAPI\\EksiSozluk.WebAPI.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.webapi\\controllers\\entrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CB135EC-0161-4FFA-AC13-7D5443F3A3E4}|EksiSozluk.WebAPI\\EksiSozluk.WebAPI.csproj|solutionrelative:eksisozluk.webapi\\controllers\\entrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CB135EC-0161-4FFA-AC13-7D5443F3A3E4}|EksiSozluk.WebAPI\\EksiSozluk.WebAPI.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.webapi\\controllers\\authscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CB135EC-0161-4FFA-AC13-7D5443F3A3E4}|EksiSozluk.WebAPI\\EksiSozluk.WebAPI.csproj|solutionrelative:eksisozluk.webapi\\controllers\\authscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{996A2383-880C-4A41-BEDE-E028DF3997B2}|EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.webui\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{996A2383-880C-4A41-BEDE-E028DF3997B2}|EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj|solutionrelative:eksisozluk.webui\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6CB135EC-0161-4FFA-AC13-7D5443F3A3E4}|EksiSozluk.WebAPI\\EksiSozluk.WebAPI.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.webapi\\controllers\\titlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CB135EC-0161-4FFA-AC13-7D5443F3A3E4}|EksiSozluk.WebAPI\\EksiSozluk.WebAPI.csproj|solutionrelative:eksisozluk.webapi\\controllers\\titlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.application\\mediator\\queries\\entryqueries\\getentriesbyfilterquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|solutionrelative:eksisozluk.application\\mediator\\queries\\entryqueries\\getentriesbyfilterquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.application\\mediator\\handlers\\titlehandlers\\gettitlesbyfilterwithfirstentryqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|solutionrelative:eksisozluk.application\\mediator\\handlers\\titlehandlers\\gettitlesbyfilterwithfirstentryqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.application\\mediator\\handlers\\titlehandlers\\gettitlebyfilterwithentriesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|solutionrelative:eksisozluk.application\\mediator\\handlers\\titlehandlers\\gettitlebyfilterwithentriesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.application\\mediator\\handlers\\titlehandlers\\gettitlebyfilterqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|solutionrelative:eksisozluk.application\\mediator\\handlers\\titlehandlers\\gettitlebyfilterqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.application\\mediator\\queries\\titlequeries\\gettitlebyfilterwithentriesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|solutionrelative:eksisozluk.application\\mediator\\queries\\titlequeries\\gettitlebyfilterwithentriesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.application\\mediator\\queries\\titlequeries\\gettitlebyfilterquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21F25FF4-F66C-4436-8FA6-251754A6C7DA}|EksiSozluk.Application\\EksiSozluk.Application.csproj|solutionrelative:eksisozluk.application\\mediator\\queries\\titlequeries\\gettitlebyfilterquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,8 +57,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 153,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,41 +66,158 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebUI\\Views\\Auth\\Register.cshtml",
-              "RelativeDocumentMoniker": "EksiSozluk.WebUI\\Views\\Auth\\Register.cshtml",
-              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebUI\\Views\\Auth\\Register.cshtml",
-              "RelativeToolTip": "EksiSozluk.WebUI\\Views\\Auth\\Register.cshtml",
-              "ViewState": "AQIAABoAAAAAAAAAAAA6wFcAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-17T20:27:35.915Z",
+              "DocumentIndex": 2,
+              "Title": "Entry.cs",
+              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Domain\\Entities\\Entry.cs",
+              "RelativeDocumentMoniker": "EksiSozluk.Domain\\Entities\\Entry.cs",
+              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Domain\\Entities\\Entry.cs",
+              "RelativeToolTip": "EksiSozluk.Domain\\Entities\\Entry.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T20:15:21.365Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "GetEntriesByFilterQueryResult.cs",
+              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Mediator\\Results\\EntryResults\\GetEntriesByFilterQueryResult.cs",
+              "RelativeDocumentMoniker": "EksiSozluk.Application\\Mediator\\Results\\EntryResults\\GetEntriesByFilterQueryResult.cs",
+              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Mediator\\Results\\EntryResults\\GetEntriesByFilterQueryResult.cs",
+              "RelativeToolTip": "EksiSozluk.Application\\Mediator\\Results\\EntryResults\\GetEntriesByFilterQueryResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T20:14:39.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TitlesController.cs",
+              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebAPI\\Controllers\\TitlesController.cs",
+              "RelativeDocumentMoniker": "EksiSozluk.WebAPI\\Controllers\\TitlesController.cs",
+              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebAPI\\Controllers\\TitlesController.cs",
+              "RelativeToolTip": "EksiSozluk.WebAPI\\Controllers\\TitlesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T20:03:49.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AuthsController.cs",
               "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebAPI\\Controllers\\AuthsController.cs",
               "RelativeDocumentMoniker": "EksiSozluk.WebAPI\\Controllers\\AuthsController.cs",
               "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebAPI\\Controllers\\AuthsController.cs",
               "RelativeToolTip": "EksiSozluk.WebAPI\\Controllers\\AuthsController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAvwB4AAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T20:26:27.657Z",
+              "WhenOpened": "2024-05-08T20:03:55.484Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebUI\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "EksiSozluk.WebUI\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebUI\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "EksiSozluk.WebUI\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAswCEAAAAQAAAA",
+              "DocumentIndex": 3,
+              "Title": "EntryController.cs",
+              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebAPI\\Controllers\\EntryController.cs",
+              "RelativeDocumentMoniker": "EksiSozluk.WebAPI\\Controllers\\EntryController.cs",
+              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebAPI\\Controllers\\EntryController.cs",
+              "RelativeToolTip": "EksiSozluk.WebAPI\\Controllers\\EntryController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T20:26:27.664Z",
+              "WhenOpened": "2024-05-08T20:02:28.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GetTitlesByFilterWithFirstEntryQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Mediator\\Handlers\\TitleHandlers\\GetTitlesByFilterWithFirstEntryQueryHandler.cs",
+              "RelativeDocumentMoniker": "EksiSozluk.Application\\Mediator\\Handlers\\TitleHandlers\\GetTitlesByFilterWithFirstEntryQueryHandler.cs",
+              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Mediator\\Handlers\\TitleHandlers\\GetTitlesByFilterWithFirstEntryQueryHandler.cs",
+              "RelativeToolTip": "EksiSozluk.Application\\Mediator\\Handlers\\TitleHandlers\\GetTitlesByFilterWithFirstEntryQueryHandler.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABwAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T19:57:35.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GetTitleByFilterWithEntriesQuery.cs",
+              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Mediator\\Queries\\TitleQueries\\GetTitleByFilterWithEntriesQuery.cs",
+              "RelativeDocumentMoniker": "EksiSozluk.Application\\Mediator\\Queries\\TitleQueries\\GetTitleByFilterWithEntriesQuery.cs",
+              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Mediator\\Queries\\TitleQueries\\GetTitleByFilterWithEntriesQuery.cs",
+              "RelativeToolTip": "EksiSozluk.Application\\Mediator\\Queries\\TitleQueries\\GetTitleByFilterWithEntriesQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T19:52:54.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GetTitleByFilterWithEntriesQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Mediator\\Handlers\\TitleHandlers\\GetTitleByFilterWithEntriesQueryHandler.cs",
+              "RelativeDocumentMoniker": "EksiSozluk.Application\\Mediator\\Handlers\\TitleHandlers\\GetTitleByFilterWithEntriesQueryHandler.cs",
+              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Mediator\\Handlers\\TitleHandlers\\GetTitleByFilterWithEntriesQueryHandler.cs",
+              "RelativeToolTip": "EksiSozluk.Application\\Mediator\\Handlers\\TitleHandlers\\GetTitleByFilterWithEntriesQueryHandler.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABgAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T19:51:05.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetEntryByFilterQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Mediator\\Handlers\\EntryHandlers\\GetEntryByFilterQueryHandler.cs",
+              "RelativeDocumentMoniker": "EksiSozluk.Application\\Mediator\\Handlers\\EntryHandlers\\GetEntryByFilterQueryHandler.cs",
+              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Mediator\\Handlers\\EntryHandlers\\GetEntryByFilterQueryHandler.cs",
+              "RelativeToolTip": "EksiSozluk.Application\\Mediator\\Handlers\\EntryHandlers\\GetEntryByFilterQueryHandler.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T19:51:00.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetTitleByFilterQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Mediator\\Handlers\\TitleHandlers\\GetTitleByFilterQueryHandler.cs",
+              "RelativeDocumentMoniker": "EksiSozluk.Application\\Mediator\\Handlers\\TitleHandlers\\GetTitleByFilterQueryHandler.cs",
+              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Mediator\\Handlers\\TitleHandlers\\GetTitleByFilterQueryHandler.cs",
+              "RelativeToolTip": "EksiSozluk.Application\\Mediator\\Handlers\\TitleHandlers\\GetTitleByFilterQueryHandler.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T19:50:20.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GetTitleByFilterQuery.cs",
+              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Mediator\\Queries\\TitleQueries\\GetTitleByFilterQuery.cs",
+              "RelativeDocumentMoniker": "EksiSozluk.Application\\Mediator\\Queries\\TitleQueries\\GetTitleByFilterQuery.cs",
+              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Mediator\\Queries\\TitleQueries\\GetTitleByFilterQuery.cs",
+              "RelativeToolTip": "EksiSozluk.Application\\Mediator\\Queries\\TitleQueries\\GetTitleByFilterQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T19:49:48.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetEntriesByFilterQuery.cs",
+              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Mediator\\Queries\\EntryQueries\\GetEntriesByFilterQuery.cs",
+              "RelativeDocumentMoniker": "EksiSozluk.Application\\Mediator\\Queries\\EntryQueries\\GetEntriesByFilterQuery.cs",
+              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.Application\\Mediator\\Queries\\EntryQueries\\GetEntriesByFilterQuery.cs",
+              "RelativeToolTip": "EksiSozluk.Application\\Mediator\\Queries\\EntryQueries\\GetEntriesByFilterQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T19:49:38.957Z",
               "EditorCaption": ""
             }
           ]
