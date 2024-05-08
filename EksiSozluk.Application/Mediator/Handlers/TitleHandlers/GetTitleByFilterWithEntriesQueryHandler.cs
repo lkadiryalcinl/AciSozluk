@@ -26,7 +26,8 @@ namespace EksiSozluk.Application.Mediator.Handlers.TitleHandlers
                 EntryContent = x.EntryContent,
                 IsEntryDelete = x.IsEntryDelete,
                 IsEntryUpdated = x.IsEntryUpdated,
-                UpdatedDate = x.UpdatedDate
+                UpdatedDate = x.UpdatedDate,
+                Username = x.User.UserName
             }).OrderBy(x => x.CreatedDate).ToList();
 
             return new GetTitleByFilterWithEntriesQueryResult

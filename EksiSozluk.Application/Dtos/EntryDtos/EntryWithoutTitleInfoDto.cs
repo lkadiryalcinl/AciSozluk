@@ -9,5 +9,6 @@
         public DateTime UpdatedDate { get; set; }
         public bool IsEntryDelete { get; set; } = false;
         public bool IsEntryUpdated { get; set; } = false;
+        public string Username { get; set; }
     }
 }

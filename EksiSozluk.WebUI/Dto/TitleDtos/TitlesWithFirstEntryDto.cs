@@ -8,5 +8,6 @@ namespace EksiSozluk.WebUI.Dto.TitleDtos
         public string TitleName { get; set; }
         public string ChannelName { get; set; }
         public EntryWithoutTitleInfoDto FirstEntry { get; set; }
+        
     }
 }
