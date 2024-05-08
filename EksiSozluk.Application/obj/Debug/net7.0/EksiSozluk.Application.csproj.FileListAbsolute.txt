@@ -27,3 +27,6 @@ C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Application\obj\Debug\net7.0\EksiSoz
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Application\obj\Debug\net7.0\refint\EksiSozluk.Application.dll
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Application\obj\Debug\net7.0\EksiSozluk.Application.pdb
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Application\obj\Debug\net7.0\ref\EksiSozluk.Application.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Application\bin\Debug\net7.0\EksiSozluk.Domain.dll
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Application\bin\Debug\net7.0\EksiSozluk.Domain.pdb
+C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.Application\obj\Debug\net7.0\EksiSozl.DC379DB5.Up2Date

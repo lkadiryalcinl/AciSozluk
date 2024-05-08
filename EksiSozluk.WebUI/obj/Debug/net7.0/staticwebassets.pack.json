@@ -1,59 +1,55 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\EksiSozluk.WebUI.bundle.scp.css",
-      "PackagePath": "staticwebassets\\EksiSozluk.WebUI.bundle.scp.css"
-    },
-    {
-      "Id": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\css\\bootstrap-icons.min.css",
+      "Id": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\css\\bootstrap-icons.min.css",
       "PackagePath": "staticwebassets\\eksi-template\\css\\bootstrap-icons.min.css"
     },
     {
-      "Id": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\eksi-template\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\eksi-template\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\css\\index.css",
+      "Id": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\css\\index.css",
       "PackagePath": "staticwebassets\\eksi-template\\css\\index.css"
     },
     {
-      "Id": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\eksi-seyler-sm.png",
+      "Id": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\eksi-seyler-sm.png",
       "PackagePath": "staticwebassets\\eksi-template\\images\\eksi-seyler-sm.png"
     },
     {
-      "Id": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\eksi-seyler.png",
+      "Id": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\eksi-seyler.png",
       "PackagePath": "staticwebassets\\eksi-template\\images\\eksi-seyler.png"
     },
     {
-      "Id": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\eksi-sozluk.png",
+      "Id": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\eksi-sozluk.png",
       "PackagePath": "staticwebassets\\eksi-template\\images\\eksi-sozluk.png"
     },
     {
-      "Id": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\eksisozluk.png",
+      "Id": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\eksisozluk.png",
       "PackagePath": "staticwebassets\\eksi-template\\images\\eksisozluk.png"
     },
     {
-      "Id": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\pena-sm.png",
+      "Id": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\pena-sm.png",
       "PackagePath": "staticwebassets\\eksi-template\\images\\pena-sm.png"
     },
     {
-      "Id": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\pena.png",
+      "Id": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\pena.png",
       "PackagePath": "staticwebassets\\eksi-template\\images\\pena.png"
     },
     {
-      "Id": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\eksi-template\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\eksi-template\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\js\\script.js",
+      "Id": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\js\\script.js",
       "PackagePath": "staticwebassets\\eksi-template\\js\\script.js"
     },
     {

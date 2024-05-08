@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "baKpPVosx6cGPhgYzUXs717PNLNkuviOrmY8RQezW7U=",
+  "Hash": "PhbcWZpV3ZOFNsNkE1EqwHHk63ZdOWN15341/KLIoPQ=",
   "Source": "EksiSozluk.WebUI",
   "BasePath": "_content/EksiSozluk.WebUI",
   "Mode": "Default",
@@ -10,55 +10,17 @@
     {
       "Name": "EksiSozluk.WebUI\\wwwroot",
       "Source": "EksiSozluk.WebUI",
-      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
       "BasePath": "_content/EksiSozluk.WebUI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\obj\\Debug\\net7.0\\scopedcss\\bundle\\EksiSozluk.WebUI.styles.css",
-      "SourceId": "EksiSozluk.WebUI",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/EksiSozluk.WebUI",
-      "RelativePath": "EksiSozluk.WebUI.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\obj\\Debug\\net7.0\\scopedcss\\bundle\\EksiSozluk.WebUI.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\EksiSozluk.WebUI.bundle.scp.css",
-      "SourceId": "EksiSozluk.WebUI",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/EksiSozluk.WebUI",
-      "RelativePath": "EksiSozluk.WebUI.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\EksiSozluk.WebUI.bundle.scp.css"
-    },
-    {
-      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\css\\bootstrap.min.css",
       "SourceId": "EksiSozluk.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
       "BasePath": "_content/EksiSozluk.WebUI",
       "RelativePath": "eksi-template/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -74,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\eksi-template\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\css\\bootstrap.min.css.map",
       "SourceId": "EksiSozluk.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
       "BasePath": "_content/EksiSozluk.WebUI",
       "RelativePath": "eksi-template/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -93,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\eksi-template\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\css\\bootstrap-icons.min.css",
+      "Identity": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\css\\bootstrap-icons.min.css",
       "SourceId": "EksiSozluk.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
       "BasePath": "_content/EksiSozluk.WebUI",
       "RelativePath": "eksi-template/css/bootstrap-icons.min.css",
       "AssetKind": "All",
@@ -112,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\eksi-template\\css\\bootstrap-icons.min.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\css\\index.css",
+      "Identity": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\css\\index.css",
       "SourceId": "EksiSozluk.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
       "BasePath": "_content/EksiSozluk.WebUI",
       "RelativePath": "eksi-template/css/index.css",
       "AssetKind": "All",
@@ -131,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\eksi-template\\css\\index.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\eksi-seyler.png",
+      "Identity": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\eksi-seyler.png",
       "SourceId": "EksiSozluk.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
       "BasePath": "_content/EksiSozluk.WebUI",
       "RelativePath": "eksi-template/images/eksi-seyler.png",
       "AssetKind": "All",
@@ -150,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\eksi-template\\images\\eksi-seyler.png"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\eksi-seyler-sm.png",
+      "Identity": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\eksi-seyler-sm.png",
       "SourceId": "EksiSozluk.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
       "BasePath": "_content/EksiSozluk.WebUI",
       "RelativePath": "eksi-template/images/eksi-seyler-sm.png",
       "AssetKind": "All",
@@ -169,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\eksi-template\\images\\eksi-seyler-sm.png"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\eksisozluk.png",
+      "Identity": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\eksisozluk.png",
       "SourceId": "EksiSozluk.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
       "BasePath": "_content/EksiSozluk.WebUI",
       "RelativePath": "eksi-template/images/eksisozluk.png",
       "AssetKind": "All",
@@ -188,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\eksi-template\\images\\eksisozluk.png"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\eksi-sozluk.png",
+      "Identity": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\eksi-sozluk.png",
       "SourceId": "EksiSozluk.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
       "BasePath": "_content/EksiSozluk.WebUI",
       "RelativePath": "eksi-template/images/eksi-sozluk.png",
       "AssetKind": "All",
@@ -207,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\eksi-template\\images\\eksi-sozluk.png"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\pena.png",
+      "Identity": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\pena.png",
       "SourceId": "EksiSozluk.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
       "BasePath": "_content/EksiSozluk.WebUI",
       "RelativePath": "eksi-template/images/pena.png",
       "AssetKind": "All",
@@ -226,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\eksi-template\\images\\pena.png"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\pena-sm.png",
+      "Identity": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\pena-sm.png",
       "SourceId": "EksiSozluk.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
       "BasePath": "_content/EksiSozluk.WebUI",
       "RelativePath": "eksi-template/images/pena-sm.png",
       "AssetKind": "All",
@@ -245,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\eksi-template\\images\\pena-sm.png"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\js\\bootstrap.min.js",
       "SourceId": "EksiSozluk.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
       "BasePath": "_content/EksiSozluk.WebUI",
       "RelativePath": "eksi-template/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -264,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\eksi-template\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\js\\bootstrap.min.js.map",
       "SourceId": "EksiSozluk.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
       "BasePath": "_content/EksiSozluk.WebUI",
       "RelativePath": "eksi-template/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -283,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\eksi-template\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\js\\script.js",
+      "Identity": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\js\\script.js",
       "SourceId": "EksiSozluk.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\akosk\\OneDrive\\Masaüstü\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
       "BasePath": "_content/EksiSozluk.WebUI",
       "RelativePath": "eksi-template/js/script.js",
       "AssetKind": "All",
