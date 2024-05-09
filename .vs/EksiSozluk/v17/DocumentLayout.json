@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{996A2383-880C-4A41-BEDE-E028DF3997B2}|EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.webui\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{996A2383-880C-4A41-BEDE-E028DF3997B2}|EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj|solutionrelative:eksisozluk.webui\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{996A2383-880C-4A41-BEDE-E028DF3997B2}|EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.webui\\services\\httpclientserviceaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{996A2383-880C-4A41-BEDE-E028DF3997B2}|EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj|solutionrelative:eksisozluk.webui\\services\\httpclientserviceaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{996A2383-880C-4A41-BEDE-E028DF3997B2}|EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.webui\\controllers\\titledetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{996A2383-880C-4A41-BEDE-E028DF3997B2}|EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj|solutionrelative:eksisozluk.webui\\controllers\\titledetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{996A2383-880C-4A41-BEDE-E028DF3997B2}|EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.webui\\services\\httpclientserviceviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{996A2383-880C-4A41-BEDE-E028DF3997B2}|EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj|solutionrelative:eksisozluk.webui\\services\\httpclientserviceviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{996A2383-880C-4A41-BEDE-E028DF3997B2}|EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.webui\\dto\\profiledtos\\titlewithentrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{996A2383-880C-4A41-BEDE-E028DF3997B2}|EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj|solutionrelative:eksisozluk.webui\\dto\\profiledtos\\titlewithentrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{996A2383-880C-4A41-BEDE-E028DF3997B2}|EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.webui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{996A2383-880C-4A41-BEDE-E028DF3997B2}|EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj|solutionrelative:eksisozluk.webui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{996A2383-880C-4A41-BEDE-E028DF3997B2}|EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.webui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{996A2383-880C-4A41-BEDE-E028DF3997B2}|EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj|solutionrelative:eksisozluk.webui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{996A2383-880C-4A41-BEDE-E028DF3997B2}|EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.webui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{996A2383-880C-4A41-BEDE-E028DF3997B2}|EksiSozluk.WebUI\\EksiSozluk.WebUI.csproj|solutionrelative:eksisozluk.webui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CB135EC-0161-4FFA-AC13-7D5443F3A3E4}|EksiSozluk.WebAPI\\EksiSozluk.WebAPI.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6CB135EC-0161-4FFA-AC13-7D5443F3A3E4}|EksiSozluk.WebAPI\\EksiSozluk.WebAPI.csproj|solutionrelative:eksisozluk.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CB135EC-0161-4FFA-AC13-7D5443F3A3E4}|EksiSozluk.WebAPI\\EksiSozluk.WebAPI.csproj|c:\\users\\akosk\\onedrive\\masa\u00FCst\u00FC\\eksisozluk\\eksisozluk.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CB135EC-0161-4FFA-AC13-7D5443F3A3E4}|EksiSozluk.WebAPI\\EksiSozluk.WebAPI.csproj|solutionrelative:eksisozluk.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,39 +46,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TitleDetailController.cs",
-              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebUI\\Controllers\\TitleDetailController.cs",
-              "RelativeDocumentMoniker": "EksiSozluk.WebUI\\Controllers\\TitleDetailController.cs",
-              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebUI\\Controllers\\TitleDetailController.cs",
-              "RelativeToolTip": "EksiSozluk.WebUI\\Controllers\\TitleDetailController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T19:30:32.946Z"
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebUI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "EksiSozluk.WebUI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebUI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "EksiSozluk.WebUI\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-09T20:21:59.89Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TitleWithEntryDto.cs",
-              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebUI\\Dto\\ProfileDtos\\TitleWithEntryDto.cs",
-              "RelativeDocumentMoniker": "EksiSozluk.WebUI\\Dto\\ProfileDtos\\TitleWithEntryDto.cs",
-              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebUI\\Dto\\ProfileDtos\\TitleWithEntryDto.cs",
-              "RelativeToolTip": "EksiSozluk.WebUI\\Dto\\ProfileDtos\\TitleWithEntryDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "HttpClientServiceViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebUI\\Services\\HttpClientServiceViewComponent.cs",
+              "RelativeDocumentMoniker": "EksiSozluk.WebUI\\Services\\HttpClientServiceViewComponent.cs",
+              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebUI\\Services\\HttpClientServiceViewComponent.cs",
+              "RelativeToolTip": "EksiSozluk.WebUI\\Services\\HttpClientServiceViewComponent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T19:29:20.14Z"
+              "WhenOpened": "2024-05-09T20:19:34.121Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProfileController.cs",
-              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebUI\\Controllers\\ProfileController.cs",
-              "RelativeDocumentMoniker": "EksiSozluk.WebUI\\Controllers\\ProfileController.cs",
-              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebUI\\Controllers\\ProfileController.cs",
-              "RelativeToolTip": "EksiSozluk.WebUI\\Controllers\\ProfileController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAcwCIAAAAAAAAA",
+              "Title": "HttpClientServiceAction.cs",
+              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebUI\\Services\\HttpClientServiceAction.cs",
+              "RelativeDocumentMoniker": "EksiSozluk.WebUI\\Services\\HttpClientServiceAction.cs",
+              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebUI\\Services\\HttpClientServiceAction.cs",
+              "RelativeToolTip": "EksiSozluk.WebUI\\Services\\HttpClientServiceAction.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T14:25:43.854Z",
+              "WhenOpened": "2024-05-09T20:19:28.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "EksiSozluk.WebAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebAPI\\appsettings.json",
+              "RelativeToolTip": "EksiSozluk.WebAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-09T20:18:33.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "EksiSozluk.WebAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebAPI\\Program.cs",
+              "RelativeToolTip": "EksiSozluk.WebAPI\\Program.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T20:18:30.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebUI\\appsettings.json",
+              "RelativeDocumentMoniker": "EksiSozluk.WebUI\\appsettings.json",
+              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebUI\\appsettings.json",
+              "RelativeToolTip": "EksiSozluk.WebUI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-09T20:18:19.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebUI\\Program.cs",
+              "RelativeDocumentMoniker": "EksiSozluk.WebUI\\Program.cs",
+              "ToolTip": "C:\\Users\\akosk\\OneDrive\\Masa\u00FCst\u00FC\\EksiSozluk\\EksiSozluk.WebUI\\Program.cs",
+              "RelativeToolTip": "EksiSozluk.WebUI\\Program.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T20:18:17.097Z",
               "EditorCaption": ""
             }
           ]
