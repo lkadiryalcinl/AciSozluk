@@ -25,7 +25,15 @@
     resize: both;
     width: 300px;
     height: 200px;
+    border: 1px solid grey;
+    border-radius: unset;
 }
+
+    .text-area-custom:focus {
+        box-shadow: unset;
+        border: 1px solid grey;
+        border-radius: unset;
+    }
 
 .eksi-nav-top-line {
     border: 2px solid #81C14B;
@@ -186,9 +194,9 @@
     text-decoration: none;
 }
 
-.card-link:hover {
-    background-color: #f4f4f4;
-}
+    .card-link:hover {
+        background-color: #f4f4f4;
+    }
 
 .title-content {
     height: auto;
@@ -313,5 +321,45 @@
 
     .button-color:hover {
         text-decoration: none;
+        background-color: #5fa042;
+    }
+
+.create-entry-opt {
+    text-decoration: none;
+    margin-top: 1rem;
+    color: black;
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+    font-size: smaller;
+    margin-right: 0.5rem;
+}
+
+    .create-entry-opt:hover {
+        background-color: #ffffff;
+    }
+
+.create-entry-text-area {
+    margin-top: 1rem;
+    height: 150px;
+    border: 1px solid grey;
+    border-radius: unset;
+    transition: height 0.3s ease;
+}
+
+    .create-entry-text-area:focus {
+        height: 300px;
+        border: 1px solid grey;
+        box-shadow: unset;
+    }
+
+.create-entry-button {
+    border-radius: 0.25rem;
+    border: unset;
+    padding: 0.5rem 0.3rem 0.5rem 0.3rem;
+    background-color: #78c056;
+    color: white;
+}
+
+    .create-entry-button:hover {
         background-color: #5fa042;
     }
