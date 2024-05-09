@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EksiSozluk.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed70c1a192f9f7e60462d831aeace64d574f5c39")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e760f555b79209e6fe1f0d2489e54c4917d616b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("EksiSozluk.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EksiSozluk.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
