@@ -1,147 +1,25 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Index";
     Layout = "~/Views/UILayout/Index.cshtml";
 }
 
-
 <div class="container">
     <div class="row">
         <div class="col-9 full">
-            <div class="row">
-                <div class="col-8">
-                    <h4>
-                        <a href="#" type="button" class="author">yazar adı</a>
-                    </h4>
 
-                    <div class="row">
-                        <div class="col">
-                            <a href="#" type="button" class="noob">çaylak</a>
-                        </div>
-                    </div>
-                    <br />
-                    <br />
-                    <div class="row">
-                        <div class="col d-flex">
-                            <p class="me-2">90 entry</p>
-                            <a href="#" type="button" class="follow-number me-2"> 3 takipçi</a>
-                            <a href="#" type="button" class="follow-number me-2">10 takip</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 d-flex justify-content-end">
-                    <a href="#" type="button"><i class="bi bi-person-circle get-circle"></i> </a>
-                </div>
-
-
-                <div class="row">
-                    <div class="col-12">
-                        <a href="#" type="button"><i class="bi bi-box-arrow-up up get-circle2"></i></a>
-                        &nbsp
-                        <a href="#" type="button"><i class="bi bi-three-dots up get-circle2"></i></a>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12">
-                        <hr>
-                        <a href="#" type="button" class="entry-number"> entry'ler </a>
-                        &nbsp
-                        <a href="#" type="button" class="entry-number"> favoriler </a>
-                        &nbsp
-                        <a href="#" type="button" class="entry-number"> görseller </a>
-                        &nbsp
-                        <a href="#" type="button" class="entry-number"> istatistikler</a>
-                        <hr>
-                    </div>
-                </div>
-                <br>
-                <!-- Entry başladığı yer  -->
-
-                <div class="container-fluid">
-                    <div class="row mt-4">
-                        <div class="col">
-                            <h5>
-                                <a href="#" type="button" class="entry-title">başlık</a>
-                            </h5>
-                        </div>
-                        <div class="row">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Laboriosam quos aspernatur dicta quod libero repellat similique accusamus quaerat
-                                cum deserunt voluptatem sed placeat labore saepe, ab aliquam rerum quo natus?
-                            </p>
-                        </div>
-                        <div class="row">
-                            <!-- Sol taraftaki elemanlar -->
-                            <div class="col-8 d-flex justify-content-start">
-                                <div class="row">
-                                    <div class="col">
-                                        <a href="#" type="button"><i class="bi bi-arrow-up-square up"></i></a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="#" type="button"><i class="bi bi-arrow-down-square down"></i></a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="#" type="button"><i class="bi bi-droplet fav" id="icon"></i></a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="#" type="button" class="entry-number">250</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Sağ taraftaki elemanlar -->
-                            <div class="col-4 d-flex justify-content-end">
-                                <div class="row">
-                                    <div class="col">
-                                        <a href="#" type="button"><i class="bi bi-box-arrow-up up"></i></a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="#" type="button"><i class="bi bi-three-dots up"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 d-flex justify-content-end">
-                                <div class="row ">
-                                    <div class="col-9">
-                                        <div class="row">
-                                            <div class="col d-flex justify-content-end">
-                                                <a href="#" type="button" class="person-name">hasan</a>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col d-flex justify-content-end">
-                                                <a href="#" type="button" class="person-name">hasan</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3">
-                                        <a href="#" type="button"><i class="bi bi-person-circle person-cycle"></i> </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Entry bitişi  -->
-            </div>
+            <!-- yazar adı  ve yazar istatistikleri ve simgeler   -->
+            @await Component.InvokeAsync("_UpsideProfilePageComponentPartial")
+            <!--  yazar adı ve yazar istatisitkleri bitiş -->
+            <!--  simgeler  -->
+            <!-- entry-favori-istatistikler buton -->
+            @await Component.InvokeAsync("_TheMiddleSideStatsPageComponentPartial")
+            <!--    entry-favori-istatistikler buton  bitiş  -->
+            <!-- Entry başladığı yer  -->
+            @await Component.InvokeAsync("_BotttomSideEntryPageComponentPartial")
+            <!-- Entry bitişi  -->
         </div>
         <!-- col-9 bitişi  -->
-        <div class="col-3 hidden-custom">
-            <br><br>
-            <h6>notlar</h6>
-            <form class="form" method="post">
-                <div class="form-group">
-                    <textarea class="form-control text-area-custom" placeholder="birşeyler yaz"></textarea>
-                </div>
-                <a href="#" type="button">
-                    <i class="bi bi-bookmark-check-fill "
-                       style="color: rgb(45, 44, 44); font-size: 30px;"></i>
-                </a>
-            </form>
-        </div>
+        @await Component.InvokeAsync("_TheSideNotePageComponentPartial")
     </div>
-
 </div>
+
