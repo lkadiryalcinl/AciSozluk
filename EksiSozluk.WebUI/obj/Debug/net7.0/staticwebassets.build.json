@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3riThD6S7Zp+QCuAqDZ70dCibQmxUetB9G2yRfzeS/Y=",
+  "Hash": "UB+lSG2E7DBYP/qPaEkph/IPcZRdpL1agdj29wta1w8=",
   "Source": "EksiSozluk.WebUI",
   "BasePath": "_content/EksiSozluk.WebUI",
   "Mode": "Default",
@@ -16,25 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\css\\bootstrap-icons.min.css",
-      "SourceId": "EksiSozluk.WebUI",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
-      "BasePath": "_content/EksiSozluk.WebUI",
-      "RelativePath": "eksi-template/css/bootstrap-icons.min.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\eksi-template\\css\\bootstrap-icons.min.css"
-    },
     {
       "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\css\\bootstrap.min.css",
       "SourceId": "EksiSozluk.WebUI",
@@ -74,6 +55,25 @@
       "OriginalItemSpec": "wwwroot\\eksi-template\\css\\bootstrap.min.css.map"
     },
     {
+      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\css\\bootstrap-icons.min.css",
+      "SourceId": "EksiSozluk.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
+      "BasePath": "_content/EksiSozluk.WebUI",
+      "RelativePath": "eksi-template/css/bootstrap-icons.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\eksi-template\\css\\bootstrap-icons.min.css"
+    },
+    {
       "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\css\\index.css",
       "SourceId": "EksiSozluk.WebUI",
       "SourceType": "Discovered",
@@ -91,25 +91,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\eksi-template\\css\\index.css"
-    },
-    {
-      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\eksi-seyler-sm.png",
-      "SourceId": "EksiSozluk.WebUI",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
-      "BasePath": "_content/EksiSozluk.WebUI",
-      "RelativePath": "eksi-template/images/eksi-seyler-sm.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\eksi-template\\images\\eksi-seyler-sm.png"
     },
     {
       "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\eksi-seyler.png",
@@ -131,12 +112,12 @@
       "OriginalItemSpec": "wwwroot\\eksi-template\\images\\eksi-seyler.png"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\eksi-sozluk.png",
+      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\eksi-seyler-sm.png",
       "SourceId": "EksiSozluk.WebUI",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
       "BasePath": "_content/EksiSozluk.WebUI",
-      "RelativePath": "eksi-template/images/eksi-sozluk.png",
+      "RelativePath": "eksi-template/images/eksi-seyler-sm.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -147,7 +128,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\eksi-template\\images\\eksi-sozluk.png"
+      "OriginalItemSpec": "wwwroot\\eksi-template\\images\\eksi-seyler-sm.png"
     },
     {
       "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\eksisozluk.png",
@@ -169,12 +150,12 @@
       "OriginalItemSpec": "wwwroot\\eksi-template\\images\\eksisozluk.png"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\pena-sm.png",
+      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\eksi-sozluk.png",
       "SourceId": "EksiSozluk.WebUI",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
       "BasePath": "_content/EksiSozluk.WebUI",
-      "RelativePath": "eksi-template/images/pena-sm.png",
+      "RelativePath": "eksi-template/images/eksi-sozluk.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -185,7 +166,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\eksi-template\\images\\pena-sm.png"
+      "OriginalItemSpec": "wwwroot\\eksi-template\\images\\eksi-sozluk.png"
     },
     {
       "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\pena.png",
@@ -205,6 +186,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\eksi-template\\images\\pena.png"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\images\\pena-sm.png",
+      "SourceId": "EksiSozluk.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\",
+      "BasePath": "_content/EksiSozluk.WebUI",
+      "RelativePath": "eksi-template/images/pena-sm.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\eksi-template\\images\\pena-sm.png"
     },
     {
       "Identity": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebUI\\wwwroot\\eksi-template\\js\\bootstrap.min.js",

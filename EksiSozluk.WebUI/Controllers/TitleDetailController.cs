@@ -21,5 +21,10 @@ namespace EksiSozluk.WebUI.Controllers
             var values = await _httpClientServiceAction.InvokeAsync<TitleWithEntriesDto>($"Titles/GetTitleByFilterWithEntries?id={titleId}");
             return titleId.IsNullOrEmpty() ? View() : View(values);
         }
+
+        public async void AddFavoritesEntry(string userId,string entryId)
+        {
+            
+        }
     }
 }

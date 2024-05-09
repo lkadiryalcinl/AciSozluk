@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EksiSozluk.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e760f555b79209e6fe1f0d2489e54c4917d616b8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d46ba8a1ba072c83015936ebf6e4eeb643e7afee")]
 [assembly: System.Reflection.AssemblyProductAttribute("EksiSozluk.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EksiSozluk.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

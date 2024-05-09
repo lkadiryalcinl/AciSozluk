@@ -5,7 +5,7 @@
     <version>1.0.0</version>
     <authors>EksiSozluk.Domain</authors>
     <description>Package Description</description>
-    <repository type="git" commit="9bd5e98e1890ef1f666700ee874a6e8fe947731c" />
+    <repository type="git" commit="d46ba8a1ba072c83015936ebf6e4eeb643e7afee" />
     <dependencies>
       <group targetFramework="net7.0">
         <dependency id="Microsoft.AspNetCore.Identity.EntityFrameworkCore" version="7.0.17" exclude="Build,Analyzers" />
