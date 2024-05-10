@@ -1,5 +1,4 @@
-﻿using EksiSozluk.Domain.Entities;
-using EksiSozluk.WebUI.Dto.ProfileDtos;
+﻿using EksiSozluk.WebUI.Dto.ProfileDtos;
 using EksiSozluk.WebUI.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,14 +16,9 @@ namespace EksiSozluk.WebUI.Controllers
 
         public async Task<IActionResult> Index(string username)
         {
-         
-            var UserID = await _httpClientServiceAction.InvokeAsync<User>($"User/{username}");
-            var values = await _httpClientServiceAction.InvokeAsync<List<TitleWithEntryDto>>($"Entry/GetEntriesByFilter?id={UserID.Id}");
+            var values = await _httpClientServiceAction.InvokeAsync<List<TitleWithEntryDto>>($"Entry/GetEntriesByFilter?id={username}");
             ViewBag.myentries = values;
             return View();
         }
     }
-
-  
-
 }
