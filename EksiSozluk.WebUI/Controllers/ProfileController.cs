@@ -1,4 +1,4 @@
-﻿using EksiSozluk.Domain.Entities;
+using EksiSozluk.Domain.Entities;
 using EksiSozluk.WebUI.Dto.ProfileDtos;
 using EksiSozluk.WebUI.Services;
 using Microsoft.AspNetCore.Mvc;
