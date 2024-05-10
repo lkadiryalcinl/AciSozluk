@@ -25,6 +25,5 @@ namespace EksiSozluk.WebAPI.Controllers
             var values = await _mediator.Send(getEntriesByFilterQuery);
             return Ok(values);
         }
-
     }
 }

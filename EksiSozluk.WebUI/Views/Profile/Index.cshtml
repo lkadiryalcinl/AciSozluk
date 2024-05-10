@@ -15,7 +15,7 @@
             @await Component.InvokeAsync("_TheMiddleSideStatsPageComponentPartial")
             <!--    entry-favori-istatistikler buton  bitiş  -->
             <!-- Entry başladığı yer  -->
-            @await Component.InvokeAsync("_BotttomSideEntryPageComponentPartial")
+            @await Component.InvokeAsync("_BotttomSideEntryPageComponentPartial", new { myentries = ViewBag.myentries })
             <!-- Entry bitişi  -->
         </div>
         <!-- col-9 bitişi  -->

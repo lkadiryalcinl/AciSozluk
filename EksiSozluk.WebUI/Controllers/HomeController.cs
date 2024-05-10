@@ -17,8 +17,8 @@ namespace EksiSozluk.WebUI.Controllers
         public async Task<IActionResult> Index(string channelName)
         {
             ViewBag.ChannelName = channelName;
-            var values = channelName.IsNullOrEmpty() ? 
-                await _httpClientServiceAction.InvokeAsync<List<TitlesWithFirstEntryDto>>($"Titles/GetTitlesByFilterWithFirstEntry?id=gündem") 
+            var values = channelName.IsNullOrEmpty() ?
+                await _httpClientServiceAction.InvokeAsync<List<TitlesWithFirstEntryDto>>($"Titles/GetTitlesByFilterWithFirstEntry?id=gündem")
                 : await _httpClientServiceAction.InvokeAsync<List<TitlesWithFirstEntryDto>>($"Titles/GetTitlesByFilterWithFirstEntry?id={channelName}");
             return View(values);
         }

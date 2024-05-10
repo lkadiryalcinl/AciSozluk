@@ -1,12 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using EksiSozluk.WebUI.Dto.ProfileDtos;
+using Microsoft.AspNetCore.Mvc;
 
 namespace EksiSozluk.WebUI.ViewComponents.ProfileViewComponents
 {
-    public class _BotttomSideEntryPageComponentPartial:ViewComponent
+    public class _BotttomSideEntryPageComponentPartial : ViewComponent
     {
-        public async Task<IViewComponentResult> InvokeAsync()
+        public IViewComponentResult Invoke(List<TitleWithEntryDto> myentries)
         {
-            return View();
+            var values = myentries;
+            var a = 5;
+            return View(values);
         }
     }
 }

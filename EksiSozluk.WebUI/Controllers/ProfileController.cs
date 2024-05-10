@@ -1,4 +1,4 @@
-﻿using EksiSozluk.WebUI.Dto.UserDtos;
+﻿using EksiSozluk.WebUI.Dto.ProfileDtos;
 using EksiSozluk.WebUI.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,10 +13,11 @@ namespace EksiSozluk.WebUI.Controllers
             _httpClientServiceAction = httpClientServiceAction;
         }
 
-        public IActionResult Index(string userId)
-        {
-            var values = _httpClientServiceAction.InvokeAsync<List<UserEntryDto>>($"User/GetEntriesByUserId?={userId}");
 
+        public async Task<IActionResult> Index(string username)
+        {
+            var values = await _httpClientServiceAction.InvokeAsync<List<TitleWithEntryDto>>($"Entry/GetEntriesByFilter?id={username}");
+            ViewBag.myentries = values;
             return View();
         }
     }

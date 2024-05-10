@@ -1,33 +1,41 @@
-﻿<div class="row">
-<div class="col-8">
- 
-    <h4>
-        <a href="#" type="button" class="author">yazar adı</a>
-    </h4>
-    <div class="row">
-        <div class="col">
-            <a href="#" type="button" class="noob">çaylak</a>
-        </div>
-    </div>
-    <br />
-    <br />
-    <div class="row">
-        <div class="col d-flex">
-            <p class="me-2">90 entry</p>
-            <a href="#" type="button" class="follow-number me-2"> 3 takipçi</a>
-            <a href="#" type="button" class="follow-number me-2">10 takip</a>
-        </div>
-    </div>
-</div>
-<div class="col-4 d-flex justify-content-end">
-    <a href="#" type="button"><i class="bi bi-person-circle get-circle"></i> </a>
-</div>
+﻿@using Microsoft.AspNetCore.Http
+@using System.Security.Claims
+@{
+    var user = Context.User;
+    var userName = user.Identity.Name;
+    var userId = user.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+}
+
 <div class="row">
-    <div class="col-12">
-        <a href="#" type="button"><i class="bi bi-box-arrow-up up get-circle2"></i></a>
-        &nbsp
-        <a href="#" type="button"><i class="bi bi-three-dots up get-circle2"></i></a>
+    <div class="col-8">
+
+        <h4>
+            <a href="#" type="button" class="author">@userName</a>
+        </h4>
+        <div class="row">
+            <div class="col">
+                <a href="#" type="button" class="noob">çaylak</a>
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="row">
+            <div class="col d-flex">
+                <p class="me-2">90 entry</p>
+                <a href="#" type="button" class="follow-number me-2"> 3 takipçi</a>
+                <a href="#" type="button" class="follow-number me-2">10 takip</a>
+            </div>
+        </div>
     </div>
-</div>
+    <div class="col-4 d-flex justify-content-end">
+        <a href="#" type="button"><i class="bi bi-person-circle get-circle"></i> </a>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <a href="#" type="button"><i class="bi bi-box-arrow-up up get-circle2"></i></a>
+            &nbsp
+            <a href="#" type="button"><i class="bi bi-three-dots up get-circle2"></i></a>
+        </div>
+    </div>
 </div>
 
