@@ -6,6 +6,5 @@
         public string TitleName { get; set; }
         public string EntryContent { get; set; }
         public DateTime CreatedDate { get; set; }
-        public string Username { get; set; }
     }
 }
