@@ -1,5 +1,9 @@
-@using EksiSozluk.WebUI.Dto.EntryTransactionRelationDtos
+<<<<<<< HEAD
 @using Microsoft.AspNetCore.Http
+=======
+﻿@using Microsoft.AspNetCore.Http
+@using System.Security.Claims
+>>>>>>> parent of bc1371d (Favorites entry api consume opts)
 @model TitleWithEntriesDto
 @{
     ViewData["Title"] = "Index";
@@ -43,15 +47,15 @@
                                             </div>
                                             @if (isLoggedIn)
                                             {
-
-                                                <div class="col d-flex justify-content-between">
-                                                    <div class="col">
+                                                
+                                                    <div class="col d-flex justify-content-between">
+                                                        <div class="col">
                                                         <a asp-controller="TitleDetail" asp-action="AddFavoritesEntry" asp-route-userId="@userId" asp-route-entryId="@entry.Id" type="button" class="mx-1"><i class="bi bi-droplet fav" id="icon"></i></a>
+                                                        </div>
+                                                        <div class="col">
+                                                            <a href="#" type="button" class="entry-number mx-1">250</a>
+                                                        </div>
                                                     </div>
-                                                    <div class="col">
-                                                        <a href="#" type="button" class="entry-number mx-1">250</a>
-                                                    </div>
-                                                </div>
                                             }
                                         </div>
                                     </div>
@@ -74,14 +78,14 @@
                                                 <div class="row">
                                                     <div class="col d-flex justify-content-end">
 
-
-                                                        @*         <a href="#" type="button" class="person-name text-eksi">@entry.Username</a>
-                                                *@
-
+                                                        
+                                      @*         <a href="#" type="button" class="person-name text-eksi">@entry.Username</a>
+ *@
+                                                
                                                         <a asp-controller="Profile" asp-action="Index" asp-route-username="@entry.Username" type="button" class="person-name text-eksi">@entry.Username</a>
-                                                        @*
-                                                asp-controller="TitleDetail" asp-action="Index
-                                                *@
+@* 
+                                                        asp-controller="TitleDetail" asp-action="Index
+ *@
 
                                                     </div>
                                                 </div>
@@ -108,3 +112,10 @@
 
     </div>
 }
+<<<<<<< HEAD
+
+<script>
+
+</script>
+=======
+>>>>>>> parent of 0e9f0fc (Transaction Dtos)
