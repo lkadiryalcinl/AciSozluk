@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EksiSozluk.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1dbaff0a05e624efd686d5e58566ee3876e3da02")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb737eb90aa44620063062653e14edebc485dcd2")]
+>>>>>>> parent of 0e9f0fc (Transaction Dtos)
 [assembly: System.Reflection.AssemblyProductAttribute("EksiSozluk.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EksiSozluk.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
