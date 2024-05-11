@@ -17,6 +17,7 @@ namespace EksiSozluk.Application.Mediator.Handlers.EntryHandlers
 
         public async Task<List<GetEntriesByFilterQueryResult>> Handle(GetEntriesByFilterQuery request, CancellationToken cancellationToken)
         {
+
             var values = await _entryRepository.GetByFilterAsync(x => x.UserId == request.Id || x.User.UserName == request.Id);
 
             return values.Select(x => new GetEntriesByFilterQueryResult
@@ -24,7 +25,7 @@ namespace EksiSozluk.Application.Mediator.Handlers.EntryHandlers
                 Id = x.Id,
                 TitleName = x.Title.TitleName,
                 CreatedDate = x.CreatedDate,
-                EntryContent = x.EntryContent
+                EntryContent = x.EntryContent,        
             }).ToList();
           
 
