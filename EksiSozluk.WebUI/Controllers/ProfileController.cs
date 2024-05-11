@@ -17,14 +17,18 @@ namespace EksiSozluk.WebUI.Controllers
 
         public async Task<IActionResult> Index(string username)
         {
-         
             var UserID = await _httpClientServiceAction.InvokeAsync<User>($"User/{username}");
             var values = await _httpClientServiceAction.InvokeAsync<List<TitleWithEntryDto>>($"Entry/GetEntriesByFilter?id={UserID.Id}");
+
+            values.ForEach(x =>
+            {
+                x.Username = username;
+            });
             ViewBag.myentries = values;
             return View();
         }
     }
 
-  
+
 
 }
