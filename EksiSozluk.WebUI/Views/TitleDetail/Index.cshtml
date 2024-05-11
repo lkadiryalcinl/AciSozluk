@@ -1,11 +1,9 @@
 ﻿@using Microsoft.AspNetCore.Http
-@using System.Security.Claims
 @model TitleWithEntriesDto
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/UILayout/Index.cshtml";
     var user = Context.User;
-    var userId = user.FindFirst(ClaimTypes.NameIdentifier)?.Value;
     var isLoggedIn = user.Identity.IsAuthenticated;
 }
 
@@ -44,15 +42,14 @@
                                             </div>
                                             @if (isLoggedIn)
                                             {
-                                                
-                                                    <div class="col d-flex justify-content-between">
-                                                        <div class="col">
-                                                        <a asp-controller="TitleDetail" asp-action="AddFavoritesEntry" asp-route-userId="@userId" asp-route-entryId="@entry.Id" type="button" class="mx-1"><i class="bi bi-droplet fav" id="icon"></i></a>
-                                                        </div>
-                                                        <div class="col">
-                                                            <a href="#" type="button" class="entry-number mx-1">250</a>
-                                                        </div>
+                                                <div class="col d-flex justify-content-between">
+                                                    <div class="col">
+                                                        <a href="#" type="button" class="mx-1"><i class="bi bi-droplet fav" id="icon"></i></a>
                                                     </div>
+                                                    <div class="col">
+                                                        <a href="#" type="button" class="entry-number mx-1">250</a>
+                                                    </div>
+                                                </div>
                                             }
                                         </div>
                                     </div>
@@ -102,38 +99,17 @@
                         </div>
                     </div>
                     <!-- Entry bitişi  -->
-                    <div class="col-12 container-fluid bg-light">
-                        <div class="col-12 d-flex">
-                            <button class="border create-entry-opt">(bkz: )</button>
-                            <button class="border create-entry-opt">hede</button>
-                            <button class="border create-entry-opt">*</button>
-                            <button class="border create-entry-opt">-spoiler-</button>
-                            <button class="border create-entry-opt">http://</button>
-                        </div>
-                        <form class="form" method="post">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <textarea class="form-control create-entry-text-area" placeholder='"@Model.TitleName" hakkında bilgi verin'></textarea>
-                                </div>
-                            </div>
-                            <div class="col-12 my-2">
-                                <a href="#" class="dropdown-toggle create-entry-opt">kenarda dursun</a>
-                                <button type="submit" class="create-entry-button">yolla</button>
-                            </div>
-                        </form>
-                    </div>
                 </div>
             </div>
             <!-- col-9 bitişi  -->
-
         </div>
 
     </div>
 }
-
 <<<<<<< HEAD
-=======
+
 <script>
 
 </script>
->>>>>>> 3fe95b2 (Route title page to profile page added)
+=======
+>>>>>>> parent of 0e9f0fc (Transaction Dtos)
