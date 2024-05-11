@@ -1,4 +1,5 @@
-﻿using EksiSozluk.Application.Mediator.Queries.EntryQueries;
+﻿using EksiSozluk.Application.Mediator.Commands.EntryTransactionCommands;
+using EksiSozluk.Application.Mediator.Queries.EntryQueries;
 using EksiSozluk.Application.Mediator.Queries.EntryTransactionQueries;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -26,6 +27,13 @@ namespace EksiSozluk.WebAPI.Controllers
             };
             var values = await _mediator.Send(getEntryTransactionQuery);
             return Ok(values);
+        }
+
+        [HttpPut("UpdateEntryTransaction")]
+        public async Task<IActionResult> UpdateEntryTransaction(UpdateEntryTransactionCommand updateEntryTransactionCommand)
+        {
+            await _mediator.Send(updateEntryTransactionCommand);
+            return Ok("updated.");
         }
     }
 }

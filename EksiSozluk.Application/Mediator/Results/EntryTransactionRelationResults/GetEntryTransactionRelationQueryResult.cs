@@ -3,6 +3,6 @@
     public class GetEntryTransactionRelationQueryResult
     {
         public Guid Id { get; set; }
-        public Guid EntryTransactionId { get; set; }
+        public string EntryTransactionId { get; set; }
     }
 }
