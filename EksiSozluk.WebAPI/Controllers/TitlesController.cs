@@ -36,7 +36,11 @@ namespace EksiSozluk.WebAPI.Controllers
             var values = await _mediator.Send(getTitleByFilterWithEntriesQuery);
             return Ok(values);
         }
+
+
         
+
+
         [HttpGet("GetTitlesByFilterWithFirstEntry")]
         public async Task<IActionResult> GetTitlesByFilterWithFirstEntry(string id)
         {

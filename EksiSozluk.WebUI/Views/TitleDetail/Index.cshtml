@@ -74,7 +74,16 @@
                                             <div class="col-9">
                                                 <div class="row">
                                                     <div class="col d-flex justify-content-end">
-                                                        <a href="#" type="button" class="person-name text-eksi">@entry.Username</a>
+
+                                                        
+                                      @*         <a href="#" type="button" class="person-name text-eksi">@entry.Username</a>
+ *@
+                                                
+                                                        <a asp-controller="Profile" asp-action="Index" asp-route-username="@entry.Username" type="button" class="person-name text-eksi">@entry.Username</a>
+@* 
+                                                        asp-controller="TitleDetail" asp-action="Index
+ *@
+
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -123,5 +132,5 @@
 }
 
 <script>
-    
+
 </script>
