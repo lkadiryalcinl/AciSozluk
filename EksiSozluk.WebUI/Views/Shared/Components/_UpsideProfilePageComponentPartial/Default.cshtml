@@ -1,5 +1,8 @@
 ﻿@using Microsoft.AspNetCore.Http
 @using System.Security.Claims
+@model ProfileStatsDto
+
+
 @{
     var user = Context.User;
     var userName = user.Identity.Name;
@@ -21,7 +24,7 @@
         <br />
         <div class="row">
             <div class="col d-flex">
-                <p class="me-2">90 entry</p>
+                <p class="me-2">90</p>
                 <a href="#" type="button" class="follow-number me-2"> 3 takipçi</a>
                 <a href="#" type="button" class="follow-number me-2">10 takip</a>
             </div>

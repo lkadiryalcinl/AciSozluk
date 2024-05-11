@@ -8,7 +8,7 @@
         <div class="col-9 full">
 
             <!-- yazar adı  ve yazar istatistikleri ve simgeler   -->
-            @await Component.InvokeAsync("_UpsideProfilePageComponentPartial")
+            @await Component.InvokeAsync("_UpsideProfilePageComponentPartial", new { profileStats = ViewBag.profileStats })
             <!--  yazar adı ve yazar istatisitkleri bitiş -->
             <!--  simgeler  -->
             <!-- entry-favori-istatistikler buton -->
