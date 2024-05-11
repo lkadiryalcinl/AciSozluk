@@ -8,7 +8,6 @@ namespace EksiSozluk.WebUI.ViewComponents.ProfileViewComponents
         public IViewComponentResult Invoke(List<TitleWithEntryDto> myentries)
         {
             var values = myentries;
-            var a = 5;
             return View(values);
         }
     }
