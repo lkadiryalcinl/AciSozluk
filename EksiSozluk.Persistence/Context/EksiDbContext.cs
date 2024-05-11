@@ -137,13 +137,13 @@ namespace EksiSozluk.Persistence.Context
             //User -> EntryTransactionRelation
             modelBuilder.Entity<EntryTransactionRelation>()
                 .HasOne(e => e.User)
-                .WithOne(e => e.EntryTransactionRelation)
-                .HasForeignKey<EntryTransactionRelation>(e => e.UserId);
+                .WithMany(e => e.EntryTransactionRelations)
+                .HasForeignKey(e => e.UserId).OnDelete(DeleteBehavior.NoAction);
 
             modelBuilder.Entity<User>()
-                .HasOne(e => e.EntryTransactionRelation)
+                .HasMany(e => e.EntryTransactionRelations)
                 .WithOne(e => e.User)
-                .HasForeignKey<EntryTransactionRelation>(e => e.UserId);
+                .HasForeignKey(e => e.UserId).OnDelete(DeleteBehavior.NoAction);
 
             //Follow User <<- User
             modelBuilder.Entity<User>()

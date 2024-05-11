@@ -26,7 +26,9 @@ namespace EksiSozluk.Persistence.Repositories
 
         public async Task<T> GetByIdAsync(string id)
         {
-            return await _context.Set<T>().FindAsync(id);
+            var values = await _context.Set<T>().FindAsync(Guid.Parse(id));
+            return values;
+
         }
 
         public async Task RemoveAsync(T entity)

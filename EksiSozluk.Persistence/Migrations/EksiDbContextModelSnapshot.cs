@@ -134,8 +134,7 @@ namespace EksiSozluk.Persistence.Migrations
                     b.HasIndex("EntryTransactionId")
                         .IsUnique();
 
-                    b.HasIndex("UserId")
-                        .IsUnique();
+                    b.HasIndex("UserId");
 
                     b.ToTable("EntryTransactionRelations");
                 });
@@ -478,9 +477,9 @@ namespace EksiSozluk.Persistence.Migrations
                         .IsRequired();
 
                     b.HasOne("EksiSozluk.Domain.Entities.User", "User")
-                        .WithOne("EntryTransactionRelation")
-                        .HasForeignKey("EksiSozluk.Domain.Entities.EntryTransactionRelation", "UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .WithMany("EntryTransactionRelations")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Entry");
@@ -630,8 +629,7 @@ namespace EksiSozluk.Persistence.Migrations
 
             modelBuilder.Entity("EksiSozluk.Domain.Entities.User", b =>
                 {
-                    b.Navigation("EntryTransactionRelation")
-                        .IsRequired();
+                    b.Navigation("EntryTransactionRelations");
 
                     b.Navigation("FollowChannels");
 
