@@ -4,7 +4,6 @@ using EksiSozluk.WebUI.Dto.TitleDtos;
 using Microsoft.IdentityModel.Tokens;
 using EksiSozluk.Domain.Entities;
 using EksiSozluk.WebUI.Dto.EntryTransactionRelationDtos;
-using EksiSozluk.WebUI.Dto.EntryTransactionDtos;
 
 namespace EksiSozluk.WebUI.Controllers
 {
@@ -25,49 +24,28 @@ namespace EksiSozluk.WebUI.Controllers
             return titleId.IsNullOrEmpty() ? View() : View(values);
         }
 
-        public async Task<IActionResult> AddFavoritesEntry(string userId, string entryId)
+        public async void AddFavoritesEntry(string userId,string entryId)
         {
-            var channelName = ViewBag.ChannelName;
-            var TitleId = ViewBag.TitleId;
-
             var values = await _httpClientServiceAction.InvokeAsync<ResultEntryTransactionRelationDto>($"EntryTransactionRelation/GetEntryTransactionRelationByFilter?userId={userId}&entryId={entryId}");
 
-            if (values != null)
+            if(values != null)
             {
-                var value = await _httpClientServiceAction.InvokeAsync<ResultEntryTransactionDto>($"EntryTransaction/GetEntryTransactionsByFilter?id={values.EntryTransactionId}");
 
-                UpdateEntryTransactionDto updateEntryTransactionDto = new()
-                {
-                    Id = values.EntryTransactionId,
-                    EntryTransactionRelationId = values.Id,
-                    IsFavorited = !value.IsFavorited,
-                    FavoritedDate = DateTime.Now,
-                    IsDisliked = value.IsDisliked,
-                    DisikedDate = value.DisikedDate,
-                    IsLiked = value.IsLiked,
-                    LikedDate = value.LikedDate
-                };
-
-                await _httpClientServiceAction.UpdateAsync<UpdateEntryTransactionDto>("EntryTransaction/UpdateEntryTransaction", updateEntryTransactionDto);
-                return RedirectToAction("Index", "TitleDetail", new { channelName, TitleId });
             }
             else
             {
-                CreateEntryTransactionRelationDto createEntryTransactionRelationDto = new()
-                {
-                    UserId = userId,
-                    EntryId = Guid.Parse(entryId),
-                    IsLiked = false,
-                    LikedDate = DateTime.MinValue,
-                    IsDisliked = false,
-                    DisikedDate = DateTime.MinValue,
+                CreateEntryTransactionRelationDto createEntryTransactionRelationDto = new();
+                createEntryTransactionRelationDto.UserId = userId;
+                createEntryTransactionRelationDto.EntryId = Guid.Parse(entryId);
+                createEntryTransactionRelationDto.IsLiked = false;
+                createEntryTransactionRelationDto.LikedDate = DateTime.MinValue;
+                createEntryTransactionRelationDto.IsDisliked = false;
+                createEntryTransactionRelationDto.DisikedDate = DateTime.MinValue;
 
-                    IsFavorited = true,
-                    FavoritedDate = DateTime.Now
-                };
+                createEntryTransactionRelationDto.IsFavorited = true;
+                createEntryTransactionRelationDto.FavoritedDate = DateTime.Now;
 
                 await _httpClientServiceAction.CreateAsync<CreateEntryTransactionRelationDto>("EntryTransactionRelation/CreateEntryTransactionRelation", createEntryTransactionRelationDto);
-                return RedirectToAction("Index", "TitleDetail", new { channelName, TitleId });
             }
         }
     }

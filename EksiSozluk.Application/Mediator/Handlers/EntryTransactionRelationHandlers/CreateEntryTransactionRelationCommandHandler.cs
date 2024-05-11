@@ -33,7 +33,6 @@ namespace EksiSozluk.Application.Mediator.Handlers.EntryTransactionRelationHandl
 
             await _etlrepository.CreateAsync(new EntryTransactionRelation
             {
-                Id = Guid.NewGuid(),
                 EntryTransactionId = EntryTransactionId,
                 UserId = request.UserId,
                 EntryId = request.EntryId

@@ -20,7 +20,7 @@ namespace EksiSozluk.Application.Mediator.Handlers.EntryTransactionRelationHandl
 
             return new GetEntryTransactionRelationQueryResult
             {
-                EntryTransactionId = values.EntryTransactionId.ToString().ToUpper(),
+                EntryTransactionId = values.EntryTransactionId,
                 Id = values.Id
             };
         }

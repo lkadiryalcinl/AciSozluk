@@ -37,6 +37,10 @@ namespace EksiSozluk.WebAPI.Controllers
             return Ok(values);
         }
 
+
+        
+
+
         [HttpGet("GetTitlesByFilterWithFirstEntry")]
         public async Task<IActionResult> GetTitlesByFilterWithFirstEntry(string id)
         {
