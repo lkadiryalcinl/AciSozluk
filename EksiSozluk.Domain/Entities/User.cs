@@ -20,7 +20,7 @@ namespace EksiSozluk.Domain.Entities
         public DateTime RegistrationDate { get; set; } = DateTime.Now;
 
 
-        public List<EntryTransactionRelation> EntryTransactionRelations { get; set; }
+        public EntryTransactionRelation EntryTransactionRelation { get; set; }
         // The user can write many entries
         public List<Entry> UserEntries { get; set; }
         public List<FollowChannel> FollowChannels { get; set; }
