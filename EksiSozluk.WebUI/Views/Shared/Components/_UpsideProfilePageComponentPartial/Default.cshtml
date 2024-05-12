@@ -8,7 +8,8 @@
     var userName = user.Identity.Name;
     var userId = user.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 }
-
+@if (Model != null)
+{
 <div class="row">
     <div class="col-8">
 
@@ -24,7 +25,7 @@
         <br />
         <div class="row">
             <div class="col d-flex">
-                <p class="me-2">90</p>
+                <p class="me-2">@(Model!=null ?Model.EntryCount:0) entry</p>
                 <a href="#" type="button" class="follow-number me-2"> 3 takipçi</a>
                 <a href="#" type="button" class="follow-number me-2">10 takip</a>
             </div>
@@ -41,4 +42,4 @@
         </div>
     </div>
 </div>
-
+}

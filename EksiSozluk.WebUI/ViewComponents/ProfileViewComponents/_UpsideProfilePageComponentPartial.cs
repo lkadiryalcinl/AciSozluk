@@ -5,9 +5,9 @@ namespace EksiSozluk.WebUI.ViewComponents.ProfileViewComponents
 {
     public class _UpsideProfilePageComponentPartial : ViewComponent
     {
-        public  IViewComponentResult Invoke(ProfileStatsDto profileStatsDto)
+        public  IViewComponentResult Invoke()
         {
-            var values = profileStatsDto;
+            var values = TempData["profileStats"];
             return View(values);
         }
     }
