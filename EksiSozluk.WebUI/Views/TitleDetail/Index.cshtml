@@ -1,15 +1,13 @@
-<<<<<<< HEAD
 @using Microsoft.AspNetCore.Http
-=======
-﻿@using Microsoft.AspNetCore.Http
-@using System.Security.Claims
->>>>>>> parent of bc1371d (Favorites entry api consume opts)
+﻿@using System.Security.Claims
 @model TitleWithEntriesDto
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/UILayout/Index.cshtml";
     var user = Context.User;
+    var userId = user.FindFirst(ClaimTypes.NameIdentifier)?.Value;
     var isLoggedIn = user.Identity.IsAuthenticated;
+
 }
 
 @if (Model != null)
@@ -40,22 +38,21 @@
                                     <div class="col-8 d-flex justify-content-start">
                                         <div class="row">
                                             <div class="col">
-                                                <a href="#" type="button"><i class="bi bi-arrow-up-square up"></i></a>
+                                                <a id="@(entry.Id + "like")" asp-controller="TitleDetail" asp-action="UpdateTransaction" asp-route-userId="@userId" asp-route-entryId="@entry.Id" asp-route-actionType="like" type="button"><i class="bi @((entry.IsLikedByUser ? "bi-arrow-up-square-fill" : "bi-arrow-up-square")) up"></i></a>
                                             </div>
                                             <div class="col">
-                                                <a href="#" type="button"><i class="bi bi-arrow-down-square down"></i></a>
+                                                <a id="@(entry.Id + "dislike")" asp-controller="TitleDetail" asp-action="UpdateTransaction" asp-route-userId="@userId" asp-route-entryId="@entry.Id" asp-route-actionType="dislike" type="button"><i class="bi @((entry.IsDislikedByUser ? "bi-arrow-down-square-fill" : "bi-arrow-down-square")) down"></i></a>
                                             </div>
                                             @if (isLoggedIn)
                                             {
-                                                
-                                                    <div class="col d-flex justify-content-between">
-                                                        <div class="col">
-                                                        <a asp-controller="TitleDetail" asp-action="AddFavoritesEntry" asp-route-userId="@userId" asp-route-entryId="@entry.Id" type="button" class="mx-1"><i class="bi bi-droplet fav" id="icon"></i></a>
-                                                        </div>
-                                                        <div class="col">
-                                                            <a href="#" type="button" class="entry-number mx-1">250</a>
-                                                        </div>
+                                                <div class="col d-flex justify-content-between">
+                                                    <div class="col">
+                                                        <a id="@(entry.Id + "fav")" asp-controller="TitleDetail" asp-action="UpdateTransaction" asp-route-userId="@userId" asp-route-entryId="@entry.Id" asp-route-actionType="favorite" type="button" class="mx-1"><i class="bi @((entry.IsFavByUser ? "bi-droplet-fill" : "bi-droplet")) fav" id="icon"></i></a>
                                                     </div>
+                                                    <div class="col">
+                                                        <a href="#" type="button" class="entry-number mx-1">@entry.FavoritedCount</a>
+                                                    </div>
+                                                </div>
                                             }
                                         </div>
                                     </div>
@@ -78,14 +75,14 @@
                                                 <div class="row">
                                                     <div class="col d-flex justify-content-end">
 
-                                                        
-                                      @*         <a href="#" type="button" class="person-name text-eksi">@entry.Username</a>
- *@
-                                                
+
+                                                        @*         <a href="#" type="button" class="person-name text-eksi">@entry.Username</a>
+                                                *@
+
                                                         <a asp-controller="Profile" asp-action="Index" asp-route-username="@entry.Username" type="button" class="person-name text-eksi">@entry.Username</a>
-@* 
-                                                        asp-controller="TitleDetail" asp-action="Index
- *@
+                                                        @*
+                                                asp-controller="TitleDetail" asp-action="Index
+                                                *@
 
                                                     </div>
                                                 </div>
@@ -112,10 +109,3 @@
 
     </div>
 }
-<<<<<<< HEAD
-
-<script>
-
-</script>
-=======
->>>>>>> parent of 0e9f0fc (Transaction Dtos)

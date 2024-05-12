@@ -24,7 +24,9 @@ namespace EksiSozluk.Application.Mediator.Handlers.EntryHandlers
                 Id = x.Id,
                 TitleName = x.Title.TitleName,
                 CreatedDate = x.CreatedDate,
-                EntryContent = x.EntryContent
+                EntryContent = x.EntryContent,
+                Username = x.User.UserName
+
             }).ToList();
         }
     }

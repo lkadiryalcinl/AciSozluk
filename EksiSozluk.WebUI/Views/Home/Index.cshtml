@@ -1,9 +1,11 @@
-﻿@using Microsoft.AspNetCore.Http
+﻿﻿@using Microsoft.AspNetCore.Http
+@using System.Security.Claims
 @model List<TitlesWithFirstEntryDto>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/UILayout/Index.cshtml";
     var user = Context.User;
+    var userId = user.FindFirst(ClaimTypes.NameIdentifier)?.Value;
     var isLoggedIn = user.Identity.IsAuthenticated;
 }
 
@@ -33,19 +35,21 @@
                                     <div class="col-8 d-flex justify-content-start">
                                         <div class="row">
                                             <div class="col">
-                                                <a href="#" type="button"><i class="bi bi-arrow-up-square up"></i></a>
+                                                <a id="@(titleWFirstEntry.FirstEntry.Id + "like")" asp-controller="TitleDetail" asp-action="UpdateTransaction" asp-route-userId="@userId" asp-route-entryId="@titleWFirstEntry.FirstEntry.Id" asp-route-actionType="like" type="button"><i class="bi @((titleWFirstEntry.FirstEntry.IsLikedByUser ? "bi-arrow-up-square-fill" : "bi-arrow-up-square")) up"></i></a>
                                             </div>
                                             <div class="col">
-                                                <a href="#" type="button"><i class="bi bi-arrow-down-square down"></i></a>
+                                                <a id="@(titleWFirstEntry.FirstEntry.Id + "dislike")" asp-controller="TitleDetail" asp-action="UpdateTransaction" asp-route-userId="@userId" asp-route-entryId="@titleWFirstEntry.FirstEntry.Id" asp-route-actionType="dislike" type="button"><i class="bi @((titleWFirstEntry.FirstEntry.IsDislikedByUser ? "bi-arrow-down-square-fill" : "bi-arrow-down-square")) down"></i></a>
                                             </div>
                                             @if (isLoggedIn)
                                             {
+
                                                 <div class="col d-flex justify-content-between">
                                                     <div class="col">
-                                                        <a href="#" type="button" class="mx-1"><i class="bi bi-droplet fav" id="icon"></i></a>
+                                                        <a id="@(titleWFirstEntry.FirstEntry.Id + "fav")" asp-controller="Home" asp-action="UpdateTransaction" asp-route-userId="@userId" asp-route-entryId="@titleWFirstEntry.FirstEntry.Id" asp-route-actionType="favorite" type="button" class="mx-1"><i class="bi @((titleWFirstEntry.FirstEntry.IsFavByUser ? "bi-droplet-fill" : "bi-droplet")) fav" id="icon"></i></a>
                                                     </div>
                                                     <div class="col">
-                                                        <a href="#" type="button" class="entry-number mx-1">250</a>
+         
+                                                        <a href="#" type="button" class="entry-number mx-1">@titleWFirstEntry.FirstEntry.FavoritedCount</a>
                                                     </div>
                                                 </div>
                                             }
@@ -95,4 +99,3 @@
 
     </div>
 }
-

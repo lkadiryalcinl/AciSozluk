@@ -10,5 +10,9 @@
         public bool IsEntryDelete { get; set; } = false;
         public bool IsEntryUpdated { get; set; } = false;
         public string Username { get; set; }
+        public int FavoritedCount { get; set; }
+        public bool IsFavByUser { get; set; }
+        public bool IsLikedByUser { get; set; }
+        public bool IsDislikedByUser { get; set; }
     }
 }

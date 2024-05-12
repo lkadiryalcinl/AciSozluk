@@ -14,13 +14,13 @@ namespace EksiSozluk.Domain.Entities
 
         public string Gender { get; set; }
 
-        public DateTime  BirthDate { get; set; } 
+        public DateTime BirthDate { get; set; }
 
 
         public DateTime RegistrationDate { get; set; } = DateTime.Now;
 
 
-        public EntryTransactionRelation EntryTransactionRelation { get; set; }
+        public List<EntryTransactionRelation> EntryTransactionRelations { get; set; }
         // The user can write many entries
         public List<Entry> UserEntries { get; set; }
         public List<FollowChannel> FollowChannels { get; set; }

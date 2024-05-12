@@ -14,15 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EksiSozluk.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be79633ea57cd506b98e8fddef8982732f48c002")]
-=======
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1dbaff0a05e624efd686d5e58566ee3876e3da02")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d46ba8a1ba072c83015936ebf6e4eeb643e7afee")]
->>>>>>> parent of 0e9f0fc (Transaction Dtos)
->>>>>>> parent of bc1371d (Favorites entry api consume opts)
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7786051d236769540d7ca2704e3fb27498b9f8f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("EksiSozluk.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EksiSozluk.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

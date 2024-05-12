@@ -20,7 +20,7 @@ namespace EksiSozluk.WebUI.Controllers
             var values = await _httpClientServiceAction.InvokeAsync<List<TitleWithEntryDto>>($"Entry/GetEntriesByFilter?id={UserID.Id}");
             values.ForEach(x =>
             {
-                x.Username = username;
+                x.UserName = username;
             });
 
             ProfileStatsDto profileStatsDto = new ProfileStatsDto();

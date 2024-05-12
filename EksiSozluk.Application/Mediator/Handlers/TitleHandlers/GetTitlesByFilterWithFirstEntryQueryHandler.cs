@@ -35,7 +35,17 @@ namespace EksiSozluk.Application.Mediator.Handlers.TitleHandlers
                     IsEntryDelete = x.IsEntryDelete,
                     IsEntryUpdated = x.IsEntryUpdated,
                     UpdatedDate = x.UpdatedDate,
-                    Username=x.User.UserName
+                    Username = x.User.UserName,
+                    FavoritedCount = x.EntryTransactionRelations?
+                    .Where(y => y.EntryId == x.Id && y.EntryTransaction.IsFavorited)
+                    .Count()
+                    ?? 0,
+                    IsFavByUser = x.EntryTransactionRelations?
+                    .Any(y => y.UserId == x.User.Id && y.EntryTransaction.IsFavorited) ?? false,
+                    IsLikedByUser = x.EntryTransactionRelations?
+                .Any(y => y.UserId == x.User.Id && y.EntryTransaction.IsLiked) ?? false,
+                    IsDislikedByUser = x.EntryTransactionRelations?
+                .Any(y => y.UserId == x.User.Id && y.EntryTransaction.IsDisliked) ?? false,
                 }).OrderBy(x => x.CreatedDate).FirstOrDefault()
             }).ToList();
 

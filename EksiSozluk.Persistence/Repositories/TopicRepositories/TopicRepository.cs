@@ -23,13 +23,27 @@ namespace EksiSozluk.Persistence.Repositories.TopicRepositories
 
         public async Task<Title> GetByFilterWithEntriesAsync(Expression<Func<Title, bool>> filter)
         {
-            var values = await _context.Titles.Where(filter).Include(x => x.Entries).ThenInclude(x => x.User).FirstOrDefaultAsync();
+            var values = await _context.Titles
+                .Where(filter)
+                .Include(x => x.Entries)
+                    .ThenInclude(x => x.User)
+                .Include(x => x.Entries)
+                    .ThenInclude(x => x.EntryTransactionRelations)
+                        .ThenInclude(x => x.EntryTransaction)
+                .FirstOrDefaultAsync();
+
             return values;
         }
 
         public async Task<List<Title>> GetByFilterWithFirstEntryAsync(Expression<Func<Title, bool>> filter)
         {
-            var values = await _context.Titles.Where(filter).Include(x => x.Channel).Include(x => x.Entries).ThenInclude(x => x.User).ToListAsync();
+            var values = await _context.Titles.Where(filter)
+                .Include(x => x.Channel)
+                .Include(x => x.Entries)
+                    .ThenInclude(x => x.User)
+                .Include(x => x.Entries)
+                    .ThenInclude(x => x.EntryTransactionRelations)
+                        .ThenInclude(x => x.EntryTransaction).ToListAsync();
             return values;
         }
     }

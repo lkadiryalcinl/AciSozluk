@@ -5,6 +5,6 @@ namespace EksiSozluk.Application.Mediator.Queries.EntryTransactionQueries
 {
     public class GetEntryTransactionQuery : IRequest<GetEntryTransactionQueryResult>
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

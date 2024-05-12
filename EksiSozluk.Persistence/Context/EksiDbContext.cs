@@ -72,7 +72,7 @@ namespace EksiSozluk.Persistence.Context
                 .WithMany(c => c.UserEntries)
                 .HasForeignKey(c => c.UserId).OnDelete(DeleteBehavior.NoAction);
             // User and Title Configuration
-            
+
             //Title and Entry Configuration
             modelBuilder.Entity<Title>()
                 .HasMany(e => e.Entries)
@@ -103,7 +103,7 @@ namespace EksiSozluk.Persistence.Context
                 .HasMany(e => e.FollowTitles)
                 .WithOne(e => e.User)
                 .HasForeignKey(e => e.UserId).OnDelete(DeleteBehavior.NoAction);
-            
+
             modelBuilder.Entity<FollowTitle>()
                 .HasOne(e => e.User)
                 .WithMany(e => e.FollowTitles)
@@ -137,13 +137,14 @@ namespace EksiSozluk.Persistence.Context
             //User -> EntryTransactionRelation
             modelBuilder.Entity<EntryTransactionRelation>()
                 .HasOne(e => e.User)
-                .WithOne(e => e.EntryTransactionRelation)
-                .HasForeignKey<EntryTransactionRelation>(e => e.UserId);
+                .WithMany(e => e.EntryTransactionRelations)
+                .HasForeignKey(e => e.UserId).OnDelete(DeleteBehavior.NoAction);
+
 
             modelBuilder.Entity<User>()
-                .HasOne(e => e.EntryTransactionRelation)
+                .HasMany(e => e.EntryTransactionRelations)
                 .WithOne(e => e.User)
-                .HasForeignKey<EntryTransactionRelation>(e => e.UserId);
+            .HasForeignKey(e => e.UserId).OnDelete(DeleteBehavior.NoAction);
 
             //Follow User <<- User
             modelBuilder.Entity<User>()

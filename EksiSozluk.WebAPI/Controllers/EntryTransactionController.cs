@@ -1,8 +1,10 @@
-﻿using EksiSozluk.Application.Mediator.Queries.EntryQueries;
+﻿using EksiSozluk.Application.Mediator.Commands.EntryTransactionCommands;
+using EksiSozluk.Application.Mediator.Queries.EntryQueries;
 using EksiSozluk.Application.Mediator.Queries.EntryTransactionQueries;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Update.Internal;
 
 namespace EksiSozluk.WebAPI.Controllers
 {
@@ -18,7 +20,7 @@ namespace EksiSozluk.WebAPI.Controllers
         }
 
         [HttpGet("GetEntryTransactionsByFilter")]
-        public async Task<IActionResult> GetEntriesByFilter(string id)
+        public async Task<IActionResult> GetEntriesByFilter(Guid id)
         {
             GetEntryTransactionQuery getEntryTransactionQuery = new()
             {
@@ -27,5 +29,14 @@ namespace EksiSozluk.WebAPI.Controllers
             var values = await _mediator.Send(getEntryTransactionQuery);
             return Ok(values);
         }
+
+
+        [HttpPut("UpdateEntryTransaction")]
+        public async Task<IActionResult> UpdateEntryTransaction(UpdateEntryTransactionCommand updateEntryTransactionCommand)
+        {
+            await _mediator.Send(updateEntryTransactionCommand);
+            return Ok();
+        }
     }
 }
+
