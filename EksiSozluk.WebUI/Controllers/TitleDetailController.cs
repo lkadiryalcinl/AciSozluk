@@ -33,7 +33,7 @@ namespace EksiSozluk.WebUI.Controllers
 
             if (values != null)
             {
-                var value = await _httpClientServiceAction.InvokeAsync<ResultEntryTransactionDto>($"EntryTransaction/GGetEntryTransactionsByFilter?id={values.EntryTransactionId.ToString()}");
+                var value = await _httpClientServiceAction.InvokeAsync<ResultEntryTransactionDto>($"EntryTransaction/GGetEntryTransactionsByFilter?id={values.EntryTransactionId}");
                 UpdateEntryTransactionDto updateEntryTransactionDto = new()
                 {
                     Id = values.EntryTransactionId,
