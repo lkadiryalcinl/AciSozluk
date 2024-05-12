@@ -23,9 +23,11 @@ namespace EksiSozluk.WebUI.Controllers
                 x.UserName = username;
             });
 
-            ProfileStatsDto profileStatsDto = new ProfileStatsDto();
-            profileStatsDto.EntryCount = values.Count();
-            ViewBag.profileStats = profileStatsDto;
+            ProfileStatsDto profileStatsDto = new()
+            {
+                EntryCount = values.Count()
+            };
+            TempData["profileStats"] = profileStatsDto;
             ViewBag.myentries = values;
             return View();
         }
