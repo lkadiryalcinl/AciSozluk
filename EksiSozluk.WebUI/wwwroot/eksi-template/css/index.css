@@ -150,6 +150,18 @@
         margin-bottom: -16px;
     }
 
+.nav-link-custom-2 {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: gray;
+}
+
+    .nav-link-custom-2:hover {
+        background-color: darkgray;
+    }
+
 .ul-custom {
     list-style-type: none;
 }
