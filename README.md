@@ -18,7 +18,7 @@ ___
 3. [Durum Diyagramı](/Docs/OtherReadMe's/Durum_Diyagrami.md)
 4. [Durum Senaryoları](/Docs/OtherReadMe's/Durum_Senaryolari.md)
 5. [Veritabanı Diyagramı](/Docs/OtherReadMe's/Veritabani_Diyagrami.md)
-6. [Front-End](https://eksisozluk.com/)
+6. [Front-End](/Docs/OtherReadMe's/Frontend.md)
 7. [Back-End](https://eksisozluk.com/)
 8. [Test](https://eksisozluk.com/)
 9. [Geliştirici ve Kullanıcı Dökümantasyonları](https://eksisozluk.com/)
