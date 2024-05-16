@@ -375,3 +375,11 @@
     .create-entry-button:hover {
         background-color: #5fa042;
     }
+
+.channel-hover{
+
+}
+
+.channel-hover:hover {
+    background-color:lightgray;
+}
