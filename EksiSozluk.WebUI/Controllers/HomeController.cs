@@ -20,7 +20,7 @@ namespace EksiSozluk.WebUI.Controllers
         {
             ViewBag.ChannelName = channelName;
             var values = channelName.IsNullOrEmpty() ?
-                await _httpClientServiceAction.InvokeAsync<List<TitlesWithFirstEntryDto>>($"Titles/GetTitlesByFilterWithFirstEntry?id=gündem")
+                await _httpClientServiceAction.InvokeAsync<List<TitlesWithFirstEntryDto>>($"Titles/GetTitlesByFilterWithFirstEntry?id=debe")
                 : await _httpClientServiceAction.InvokeAsync<List<TitlesWithFirstEntryDto>>($"Titles/GetTitlesByFilterWithFirstEntry?id={channelName}");
             return View(values);
         }
