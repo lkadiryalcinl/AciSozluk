@@ -1,4 +1,4 @@
-﻿using EksiSozluk.Application.Mediator.Results.EntryResults;
+﻿using EksiSozluk.Application.Mediator.Results.ProfileEntryResults;
 using MediatR;
 
 namespace EksiSozluk.Application.Mediator.Queries.EntryQueries

@@ -3,7 +3,8 @@
     public class ProfileStatsDto
     {
         public int EntryCount { get; set; }
-      //  public int FollowerCount { get; set; }
-      //  public int FolloweeCount { get; set; }
+        public string Username { get; set; }
+        //  public int FollowerCount { get; set; }
+        //  public int FolloweeCount { get; set; }
     }
 }
