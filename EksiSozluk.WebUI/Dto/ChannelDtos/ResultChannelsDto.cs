@@ -9,5 +9,6 @@ namespace EksiSozluk.WebUI.Dto.ChannelDtos
         public string ChannelName { get; set; }
 
         public string ChannelDescription { get; set; }
+        public bool IsFollowedByUser { get; set; }
     }
 }
