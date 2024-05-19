@@ -17,12 +17,12 @@ namespace EksiSozluk.WebAPI.Controllers
             _mediator = mediator;
         }
         
-        [HttpPost("GetfollowChannelsByFilter")]
-        public async Task<IActionResult> UnfollowChannel(string UserId)
+        [HttpGet("GetFollowChannelsByFilter")]
+        public async Task<IActionResult> UnfollowChannel(string userId)
         {
             GetFollowChannelByFilterQuery query = new()
             {
-                UserId = UserId
+                UserId = userId
             };
             var values = await _mediator.Send(query);
             return Ok(values);
@@ -35,10 +35,15 @@ namespace EksiSozluk.WebAPI.Controllers
             return Ok("Success");
         }
 
-        [HttpPost("UnfollowChannel")]
-        public async Task<IActionResult> UnfollowChannel(RemoveFollowChannelCommand removeFollowChannelCommand)
+        [HttpDelete("UnfollowChannel")]
+        public async Task<IActionResult> UnfollowChannel(Guid channelId,string userId)
         {
-            await _mediator.Send(removeFollowChannelCommand);
+            RemoveFollowChannelCommand command = new()
+            {
+                ChannelId = channelId,
+                UserId = userId
+            };
+            await _mediator.Send(command);
             return Ok("Success");
         }
     }
