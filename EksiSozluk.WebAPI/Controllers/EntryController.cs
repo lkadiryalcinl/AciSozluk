@@ -1,5 +1,5 @@
-﻿using EksiSozluk.Application.Mediator.Commands.EntryTransactionCommands;
-using EksiSozluk.Application.Mediator.Commands.Profile;
+﻿using EksiSozluk.Application.Mediator.Commands.EntryCommands;
+using EksiSozluk.Application.Mediator.Commands.ProfileEntryCommands;
 using EksiSozluk.Application.Mediator.Queries.EntryQueries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -28,13 +28,29 @@ namespace EksiSozluk.WebAPI.Controllers
             return Ok(values);
         }
 
-
         [HttpPut("ProfileEntryRemove")]
         public async Task<IActionResult> UpdateEntryTransaction(Guid id)
         {
-            RemoveProfileEntryCommand profileEntryDeleteCommand = new();
-            profileEntryDeleteCommand.Id = id;
+            RemoveProfileEntryCommand profileEntryDeleteCommand = new()
+            {
+                Id = id
+            };
+
             await _mediator.Send(profileEntryDeleteCommand);
+            return Ok();
+        }
+
+        [HttpPut("UpdateProfileEntry")]
+        public async Task<IActionResult> UpdateEntryTransactionContent(UpdateProfileEntryCommand updateProfileEntryCommand)
+        {
+            await _mediator.Send(updateProfileEntryCommand);
+            return Ok();
+        }
+
+        [HttpPost("CreateEntry")]
+        public async Task<IActionResult> CreateEntryTransaction(CreateEntryCommand createEntryCommand)
+        {
+            await _mediator.Send(createEntryCommand);
             return Ok();
         }
 
