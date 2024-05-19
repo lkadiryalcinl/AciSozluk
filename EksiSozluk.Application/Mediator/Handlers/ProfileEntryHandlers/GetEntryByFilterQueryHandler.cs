@@ -1,10 +1,9 @@
-﻿using EksiSozluk.Application.Dtos.EntryDtos;
-using EksiSozluk.Application.Interfaces.EntryInterfaces;
+﻿using EksiSozluk.Application.Interfaces.EntryInterfaces;
 using EksiSozluk.Application.Mediator.Queries.EntryQueries;
-using EksiSozluk.Application.Mediator.Results.EntryResults;
+using EksiSozluk.Application.Mediator.Results.ProfileEntryResults;
 using MediatR;
 
-namespace EksiSozluk.Application.Mediator.Handlers.EntryHandlers
+namespace EksiSozluk.Application.Mediator.Handlers.ProfileEntryHandlers
 {
     public class GetEntryByFilterQueryHandler : IRequestHandler<GetEntriesByFilterQuery, List<GetEntriesByFilterQueryResult>>
     {
@@ -18,7 +17,6 @@ namespace EksiSozluk.Application.Mediator.Handlers.EntryHandlers
         public async Task<List<GetEntriesByFilterQueryResult>> Handle(GetEntriesByFilterQuery request, CancellationToken cancellationToken)
         {
             var values = await _entryRepository.GetByFilterAsync(x => x.UserId == request.Id || x.User.UserName == request.Id);
-
             return values.Select(x => new GetEntriesByFilterQueryResult
             {
                 Id = x.Id,
@@ -26,8 +24,8 @@ namespace EksiSozluk.Application.Mediator.Handlers.EntryHandlers
                 CreatedDate = x.CreatedDate,
                 EntryContent = x.EntryContent,
                 Username = x.User.UserName
-
             }).ToList();
         }
+
     }
 }

@@ -23,7 +23,6 @@ namespace EksiSozluk.Application.Mediator.Handlers.EntryTransactionHandlers
             value.DisikedDate = request.DisikedDate;
             value.LikedDate = request.LikedDate;
             value.IsLiked = request.IsLiked;
-
             await repository.UpdateAsync(value);
         }
     }
