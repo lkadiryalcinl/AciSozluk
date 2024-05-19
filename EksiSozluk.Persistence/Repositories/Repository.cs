@@ -1,6 +1,8 @@
 ﻿using EksiSozluk.Application.Interfaces;
+using EksiSozluk.Domain.Entities;
 using EksiSozluk.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace EksiSozluk.Persistence.Repositories
 {
@@ -24,9 +26,9 @@ namespace EksiSozluk.Persistence.Repositories
             return await _context.Set<T>().ToListAsync();
         }
 
-        public async Task<T> GetByIdAsync(Guid id)
+        public async Task<T> GetByIdAsync(Expression<Func<T, bool>> filter)
         {
-            return await _context.Set<T>().FindAsync(id);
+            return await _context.Set<T>().FirstOrDefaultAsync(filter);
         }
 
         public async Task RemoveAsync(T entity)

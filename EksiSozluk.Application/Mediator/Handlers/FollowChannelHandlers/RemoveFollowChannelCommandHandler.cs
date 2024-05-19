@@ -16,7 +16,7 @@ namespace EksiSozluk.Application.Mediator.Handlers.FollowChannelHandlers
 
         public async Task Handle(RemoveFollowChannelCommand request, CancellationToken cancellationToken)
         {
-            var value = await _repository.GetByIdAsync(request.Id);
+            var value = await _repository.GetByIdAsync(x => x.ChannelId == request.ChannelId & x.UserId == request.UserId);
             await _repository.RemoveAsync(value);
         }
     }

@@ -19,7 +19,8 @@ namespace EksiSozluk.Application.Mediator.Handlers.FollowChannelHandlers
             await _repository.CreateAsync(new FollowChannel
             {
                 ChannelId = request.ChannelId,
-                UserId = request.UserId
+                UserId = request.UserId,
+                FollowedDate = request.FollowDate,
             });
         }
     }

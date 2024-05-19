@@ -17,7 +17,7 @@ namespace EksiSozluk.Application.Mediator.Handlers.EntryTransactionHandlers
 
         public async Task<GetEntryTransactionQueryResult> Handle(GetEntryTransactionQuery request, CancellationToken cancellationToken)
         {
-            var values = await _repository.GetByIdAsync(request.Id);
+            var values = await _repository.GetByIdAsync(x=> x.Id == request.Id);
 
             return new GetEntryTransactionQueryResult
             {

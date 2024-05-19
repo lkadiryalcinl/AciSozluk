@@ -16,7 +16,7 @@ namespace EksiSozluk.Application.Mediator.Handlers.EntryTransactionHandlers
 
         public async Task Handle(UpdateEntryTransactionCommand request, CancellationToken cancellationToken)
         {
-            var value = await repository.GetByIdAsync(request.Id);
+            var value = await repository.GetByIdAsync(x=> x.Id == request.Id);
             value.FavoritedDate = request.FavoritedDate;
             value.IsFavorited = request.IsFavorited;
             value.IsDisliked = request.IsDisliked;
