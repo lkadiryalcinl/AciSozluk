@@ -73,6 +73,30 @@
     color: white;
 }
 
+.auth-entrance-link-white {
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #81C14B;
+    text-align: center;
+    border-radius: 10%;
+    justify-content: center;
+    text-decoration:none;
+}
+
+    .auth-entrance-link-white:hover {
+        text-decoration: underline;
+        text-decoration-color: #5fa042;
+    }
+
+.auth-entrance-link-white-text {
+    color: #81C14B;
+    text-decoration:none;
+}
+
+    .auth-entrance-link-white-text :hover {
+        color: #5fa042;
+    }
+
 .auth-entrance-link-dropdown {
     display: inline-block;
     text-decoration: none;
@@ -376,10 +400,9 @@
         background-color: #5fa042;
     }
 
-.channel-hover{
-
+.channel-hover {
 }
 
-.channel-hover:hover {
-    background-color:lightgray;
-}
+    .channel-hover:hover {
+        background-color: lightgray;
+    }

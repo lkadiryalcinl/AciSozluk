@@ -23,15 +23,23 @@
                                 <label>@item.ChannelDescription</label>
                             </div>
                         </div>
-                        <div class="col-2 d-flex justify-content-center align-items-center auth-entrance-link-green my-2 rounded">
-                            <a class="auth-entrance-link-green-text" href="#">takip et</a>
-                        </div>
+                        @if (!item.IsFollowedByUser)
+                        {
+                            <div class="col-2 d-flex justify-content-center align-items-center auth-entrance-link-green my-2 rounded">
+                                <a asp-controller="Channel" asp-action="FollowChannel" asp-route-channelId="@item.Id" class="auth-entrance-link-green-text">takip et</a>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="col-2 d-flex justify-content-center align-items-center auth-entrance-link-white my-2 rounded">
+                                <a asp-controller="Channel" asp-action="UnfollowChannel" asp-route-channelId="@item.Id" class="auth-entrance-link-white-text">takibi bırak</a>
+                            </div>
+                        }
                     </div>
                 }
             </div>
         </div>
         <!-- col-10 bitişi  -->
     </div>
-
 </div>
 
