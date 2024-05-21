@@ -28,6 +28,7 @@ namespace EksiSozluk.WebUI.Controllers
             values.ForEach(x =>
             {
                 x.UserName = username;
+                x.UserId = UserID.Id;
             });
 
             ProfileStatsDto profileStatsDto = new()

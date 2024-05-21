@@ -28,6 +28,17 @@ namespace EksiSozluk.WebAPI.Controllers
             return Ok(values);
         }
 
+        [HttpGet("GetEntryByFilter")]
+        public async Task<IActionResult> GetEntryByFilter(Guid id)
+        {
+            GetEntryByFilterQuery getEntryByFilterQuery = new()
+            {
+                Id = id
+            };
+            var values = await _mediator.Send(getEntryByFilterQuery);
+            return Ok(values);
+        }
+
         [HttpPut("ProfileEntryRemove")]
         public async Task<IActionResult> UpdateEntryTransaction(Guid id)
         {

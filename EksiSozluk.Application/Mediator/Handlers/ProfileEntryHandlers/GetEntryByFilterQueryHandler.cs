@@ -1,31 +1,30 @@
-﻿using EksiSozluk.Application.Interfaces.EntryInterfaces;
+﻿using EksiSozluk.Application.Interfaces;
+using EksiSozluk.Application.Interfaces.EntryInterfaces;
 using EksiSozluk.Application.Mediator.Queries.EntryQueries;
 using EksiSozluk.Application.Mediator.Results.ProfileEntryResults;
+using EksiSozluk.Domain.Entities;
 using MediatR;
 
 namespace EksiSozluk.Application.Mediator.Handlers.ProfileEntryHandlers
 {
-    public class GetEntryByFilterQueryHandler : IRequestHandler<GetEntriesByFilterQuery, List<GetEntriesByFilterQueryResult>>
+    internal class GetEntryByFilterQueryHandler : IRequestHandler<GetEntryByFilterQuery, GetEntryByFilterQueryResult>
     {
-        private readonly IEntryRepository _entryRepository;
+        private readonly IEntryRepository _repository;
 
-        public GetEntryByFilterQueryHandler(IEntryRepository entryRepository)
+        public GetEntryByFilterQueryHandler(IEntryRepository repository)
         {
-            _entryRepository = entryRepository;
+            _repository = repository;
         }
 
-        public async Task<List<GetEntriesByFilterQueryResult>> Handle(GetEntriesByFilterQuery request, CancellationToken cancellationToken)
+        public async Task<GetEntryByFilterQueryResult> Handle(GetEntryByFilterQuery request, CancellationToken cancellationToken)
         {
-            var values = await _entryRepository.GetByFilterAsync(x => x.UserId == request.Id || x.User.UserName == request.Id);
-            return values.Select(x => new GetEntriesByFilterQueryResult
+            var value = await _repository.GetSingleByFilterAsync(x => x.Id == request.Id);
+            return new GetEntryByFilterQueryResult
             {
-                Id = x.Id,
-                TitleName = x.Title.TitleName,
-                CreatedDate = x.CreatedDate,
-                EntryContent = x.EntryContent,
-                Username = x.User.UserName
-            }).ToList();
+                Id = request.Id,
+                EntryContent = value.EntryContent,
+                TitleName = value.Title.TitleName
+            };
         }
-
     }
 }

@@ -6,5 +6,6 @@ namespace EksiSozluk.Application.Interfaces.EntryInterfaces
     public interface IEntryRepository
     {
         Task<List<Entry>> GetByFilterAsync(Expression<Func<Entry, bool>> filter);
+        Task<Entry> GetSingleByFilterAsync(Expression<Func<Entry, bool>> filter);
     }
 }

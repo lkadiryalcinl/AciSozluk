@@ -7,6 +7,8 @@ using EksiSozluk.WebUI.Dto.EntryTransactionRelationDtos;
 using EksiSozluk.WebUI.Dto.EntryTransactionDtos;
 using System.Security.Claims;
 using Newtonsoft.Json.Linq;
+using EksiSozluk.WebUI.Dto.EntryDtos;
+using EksiSozluk.WebUI.Dto.ProfileDtos;
 
 namespace EksiSozluk.WebUI.Controllers
 {
@@ -24,16 +26,17 @@ namespace EksiSozluk.WebUI.Controllers
             ViewBag.ChannelName = channelName;
             ViewBag.TitleId = titleId;
             var values = await _httpClientServiceAction.InvokeAsync<TitleWithEntriesDto>($"Titles/GetTitleByFilterWithEntries?id={titleId}");
+            values.ChannelName = channelName ?? String.Empty;
             return titleId.IsNullOrEmpty() ? View() : View(values);
         }
 
-        public async Task<IActionResult> UpdateTransaction(string userId, string entryId, string actionType)
+        public async Task<IActionResult> UpdateTransaction(string userId, string entryId, string actionType, string ChannelName, string TitleId)
         {
             var values = await _httpClientServiceAction.InvokeAsync<ResultEntryTransactionRelationDto>($"EntryTransactionRelation/GetEntryTransactionRelationByFilter?userId={userId}&entryId={entryId}");
 
             if (values != null)
             {
-                var value = await _httpClientServiceAction.InvokeAsync<ResultEntryTransactionDto>($"EntryTransaction/GGetEntryTransactionsByFilter?id={values.EntryTransactionId}");
+                var value = await _httpClientServiceAction.InvokeAsync<ResultEntryTransactionDto>($"EntryTransaction/GetEntryTransactionsByFilter?id={values.EntryTransactionId}");
                 UpdateEntryTransactionDto updateEntryTransactionDto = new()
                 {
                     Id = values.EntryTransactionId,
@@ -47,7 +50,7 @@ namespace EksiSozluk.WebUI.Controllers
                 };
 
                 await _httpClientServiceAction.UpdateAsync<UpdateEntryTransactionDto>("EntryTransaction/UpdateEntryTransaction", updateEntryTransactionDto);
-                return RedirectToAction("Index", "TitleDetail");
+                return RedirectToAction("Index", "TitleDetail", new { channelName = ChannelName, titleId = TitleId });
             }
             else
             {
@@ -64,8 +67,36 @@ namespace EksiSozluk.WebUI.Controllers
                 };
 
                 await _httpClientServiceAction.CreateAsync<CreateEntryTransactionRelationDto>("EntryTransactionRelation/CreateEntryTransactionRelation", createEntryTransactionRelationDto);
-                return RedirectToAction("Index", "TitleDetail");
+                return RedirectToAction("Index", "TitleDetail", new { channelName = ChannelName, titleId = TitleId });
             }
         }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateEntry(CreateEntryDto createEntryDto)
+        {
+            var userId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            createEntryDto.UserId = userId;
+            await _httpClientServiceAction.CreateAsync<CreateEntryDto>("Entry/CreateEntry", createEntryDto);
+            return RedirectToAction("Index", "TitleDetail", new { channelName = createEntryDto.ChannelName, titleId = createEntryDto.TitleId });
+
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> UpdateEntry(string entryId)
+        {
+            var values = await _httpClientServiceAction.InvokeAsync<TitleWithEntryDto>($"Entry/GetEntryByFilter?id={entryId}");
+            return View();
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateEntry(UpdateEntryDto updateEntryDto)
+        {
+            var username = HttpContext.User.Identity.Name;
+            //await _httpClientServiceAction.CreateAsync<CreateEntryDto>("Entry/CreateEntry", createEntryDto);
+            return RedirectToAction("Index", "Profile", new { username });
+
+        }
+
     }
 }

@@ -1,5 +1,10 @@
 @using Microsoft.AspNetCore.Http
+@using System.Security.Claims
 @model List<TitleWithEntryDto>
+
+@{
+    var userId = Context.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+}
 
 @if (Model != null)
 {
@@ -52,17 +57,31 @@
                                     <li><button class="dropdown-item" type="button">entry no kopyala</button></li>
                                 </ul>
                             </div>
-                            <div class="col d-flex justify-content-center align-items-center auth-entrance-link dropdown pe-2">
-                                <a class="auth-entrance-link-text pb-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    ...
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><button class="dropdown-item" type="button">düzelt</button></li>
-                                    <li><button class="dropdown-item" type="button">modlog</button></li>
-                                    <li><button class="dropdown-item" type="button">sil</button></li>
-                                    <li><button class="dropdown-item" type="button">profilime sabitle</button></li>
-                                </ul>
-                            </div>
+                            @if (userId == titleWithEntryDto.UserId)
+                            {
+                                <div class="col d-flex justify-content-center align-items-center auth-entrance-link dropdown pe-2">
+                                    <a class="auth-entrance-link-text pb-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        ...
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" type="button" asp-action="Index" asp-controller="UpdateEntry" asp-route-EntryId="@titleWithEntryDto.Id" >düzelt</a></li>
+                                        <li><button class="dropdown-item" type="button">modlog</button></li>
+                                        <li><button class="dropdown-item" type="button">sil</button></li>
+                                        <li><button class="dropdown-item" type="button">profilime sabitle</button></li>
+                                    </ul>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="col d-flex justify-content-center align-items-center auth-entrance-link dropdown pe-2">
+                                    <a class="auth-entrance-link-text pb-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        ...
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><button class="dropdown-item" type="button">şikayet</button></li>
+                                    </ul>
+                                </div>
+                            }
                         </div>
                     </div>
                 </div>
