@@ -23,7 +23,7 @@ namespace EksiSozluk.Persistence.Repositories.EntryRepositories
 
         public async Task<Entry> GetSingleByFilterAsync(Expression<Func<Entry, bool>> filter)
         {
-            var values = await _context.Entries.Where(filter).Include(x => x.Title).FirstOrDefaultAsync();
+            var values = await _context.Entries.Where(filter).Include(x => x.Title).ThenInclude(y=> y.Channel).FirstOrDefaultAsync();
             return values;
         }
     }

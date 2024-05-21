@@ -81,21 +81,20 @@ namespace EksiSozluk.WebUI.Controllers
 
         }
 
-        [HttpGet]
+        [HttpGet("UpdateEntry")]
         public async Task<IActionResult> UpdateEntry(string entryId)
         {
-            var values = await _httpClientServiceAction.InvokeAsync<TitleWithEntryDto>($"Entry/GetEntryByFilter?id={entryId}");
-            return View();
+            var value = await _httpClientServiceAction.InvokeAsync<TitleWithEntrySingleDto>($"Entry/GetEntryByFilter?id={entryId}");
+            return View(value);
         }
 
 
-        [HttpPost]
+        [HttpPost("UpdateEntry")]
         public async Task<IActionResult> UpdateEntry(UpdateEntryDto updateEntryDto)
         {
             var username = HttpContext.User.Identity.Name;
-            //await _httpClientServiceAction.CreateAsync<CreateEntryDto>("Entry/CreateEntry", createEntryDto);
+            await _httpClientServiceAction.UpdateAsync<UpdateEntryDto>("Entry/UpdateProfileEntry", updateEntryDto);
             return RedirectToAction("Index", "Profile", new { username });
-
         }
 
     }

@@ -1,10 +1,15 @@
-﻿@model ResultProfileUpdateDto
+﻿@model TitleWithEntrySingleDto
 @{
     ViewData["Title"] = "UpdateEntry";
     Layout = "~/Views/UILayout/Index.cshtml";
 }
 
 <div class="col-12 container-fluid bg-light mt-4">
+    <div class="col mb-2">
+        <h5>
+            <a asp-controller="TitleDetail" asp-action="Index" asp-route-channelName=@Model.ChannelName asp-route-titleId=@Model.TitleId type="button" class="entry-title">@Model.TitleName</a>
+        </h5>
+    </div>
     <div class="col-12 d-flex">
         <button class="border create-entry-opt">(bkz: )</button>
         <button class="border create-entry-opt">hede</button>
@@ -12,11 +17,11 @@
         <button class="border create-entry-opt">-spoiler-</button>
         <button class="border create-entry-opt">http://</button>
     </div>
-    <form class="form" method="post" asp-action="CreateEntry">
-        <input type="hidden" name="Id" value="@Model.EntryId" />
+    <form class="form" method="post" asp-action="UpdateEntry">
+        <input type="hidden" name="Id" value="@Model.Id" />
         <div class="col-12">
             <div class="form-group">
-                <textarea class="form-control create-entry-text-area" placeholder="@Model.EntryContent" name="EntryContent"></textarea>
+                <textarea class="form-control create-entry-text-area" name="EntryContent">@Model.EntryContent</textarea>
             </div>
         </div>
         <div class="col-12 my-2">

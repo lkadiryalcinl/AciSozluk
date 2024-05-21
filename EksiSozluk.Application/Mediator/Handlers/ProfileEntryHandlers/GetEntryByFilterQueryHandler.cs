@@ -22,8 +22,10 @@ namespace EksiSozluk.Application.Mediator.Handlers.ProfileEntryHandlers
             return new GetEntryByFilterQueryResult
             {
                 Id = request.Id,
+                TitleId = value.TitleId,
                 EntryContent = value.EntryContent,
-                TitleName = value.Title.TitleName
+                TitleName = value.Title.TitleName,
+                ChannelName = value.Title.Channel.ChannelName,
             };
         }
     }
