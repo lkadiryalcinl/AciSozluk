@@ -23,7 +23,8 @@ namespace EksiSozluk.Application.Mediator.Handlers.ProfileEntryHandlers
                 TitleName = x.Title.TitleName,
                 CreatedDate = x.CreatedDate,
                 EntryContent = x.EntryContent,
-                Username = x.User.UserName
+                Username = x.User.UserName,
+                IsDelete = x.IsEntryDelete
             }).ToList();
         }
 
