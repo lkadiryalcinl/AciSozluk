@@ -25,12 +25,11 @@ namespace EksiSozluk.WebUI.Controllers
             return View(values);
         }
 
-        public async Task<IActionResult> UpdateTransaction(string userId, string entryId, string actionType)
+        public async Task<IActionResult> UpdateTransaction(UpdateTransactionParamDto updateTransactionParamDto)
         {
-            var channelName = ViewBag.ChannelName;
-            var TitleId = ViewBag.TitleId;
+            //UpdateTransactionParamDto updateTransactionParamDto = new();
 
-            var values = await _httpClientServiceAction.InvokeAsync<ResultEntryTransactionRelationDto>($"EntryTransactionRelation/GetEntryTransactionRelationByFilter?userId={userId}&entryId={entryId}");
+            var values = await _httpClientServiceAction.InvokeAsync<ResultEntryTransactionRelationDto>($"EntryTransactionRelation/GetEntryTransactionRelationByFilter?userId={updateTransactionParamDto.UserId}&entryId={updateTransactionParamDto.EntryId}");
 
             if (values != null)
             {
@@ -40,34 +39,34 @@ namespace EksiSozluk.WebUI.Controllers
                 {
                     Id = values.EntryTransactionId,
                     EntryTransactionRelationId = values.Id,
-                    IsFavorited = actionType == "favorite" ? !value.IsFavorited : value.IsFavorited,
-                    FavoritedDate = actionType == "favorite" ? DateTime.Now : value.FavoritedDate,
-                    IsDisliked = actionType == "dislike" ? !value.IsDisliked : value.IsDisliked,
-                    DisikedDate = actionType == "dislike" ? DateTime.Now : value.DisikedDate,
-                    IsLiked = actionType == "like" ? !value.IsLiked : value.IsLiked,
-                    LikedDate = actionType == "like" ? DateTime.Now : value.LikedDate
+                    IsFavorited = updateTransactionParamDto.ActionType == "favorite" ? !value.IsFavorited : value.IsFavorited,
+                    FavoritedDate = updateTransactionParamDto.ActionType == "favorite" ? DateTime.Now : value.FavoritedDate,
+                    IsDisliked = updateTransactionParamDto.ActionType == "dislike" ? !value.IsDisliked : value.IsDisliked,
+                    DisikedDate = updateTransactionParamDto.ActionType == "dislike" ? DateTime.Now : value.DisikedDate,
+                    IsLiked = updateTransactionParamDto.ActionType == "like" ? !value.IsLiked : value.IsLiked,
+                    LikedDate = updateTransactionParamDto.ActionType == "like" ? DateTime.Now : value.LikedDate
                 };
 
                 await _httpClientServiceAction.UpdateAsync<UpdateEntryTransactionDto>("EntryTransaction/UpdateEntryTransaction", updateEntryTransactionDto);
-                return RedirectToAction("Index", "TitleDetail", new { channelName, TitleId });
+                return RedirectToAction("Index", "Home", new { updateTransactionParamDto.ChannelName });
             }
             else
             {
                 CreateEntryTransactionRelationDto createEntryTransactionRelationDto = new()
                 {
-                    UserId = userId,
-                    EntryId = Guid.Parse(entryId),
-                    IsLiked = actionType == "like",
-                    LikedDate = actionType == "like" ? DateTime.Now : DateTime.MinValue,
-                    IsDisliked = actionType == "dislike",
-                    DisikedDate = actionType == "dislike" ? DateTime.Now : DateTime.MinValue,
+                    UserId = updateTransactionParamDto.UserId,
+                    EntryId = Guid.Parse(updateTransactionParamDto.EntryId),
+                    IsLiked = updateTransactionParamDto.ActionType == "like",
+                    LikedDate = updateTransactionParamDto.ActionType == "like" ? DateTime.Now : DateTime.MinValue,
+                    IsDisliked = updateTransactionParamDto.ActionType == "dislike",
+                    DisikedDate = updateTransactionParamDto.ActionType == "dislike" ? DateTime.Now : DateTime.MinValue,
 
-                    IsFavorited = actionType == "favorite",
-                    FavoritedDate = actionType == "favorite" ? DateTime.Now : DateTime.MinValue
+                    IsFavorited = updateTransactionParamDto.ActionType == "favorite",
+                    FavoritedDate = updateTransactionParamDto.ActionType == "favorite" ? DateTime.Now : DateTime.MinValue
                 };
 
                 await _httpClientServiceAction.CreateAsync<CreateEntryTransactionRelationDto>("EntryTransactionRelation/CreateEntryTransactionRelation", createEntryTransactionRelationDto);
-                return RedirectToAction("Index", "TitleDetail", new { channelName, TitleId });
+                return RedirectToAction("Index", "Home", new { updateTransactionParamDto.ChannelName });
             }
         }
     }

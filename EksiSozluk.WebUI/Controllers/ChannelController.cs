@@ -36,7 +36,9 @@ namespace EksiSozluk.WebUI.Controllers
                 });
             });
             }
-            return View(values);
+
+            var orderedValues = values.OrderByDescending(x => x.IsFollowedByUser).ToList();
+            return View(orderedValues);
         }
 
         public async Task<IActionResult> UnfollowChannel(string channelId)

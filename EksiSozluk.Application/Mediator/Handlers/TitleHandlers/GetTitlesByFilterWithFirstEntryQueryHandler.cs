@@ -2,6 +2,7 @@
 using EksiSozluk.Application.Interfaces.TopicInterfaces;
 using EksiSozluk.Application.Mediator.Queries.TitleQueries;
 using EksiSozluk.Application.Mediator.Results.TitleResults;
+using EksiSozluk.Domain.Entities;
 using MediatR;
 
 
@@ -19,7 +20,25 @@ namespace EksiSozluk.Application.Mediator.Handlers.TitleHandlers
 
         public async Task<List<GetTitlesByFilterWithFirstEntryQueryResult>> Handle(GetTitlesByFilterWithFirstEntryQuery request, CancellationToken cancellationToken)
         {
-            var values = await _topicRepository.GetByFilterWithFirstEntryAsync(x => x.Channel.Id.ToString() == request.Id || x.Channel.ChannelName == request.Id);
+            List<Title> values = new();
+            //|| request.ChannelName != "çaylaklar" || request.ChannelName != "takip"
+            if (request.Id == "debe")
+            {
+                values = await _topicRepository.GetByTopLikedEntriesFromYesterdayAsync();
+            }
+            else if (request.Id == "gündem")
+            {
+                values = await _topicRepository.GetByDailyEntryCountAsync();
+            }
+            else if (request.Id == "bugün")
+            {
+                values = await _topicRepository.GetByLastEntryAsync();
+            }
+            else
+            {
+                values = await _topicRepository.GetByFilterWithFirstEntryAsync(x => x.Channel.Id.ToString() == request.Id || x.Channel.ChannelName == request.Id);
+            }
+
 
             var results = values.Select(x => new GetTitlesByFilterWithFirstEntryQueryResult
             {
