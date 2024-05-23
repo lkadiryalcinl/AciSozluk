@@ -12,7 +12,7 @@ namespace EksiSozluk.WebUI.Services
         {
             _httpClientFactory = httpClientFactory;
             _httpClient = _httpClientFactory.CreateClient();
-            _httpClient.BaseAddress = new Uri("https://eksisozlukwebapi.azurewebsites.net/api/");
+            _httpClient.BaseAddress = new Uri("https://localhost:44390/api/");
         }
 
         public async Task<IViewComponentResult> InvokeAsync<TDto>(string path)

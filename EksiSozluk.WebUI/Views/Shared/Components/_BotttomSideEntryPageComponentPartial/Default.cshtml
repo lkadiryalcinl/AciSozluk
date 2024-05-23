@@ -64,9 +64,9 @@
                                         ...
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" type="button" asp-action="Index" asp-controller="UpdateEntry" asp-route-entryId="@titleWithEntryDto.Id" >düzelt</a></li>
+                                        <li><a class="dropdown-item" type="button" asp-controller="UpdateEntry" asp-action="Index" asp-route-entryId="@titleWithEntryDto.Id">düzelt</a></li>
                                         <li><button class="dropdown-item" type="button">modlog</button></li>
-                                        <li><button class="dropdown-item" type="button">sil</button></li>
+                                        <li><a class="dropdown-item" type="button" asp-controller="Profile" asp-action="RemoveEntry" asp-route-id="@titleWithEntryDto.Id">sil</a></li>
                                         <li><button class="dropdown-item" type="button">profilime sabitle</button></li>
                                     </ul>
                                 </div>

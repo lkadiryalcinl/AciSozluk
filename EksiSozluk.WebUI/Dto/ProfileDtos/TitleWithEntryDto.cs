@@ -8,6 +8,6 @@
         public string EntryContent { get; set; }
         public DateTime CreatedDate { get; set; }
         public string UserName { get; set; }
-        public bool IsDelete { get; set; } = false;
+        public bool IsDelete { get; set; }
     }
 }
