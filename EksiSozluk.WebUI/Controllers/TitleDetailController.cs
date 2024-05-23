@@ -26,6 +26,7 @@ namespace EksiSozluk.WebUI.Controllers
             ViewBag.ChannelName = channelName;
             ViewBag.TitleId = titleId;
             var values = await _httpClientServiceAction.InvokeAsync<TitleWithEntriesDto>($"Titles/GetTitleByFilterWithEntries?id={titleId}");
+            values.EntryList = values.EntryList.Where(x => !x.IsEntryDelete).ToList();
             values.ChannelName = channelName ?? String.Empty;
             return titleId.IsNullOrEmpty() ? View() : View(values);
         }

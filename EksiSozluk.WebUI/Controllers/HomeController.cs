@@ -22,7 +22,8 @@ namespace EksiSozluk.WebUI.Controllers
             var values = channelName.IsNullOrEmpty() ?
                 await _httpClientServiceAction.InvokeAsync<List<TitlesWithFirstEntryDto>>($"Titles/GetTitlesByFilterWithFirstEntry?id=debe")
                 : await _httpClientServiceAction.InvokeAsync<List<TitlesWithFirstEntryDto>>($"Titles/GetTitlesByFilterWithFirstEntry?id={channelName}");
-            return View(values);
+            var sortedValues = values.Where(x => !x.FirstEntry.IsEntryDelete).ToList();
+            return View(sortedValues);
         }
 
         public async Task<IActionResult> UpdateTransaction(UpdateTransactionParamDto updateTransactionParamDto)
