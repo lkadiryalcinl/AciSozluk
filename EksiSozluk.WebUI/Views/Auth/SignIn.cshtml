@@ -15,10 +15,12 @@
                         <div class="col-12 mb-2">
                             <label class="col-12 mb-2 mt-2">e-mail adresi</label>
                             <input class="col-12 py-1" type="email" name="Email"/>
+                            <span asp-validation-for="Email" class="text-danger"></span>
                         </div>
                         <div class="col-12 mb-2">
                             <label class="col-12 mb-2">şifre</label>
                             <input class="col-12 py-1" type="password" name="Password" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="col-lg-6">

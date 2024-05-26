@@ -22,6 +22,7 @@
         <div class="col-12">
             <div class="form-group">
                 <textarea class="form-control create-entry-text-area" name="EntryContent">@Model.EntryContent</textarea>
+                <span asp-validation-for="EntryContent" class="text-danger"></span>
             </div>
         </div>
         <div class="col-12 my-2">

@@ -60,6 +60,10 @@ builder.Host.ConfigureContainer<ContainerBuilder>(
 //autofac implementation
 
 
+builder.Services.AddValidatorsDI();
+builder.Services.AddFluentValidationDI();
+//fluentValidation DI's
+
 var app = builder.Build();
 
 

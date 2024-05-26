@@ -17,16 +17,19 @@
                         <div class="col-12 mb-2 mt-2">
                             <label class="col-12 mb-2 mt-2">nick</label>
                             <input class="col-12 py-1" type="text" asp-for="UserName" />
+                            <span asp-validation-for="UserName" class="text-danger"></span>
                         </div>
 
                         <div class="col-12 mb-2">
                             <label class="col-12 mb-2 mt-2">e-mail adresi</label>
                             <input class="col-12 py-1" type="email" asp-for="Email" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
                         </div>
 
                         <div class="col-12 mb-2">
                             <label class="col-12 mb-2">doğum tarihi</label>
                             <input type="date" class="col-8 py-1" id="date" asp-for="BirthDate">
+                            <span asp-validation-for="BirthDate" class="text-danger"></span>
                         </div>
 
                         <div class="col-12 mb-4 mt-2">
@@ -39,6 +42,7 @@
                                     <option value="diğer">diğer</option>
                                 </select>
                             </div>
+                            <span asp-validation-for="Gender" class="text-danger"></span>
                         </div>
                         <div class="col-12 mt-2 mb-2">
                             <p class="col-11" style="color:#333333;">
@@ -59,6 +63,7 @@
                                 bir küçük harf
                                 rakam içermelidir.
                             </div>
+                            <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
 
                         <div class="col-12 mb-2">
@@ -70,6 +75,7 @@
                                 en az 1 rakam
                                 en az 8 karakter
                             </div>
+                            <span asp-validation-for="PasswordAgain" class="text-danger"></span>
                         </div>
 
                         <div class="form-check mt-4 mb-4">
@@ -78,6 +84,7 @@
                                 ekşi sözlük kullanıcı sözleşmesini okudum ve kabul ediyorum
                             </label>
                         </div>
+                        <span asp-validation-for="isAggrCheck" class="text-danger"></span>
 
                         <div class="col-12 mb-2">
                             <button class="btn btn-eksi white col-12 py-2" type="submit">kayıt ol işte böyle</button>
