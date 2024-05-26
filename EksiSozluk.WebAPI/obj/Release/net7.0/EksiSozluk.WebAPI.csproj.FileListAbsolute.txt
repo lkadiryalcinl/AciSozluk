@@ -104,3 +104,6 @@ C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\obj\Release\net7.0\refint\Eks
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\obj\Release\net7.0\EksiSozluk.WebAPI.pdb
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\obj\Release\net7.0\EksiSozluk.WebAPI.genruntimeconfig.cache
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\obj\Release\net7.0\ref\EksiSozluk.WebAPI.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\bin\Release\net7.0\FluentValidation.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\bin\Release\net7.0\FluentValidation.AspNetCore.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\bin\Release\net7.0\FluentValidation.DependencyInjectionExtensions.dll

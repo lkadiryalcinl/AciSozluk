@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GQkT55Tt9Ll73OIDTcY1QccCICdXNfiUrmOG7OHXxCYqzwEEUzvL13yUdh+0GFvfhxqETpqDpupW3d+DlxMPkw==",
+  "dgSpecHash": "1IqSjjb95jqVQXlnMMNO2ThzrCi4CahNrV5EIq1mmobv8SxsJS+YaZPuZgnrvk27pq6ashyVv2XFG6N8FNQTTg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebAPI\\EksiSozluk.WebAPI.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,9 @@
     "C:\\Users\\ASUS\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.1\\fluentvalidation.dependencyinjectionextensions.11.9.1.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",

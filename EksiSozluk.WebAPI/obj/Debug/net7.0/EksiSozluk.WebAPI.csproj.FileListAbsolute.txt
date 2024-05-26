@@ -210,3 +210,6 @@ C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebAPI\obj\Debug\net7.0
 C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebAPI\obj\Debug\net7.0\EksiSozluk.WebAPI.pdb
 C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebAPI\obj\Debug\net7.0\EksiSozluk.WebAPI.genruntimeconfig.cache
 C:\Users\akosk\OneDrive\Masaüstü\EksiSozluk\EksiSozluk.WebAPI\obj\Debug\net7.0\ref\EksiSozluk.WebAPI.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll

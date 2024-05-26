@@ -8,6 +8,9 @@ C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\obj\Release\net7.0\PubTmp\Out
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\obj\Release\net7.0\PubTmp\Out\Autofac.Extensions.DependencyInjection.dll
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\obj\Release\net7.0\PubTmp\Out\Azure.Core.dll
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\obj\Release\net7.0\PubTmp\Out\Azure.Identity.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\obj\Release\net7.0\PubTmp\Out\FluentValidation.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\obj\Release\net7.0\PubTmp\Out\FluentValidation.AspNetCore.dll
+C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\obj\Release\net7.0\PubTmp\Out\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\obj\Release\net7.0\PubTmp\Out\MediatR.dll
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\obj\Release\net7.0\PubTmp\Out\MediatR.Contracts.dll
 C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.WebAPI\obj\Release\net7.0\PubTmp\Out\MediatR.Extensions.Autofac.DependencyInjection.dll
