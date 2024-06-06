@@ -1,7 +1,7 @@
-## Ekşi Sözlük
+## Acı Sözlük
 ___
 
-**Projenin Tanımı** : Bu proje türkiye'nin ünlü internet sözlüğü Ekşi Sözlük'ün klonudur. Burada herkes konu açabilir, içerik ekleyebilir ve yorum yapabilir. Bu projede bulunan içerikler, kullanıcıların paylaşımları ve yorumlarıyla şekillenir. Ayrıca profil kısmından kullanıcı kendi bilgilerini güncelleyebilir yapmış olduğu paylaşımları daha rahat ve etkili bir şekilde yönetebilir.
+**Projenin Tanımı** : Bu proje türkiye'nin ünlü internet sözlüğü Ekşi Sözlük'ün klonudur ve bir eğitim projesidir. Herhangi bir gelir amacı yoktur. Burada herkes konu açabilir, içerik ekleyebilir ve yorum yapabilir. Bu projede bulunan içerikler, kullanıcıların paylaşımları ve yorumlarıyla şekillenir. Ayrıca profil kısmından kullanıcı kendi bilgilerini güncelleyebilir yapmış olduğu paylaşımları daha rahat ve etkili bir şekilde yönetebilir.
 
 **Proje Kategorisi** : Katılımcı Sözlük
 
