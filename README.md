@@ -7,7 +7,7 @@ ___
 
 **Referans Uygulama** : [Ekşi Sözlük](https://eksisozluk.com/)
 
-**Uygulama Adresi** : [Ekşi Sözlük]()
+**Uygulama Adresi** : [Acı Sözlük]()
 
 **Grup Adı** : MKA Yazılım
 
