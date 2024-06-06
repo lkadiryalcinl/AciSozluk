@@ -36,7 +36,7 @@
     }
 
 .eksi-nav-top-line {
-    border: 2px solid #81C14B;
+    border: 2px solid #92000A;
 }
 
 .auth-entrance-link {
@@ -57,7 +57,7 @@
 
 .auth-entrance-link-green {
     display: inline-block;
-    background-color: #81C14B;
+    background-color: #92000A;
     text-align: center;
     border-radius: 10%;
     justify-content: center;
@@ -76,7 +76,7 @@
 .auth-entrance-link-white {
     display: inline-block;
     background-color: white;
-    border: 1px solid #81C14B;
+    border: 1px solid #92000A;
     text-align: center;
     border-radius: 10%;
     justify-content: center;
@@ -85,16 +85,16 @@
 
     .auth-entrance-link-white:hover {
         text-decoration: underline;
-        text-decoration-color: #5fa042;
+        text-decoration-color: #92000A;
     }
 
 .auth-entrance-link-white-text {
-    color: #81C14B;
+    color: #92000A;
     text-decoration:none;
 }
 
     .auth-entrance-link-white-text :hover {
-        color: #5fa042;
+        color: #92000A;
     }
 
 .auth-entrance-link-dropdown {
@@ -112,8 +112,8 @@
 }
 
 .btn-eksi {
-    background-color: #81C14B;
-    border: #81C14B;
+    background-color: #92000A;
+    border: #92000A;
     padding-left: 9px;
     padding-right: 9px;
     padding-top: 3px;
@@ -122,17 +122,17 @@
 }
 
     .btn-eksi:hover {
-        background-color: #81C14B;
+        background-color: #92000A;
     }
 
 .input-eksi {
     border: 1px solid;
-    border-color: #81C14B;
+    border-color: #92000A;
     border-radius: 4px 0 0 4px;
 }
 
     .input-eksi:focus {
-        outline: 0px solid #81C14B;
+        outline: 0px solid #92000A;
         font-size: 14px;
     }
 
@@ -168,9 +168,9 @@
 }
 
     .nav-link-custom:hover {
-        color: #81C14B;
+        color: #92000A;
         font-weight: bolder;
-        border-bottom: 6px solid #81C14B;
+        border-bottom: 6px solid #92000A;
         margin-bottom: -16px;
     }
 
@@ -210,7 +210,7 @@
 }
 
 .text-eksi {
-    color: #81C14B;
+    color: #92000A;
 }
 
 .text-eksi-gray {
@@ -218,7 +218,7 @@
 }
 
 .text-eksi:hover {
-    text-decoration: #81C14B underline;
+    text-decoration: #92000A underline;
 }
 
 .text-eksi-gray:hover {
@@ -251,7 +251,7 @@
 
     .fav:hover,
     .up:hover {
-        color: #78c056;
+        color: #92000A;
     }
 
 .entry-number {
@@ -260,8 +260,8 @@
 }
 
     .entry-number:hover {
-        text-decoration: #81C14B underline;
-        color: #81C14B;
+        text-decoration: #92000A underline;
+        color: #92000A;
     }
 
 .person-name {
@@ -297,8 +297,8 @@
 }
 
     .follow-number:hover {
-        text-decoration: #78c056 underline;
-        color: #78c056;
+        text-decoration: #92000A underline;
+        color: #92000A;
     }
 
 .author {
@@ -352,12 +352,12 @@
 
 .button-color {
     text-decoration: none;
-    background-color: #78c056;
+    background-color: #92000A;
 }
 
     .button-color:hover {
         text-decoration: none;
-        background-color: #5fa042;
+        background-color: #92000A;
     }
 
 .create-entry-opt {
@@ -392,12 +392,12 @@
     border-radius: 0.25rem;
     border: unset;
     padding: 0.5rem 0.3rem 0.5rem 0.3rem;
-    background-color: #78c056;
+    background-color: #92000A;
     color: white;
 }
 
     .create-entry-button:hover {
-        background-color: #5fa042;
+        background-color: #92000A;
     }
 
 .channel-hover {
