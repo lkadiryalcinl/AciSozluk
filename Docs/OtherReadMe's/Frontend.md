@@ -1,6 +1,6 @@
 ASP.NET Core MVC Çatı olarak kullanıldı.
 
-Tasarım Linki : [Ekşi Sözlük](https://choosealicense.com/licenses/mit/)
+Tasarım Linki : [Acı Sözlük](https://choosealicense.com/licenses/mit/)
 
 # Kadir Yalçın Tasarımlar
 1. Üst Menü

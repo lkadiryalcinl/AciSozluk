@@ -1228,24 +1228,24 @@
           }
         }
       },
-      "EksiSozluk.Application/1.0.0": {
+      "AciSozluk.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "EksiSozluk.Domain": "1.0.0",
+          "AciSozluk.Domain": "1.0.0",
           "MediatR": "12.2.0",
           "MediatR.Extensions.Autofac.DependencyInjection": "12.0.0",
           "Microsoft.Data.SqlClient": "5.2.0",
           "Microsoft.Extensions.Configuration": "7.0.0"
         },
         "compile": {
-          "bin/placeholder/EksiSozluk.Application.dll": {}
+          "bin/placeholder/AciSozluk.Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/EksiSozluk.Application.dll": {}
+          "bin/placeholder/AciSozluk.Application.dll": {}
         }
       },
-      "EksiSozluk.Domain/1.0.0": {
+      "AciSozluk.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -1253,10 +1253,10 @@
           "Microsoft.Data.SqlClient": "5.2.0"
         },
         "compile": {
-          "bin/placeholder/EksiSozluk.Domain.dll": {}
+          "bin/placeholder/AciSozluk.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/EksiSozluk.Domain.dll": {}
+          "bin/placeholder/AciSozluk.Domain.dll": {}
         }
       }
     }
@@ -3273,21 +3273,21 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "EksiSozluk.Application/1.0.0": {
+    "AciSozluk.Application/1.0.0": {
       "type": "project",
-      "path": "../EksiSozluk.Application/EksiSozluk.Application.csproj",
-      "msbuildProject": "../EksiSozluk.Application/EksiSozluk.Application.csproj"
+      "path": "../EksiSozluk.Application/AciSozluk.Application.csproj",
+      "msbuildProject": "../EksiSozluk.Application/AciSozluk.Application.csproj"
     },
-    "EksiSozluk.Domain/1.0.0": {
+    "AciSozluk.Domain/1.0.0": {
       "type": "project",
-      "path": "../EksiSozluk.Domain/EksiSozluk.Domain.csproj",
-      "msbuildProject": "../EksiSozluk.Domain/EksiSozluk.Domain.csproj"
+      "path": "../EksiSozluk.Domain/AciSozluk.Domain.csproj",
+      "msbuildProject": "../EksiSozluk.Domain/AciSozluk.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "EksiSozluk.Application >= 1.0.0",
-      "EksiSozluk.Domain >= 1.0.0",
+      "AciSozluk.Application >= 1.0.0",
+      "AciSozluk.Domain >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.17",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 7.0.17",
       "Microsoft.Data.SqlClient >= 5.2.0",
@@ -3304,11 +3304,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.Persistence\\EksiSozluk.Persistence.csproj",
-      "projectName": "EksiSozluk.Persistence",
-      "projectPath": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.Persistence\\EksiSozluk.Persistence.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\AciSozluk\\EksiSozluk.Persistence\\AciSozluk.Persistence.csproj",
+      "projectName": "AciSozluk.Persistence",
+      "projectPath": "C:\\Users\\ASUS\\Desktop\\AciSozluk\\EksiSozluk.Persistence\\AciSozluk.Persistence.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.Persistence\\obj\\",
+      "outputPath": "C:\\Users\\ASUS\\Desktop\\AciSozluk\\EksiSozluk.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3330,11 +3330,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.Application\\EksiSozluk.Application.csproj": {
-              "projectPath": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.Application\\EksiSozluk.Application.csproj"
+            "C:\\Users\\ASUS\\Desktop\\AciSozluk\\EksiSozluk.Application\\AciSozluk.Application.csproj": {
+              "projectPath": "C:\\Users\\ASUS\\Desktop\\AciSozluk\\EksiSozluk.Application\\AciSozluk.Application.csproj"
             },
-            "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.Domain\\EksiSozluk.Domain.csproj": {
-              "projectPath": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.Domain\\EksiSozluk.Domain.csproj"
+            "C:\\Users\\ASUS\\Desktop\\AciSozluk\\EksiSozluk.Domain\\AciSozluk.Domain.csproj": {
+              "projectPath": "C:\\Users\\ASUS\\Desktop\\AciSozluk\\EksiSozluk.Domain\\AciSozluk.Domain.csproj"
             }
           }
         }

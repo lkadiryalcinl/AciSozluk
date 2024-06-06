@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H7CXWq4gMvcY7RNp4YJUNhcMgQg8VhLfiVcuVyi4MP+k6jbf0F3oRWIkB9aiEW8CssXZXMl28w8XbCHNqT5ncA==",
+  "dgSpecHash": "xcehSAjjtfaKk5Ey6i8+nUtHmG9/KlvfiSUC8K18Zjk/qIrlpR739ZM/FeixZ9/DoCxDope5B8vnnR9knJAkrA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.Domain\\EksiSozluk.Domain.csproj",
+  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\AciSozluk\\EksiSozluk.Domain\\AciSozluk.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

@@ -1,7 +1,7 @@
 ## Acı Sözlük
 ___
 
-**Projenin Tanımı** : Bu proje türkiye'nin ünlü internet sözlüğü Ekşi Sözlük'ün klonudur ve bir eğitim projesidir. Herhangi bir gelir amacı yoktur. Burada herkes konu açabilir, içerik ekleyebilir ve yorum yapabilir. Bu projede bulunan içerikler, kullanıcıların paylaşımları ve yorumlarıyla şekillenir. Ayrıca profil kısmından kullanıcı kendi bilgilerini güncelleyebilir yapmış olduğu paylaşımları daha rahat ve etkili bir şekilde yönetebilir.
+**Projenin Tanımı** : Bu proje (Acı Sözlük) türkiye'nin ünlü internet sözlüğü Ekşi Sözlük'ün klonudur ve bir eğitim projesidir. Herhangi bir gelir amacı yoktur. Burada herkes konu açabilir, içerik ekleyebilir ve yorum yapabilir. Bu projede bulunan içerikler, kullanıcıların paylaşımları ve yorumlarıyla şekillenir. Ayrıca profil kısmından kullanıcı kendi bilgilerini güncelleyebilir yapmış olduğu paylaşımları daha rahat ve etkili bir şekilde yönetebilir.
 
 **Proje Kategorisi** : Katılımcı Sözlük
 
@@ -19,6 +19,6 @@ ___
 4. [Durum Senaryoları](/Docs/OtherReadMe's/Durum_Senaryolari.md)
 5. [Veritabanı Diyagramı](/Docs/OtherReadMe's/Veritabani_Diyagrami.md)
 6. [Front-End](/Docs/OtherReadMe's/Frontend.md)
-7. [Back-End](https://eksisozluk.com/)
+7. [Back-End](/Docs/OtherReadMe's/Backend.md)
 8. [Test](https://eksisozluk.com/)
 9. [Geliştirici ve Kullanıcı Dökümantasyonları](https://eksisozluk.com/)

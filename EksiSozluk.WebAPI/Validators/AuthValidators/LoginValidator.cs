@@ -5,17 +5,18 @@ namespace EksiSozluk.WebAPI.Validators.AuthValidators
 {
     public class LoginValidator : AbstractValidator<LoginDto>
     {
-        public LoginValidator() 
+        public LoginValidator()
         {
             RuleFor(x => x.Email)
-                .NotEmpty().NotNull().WithMessage("email kısmı boş olamaz.")
-                .EmailAddress().WithMessage("email formatı yanlış")
+                .NotEmpty().WithMessage("email kısmı boş olamaz.")
+                .EmailAddress().WithMessage("email formatı yanlış") 
                 .MinimumLength(11).WithMessage("en az 11 karakter olmalı")
                 .MaximumLength(40).WithMessage("en fazla 40 karakter olmalı");
+
             RuleFor(x => x.Password)
-                .NotEmpty().NotNull().WithMessage("şifre kısmı boş olamaz.")
+                .NotEmpty().WithMessage("şifre kısmı boş olamaz.")
                 .MinimumLength(8).WithMessage("en az 8 karakter olmalı")
                 .MaximumLength(40).WithMessage("en fazla 40 karakter olmalı");
-        } 
+        }
     }
 }

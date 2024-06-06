@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ie781HFz5uR+tprHDhWTpRyp2UrnAoj3JhxUKZgYOXYZaBF0o6kqACQgTIMEcdE9UoVWYP5C3opSU3RLS4D5tg==",
+  "dgSpecHash": "ubd9pg41yzzcrDnUG6+PTJQZcEqCPgnX2BJ4+xCuzRNXvgc4OThZBXuMN7qGDoGSgP/lQOXbo1ru4VaobR1bKA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.Application\\EksiSozluk.Application.csproj",
+  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\AciSozluk\\EksiSozluk.Application\\AciSozluk.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\autofac\\8.0.0\\autofac.8.0.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

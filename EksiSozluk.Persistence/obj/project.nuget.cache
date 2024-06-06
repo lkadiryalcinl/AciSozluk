@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qd54Vv7aiNR1ALwPHYI4RD7iyk6IkjOJKtuAkEYxBDcEW7xcxkvNfw6C4YmuYcIJc1Sn3Z/25dwmrvYu8wCzxg==",
+  "dgSpecHash": "qKDZVevIprbaM3R3U+LDG1zqXT3Yw8GD2798FuB7lGAzz+v2EZK8ZYKBjsaX49M8S8/uzuA2HQKGyGTMrvzcFg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.Persistence\\EksiSozluk.Persistence.csproj",
+  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\AciSozluk\\EksiSozluk.Persistence\\AciSozluk.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\autofac\\8.0.0\\autofac.8.0.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

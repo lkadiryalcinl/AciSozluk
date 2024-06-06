@@ -26,7 +26,7 @@ namespace EksiSozluk.WebAPI.Controllers
 
         [HttpPost]
         [Route("register")]
-        public async Task<IActionResult> Register([FromBody] RegisterDto registerDto)
+        public async Task<IActionResult> Register(RegisterDto registerDto)
         {
             var registerResult = await _authRepository.RegisterAsync(registerDto);
 
@@ -39,7 +39,7 @@ namespace EksiSozluk.WebAPI.Controllers
         //Route ---> login
         [HttpPost]
         [Route("login")]
-        public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
+        public async Task<IActionResult> Login(LoginDto loginDto)
         {
             var loginResult = await _authRepository.LoginAsync(loginDto);
             if (loginResult.IsSucceed)
@@ -50,7 +50,7 @@ namespace EksiSozluk.WebAPI.Controllers
         //Route ---> make-author
         [HttpPost]
         [Route("make-author")]
-        public async Task<IActionResult> MakeAuthor([FromBody] UpdatePermissionDto updatePermissionDto)
+        public async Task<IActionResult> MakeAuthor(UpdatePermissionDto updatePermissionDto)
         {
             var operationResult = await _authRepository.MakeAuthorAsync(updatePermissionDto);
 

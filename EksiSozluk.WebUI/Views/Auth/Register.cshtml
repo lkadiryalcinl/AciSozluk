@@ -36,7 +36,7 @@
                             <label class="col-12 mb-2">cinsiyet</label>
                             <div class="col-8">
                                 <select class="form-select" asp-for="Gender">
-                                    <option value="seçiniz">seçiniz</option>
+                                    <option value="">seçiniz</option>
                                     <option value="erkek">erkek</option>
                                     <option value="kadın">kadın</option>
                                     <option value="diğer">diğer</option>
@@ -44,6 +44,7 @@
                             </div>
                             <span asp-validation-for="Gender" class="text-danger"></span>
                         </div>
+
                         <div class="col-12 mt-2 mb-2">
                             <p class="col-11" style="color:#333333;">
                                 <i class="col-1 bi bi-exclamation-triangle"></i>
@@ -67,7 +68,7 @@
                         </div>
 
                         <div class="col-12 mb-2">
-                            <label class="col-12 mb-2">şifre</label>
+                            <label class="col-12 mb-2">şifre tekrar</label>
                             <input class="col-12 py-1" type="password" asp-for="PasswordAgain" />
                             <div class="col-3" style="color:#888888; font-size:small;">
                                 en az 1 küçük harf

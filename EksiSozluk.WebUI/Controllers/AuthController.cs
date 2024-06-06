@@ -29,21 +29,32 @@ namespace EksiSozluk.WebUI.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterDto registerDto)
         {
-            if (registerDto.Password == registerDto.PasswordAgain && registerDto.isAggrCheck==true)
+            var response = await _httpClientServiceAction.CreateAsyncVal<RegisterDto>("Auths/register", registerDto);
+            if (response.IsSuccessStatusCode)
             {
-                var isSucceded = await _httpClientServiceAction.CreateAsync<RegisterDto>("Auths/register", registerDto);
-                return isSucceded ? RedirectToAction("SignIn", "Auth") : View();
+                return RedirectToAction("SignIn", "Auth");
             }
-            return View();
+            else
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                var validationErrors = JsonSerializer.Deserialize<ValidationProblemDetails>(errorContent);
+                if (validationErrors != null)
+                {
+                    foreach (var error in validationErrors.Errors)
+                    {
+                        ModelState.AddModelError(error.Key, string.Join(" ", error.Value));
+                    }
+                }
+                return View(registerDto);
+            }
         }
-
-
 
         [HttpGet]
         public IActionResult SignIn()
         {
             return View();
         }
+
 
         [HttpPost]
         public async Task<IActionResult> SignIn(LoginDto loginDto)
@@ -65,7 +76,7 @@ namespace EksiSozluk.WebUI.Controllers
 
                     if (tokenModel.Message != null)
                     {
-                        claims.Add(new Claim("carbooktoken", tokenModel.Message));
+                        claims.Add(new Claim("acisozluktoken", tokenModel.Message));
                         var claimsIdentity = new ClaimsIdentity(claims, JwtBearerDefaults.AuthenticationScheme);
                         var authProps = new AuthenticationProperties
                         {
@@ -78,10 +89,21 @@ namespace EksiSozluk.WebUI.Controllers
                     }
                 }
             }
+            else
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                var validationErrors = JsonSerializer.Deserialize<ValidationProblemDetails>(errorContent);
+                if (validationErrors != null)
+                {
+                    foreach (var error in validationErrors.Errors)
+                    {
+                        ModelState.AddModelError(error.Key, string.Join(" ", error.Value));
+                    }
+                }
+            }
 
-            return View();
+            return View(loginDto);
         }
-
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync();

@@ -45,7 +45,7 @@ builder.Services.AddAuthAndJwtBearerEx(builder.Configuration);
 //Add Cors
 builder.Services.AddCors(opt =>
 {
-    opt.AddPolicy("EksiSozukCors", opts =>
+    opt.AddPolicy("AciSozlukCors", opts =>
     {
         opts.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
     });
@@ -66,6 +66,7 @@ builder.Services.AddFluentValidationDI();
 
 var app = builder.Build();
 
+app.MapGet("/api", () => "API is working!");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -76,7 +77,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseAuthentication();
 
-app.UseCors("EksiSozukCors");
+app.UseCors("AciSozlukCors");
 
 app.UseHttpsRedirection();
 

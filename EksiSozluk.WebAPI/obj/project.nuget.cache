@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1IqSjjb95jqVQXlnMMNO2ThzrCi4CahNrV5EIq1mmobv8SxsJS+YaZPuZgnrvk27pq6ashyVv2XFG6N8FNQTTg==",
+  "dgSpecHash": "TJL58uqE+zWe/mHXw+YkTaU7EFwzcIMNFnz4CN5NFYyQ/hk+VQM794TIkQyClCUjAlobnT/KKSMoc7dx+iD/sQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\EksiSozluk\\EksiSozluk.WebAPI\\EksiSozluk.WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\AciSozluk\\EksiSozluk.WebAPI\\AciSozluk.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\autofac\\8.0.0\\autofac.8.0.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",

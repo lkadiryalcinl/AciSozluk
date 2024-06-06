@@ -8,6 +8,6 @@
         public string PasswordAgain { get; set; }
         public string Gender { get; set; }
         public DateTime BirthDate { get; set; }
-        public DateTime isAggrCheck { get; set; }
+        public bool isAggrCheck { get; set; }
     }
 }
