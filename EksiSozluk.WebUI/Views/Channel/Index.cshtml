@@ -1,0 +1,45 @@
+﻿@model List<ResultChannelsDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/UILayout/Index.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-10 full">
+            <div class="row">
+                <div class="col-12 row m-1 mb-2">
+                    <h5>kanallar</h5>
+                    <label>"bugün"de takip etmek istediğiniz kanallar</label>
+                </div>
+                @foreach (var item in Model)
+                {
+                    <div class="col-12 row mx-1 py-2 channel-hover">
+                        <div class="col-10">
+                            <div class="col-12">
+                                <a asp-controller="Home" asp-action="Index" asp-route-channelName="@item.ChannelName" class="auth-link" style="color:black"><h5>@item.ChannelName</h5></a>
+                            </div>
+                            <div class="col-12">
+                                <label>@item.ChannelDescription</label>
+                            </div>
+                        </div>
+                        @if (!item.IsFollowedByUser)
+                        {
+                            <div class="col-2 d-flex justify-content-center align-items-center auth-entrance-link-green my-2 rounded">
+                                <a asp-controller="Channel" asp-action="FollowChannel" asp-route-channelId="@item.Id" class="auth-entrance-link-green-text">takip et</a>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="col-2 d-flex justify-content-center align-items-center auth-entrance-link-white my-2 rounded">
+                                <a asp-controller="Channel" asp-action="UnfollowChannel" asp-route-channelId="@item.Id" class="auth-entrance-link-white-text">takibi bırak</a>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+        <!-- col-10 bitişi  -->
+    </div>
+</div>
+

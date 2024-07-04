@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>EksiSozluk.Application</id>
+    <version>1.0.0</version>
+    <authors>EksiSozluk.Application</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="cb7ab4af1ce82cfa98bd65da3b171043a2e95d2a" />
+    <dependencies>
+      <group targetFramework="net7.0">
+        <dependency id="MediatR" version="12.2.0" exclude="Build,Analyzers" />
+        <dependency id="MediatR.Extensions.Autofac.DependencyInjection" version="12.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Data.SqlClient" version="5.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration" version="7.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\ASUS\Desktop\EksiSozluk\EksiSozluk.Application\bin\Debug\net7.0\EksiSozluk.Application.dll" target="lib\net7.0\EksiSozluk.Application.dll" />
+  </files>
+</package>

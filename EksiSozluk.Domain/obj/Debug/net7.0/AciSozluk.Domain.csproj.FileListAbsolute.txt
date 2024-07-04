@@ -1,0 +1,13 @@
+C:\Users\ASUS\Desktop\AciSozluk\EksiSozluk.Domain\bin\Debug\net7.0\AciSozluk.Domain.deps.json
+C:\Users\ASUS\Desktop\AciSozluk\EksiSozluk.Domain\bin\Debug\net7.0\AciSozluk.Domain.dll
+C:\Users\ASUS\Desktop\AciSozluk\EksiSozluk.Domain\bin\Debug\net7.0\AciSozluk.Domain.pdb
+C:\Users\ASUS\Desktop\AciSozluk\EksiSozluk.Domain\obj\Debug\net7.0\AciSozluk.Domain.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\AciSozluk\EksiSozluk.Domain\obj\Debug\net7.0\AciSozluk.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\AciSozluk\EksiSozluk.Domain\obj\Debug\net7.0\AciSozluk.Domain.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\AciSozluk\EksiSozluk.Domain\obj\Debug\net7.0\AciSozluk.Domain.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\AciSozluk\EksiSozluk.Domain\obj\Debug\net7.0\AciSozluk.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\AciSozluk\EksiSozluk.Domain\obj\Debug\net7.0\AciSozluk.Domain.sourcelink.json
+C:\Users\ASUS\Desktop\AciSozluk\EksiSozluk.Domain\obj\Debug\net7.0\AciSozluk.Domain.dll
+C:\Users\ASUS\Desktop\AciSozluk\EksiSozluk.Domain\obj\Debug\net7.0\refint\AciSozluk.Domain.dll
+C:\Users\ASUS\Desktop\AciSozluk\EksiSozluk.Domain\obj\Debug\net7.0\AciSozluk.Domain.pdb
+C:\Users\ASUS\Desktop\AciSozluk\EksiSozluk.Domain\obj\Debug\net7.0\ref\AciSozluk.Domain.dll

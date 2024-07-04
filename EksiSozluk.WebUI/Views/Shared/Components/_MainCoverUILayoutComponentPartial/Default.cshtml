@@ -1,0 +1,36 @@
+﻿@model List<TitleDto>
+<section>
+    <div class="container">
+        <div class="container-fluid-custom">
+            <div class="row">
+                <div class="col-12 hidden-custom overflow-y-scroll">
+                    @foreach (var item in Model)
+                    {
+                        <div class="aside-card mx-2">
+                            <a asp-controller="TitleDetail" asp-action="Index" asp-route-channelName=@item.ChannelName asp-route-titleId=@item.Id class ="card-link">
+                                <div class="row pt-2 pb-2 card-link">
+
+                                    <div class="col-10">
+                                        <p class="title-content m-0">
+                                            @item.TitleName
+                                        </p>
+                                    </div>
+                                    <div class="col-2 entry-number-aside" style="text-align: right;">
+                                        <span>@item.EntryCount</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+

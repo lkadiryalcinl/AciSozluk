@@ -1,0 +1,188 @@
+@using Microsoft.AspNetCore.Http
+
+@{
+    var user = Context.User;
+    var isLoggedIn = user.Identity.IsAuthenticated;
+    var username = user.Identity.Name;
+}
+<section>
+    <div class="eksi-nav-top-line"></div>
+    <div class="container">
+        <nav class="container-fluid-custom">
+            <div class="row mt-3">
+                <div class="col-6 full">
+                    <div class="d-flex container-fluid-custom justify-content-between">
+                        <div class="col-5">
+                            <a href="/Home/Index" target="_self">
+                                <img alt="eksi-logo" src="~/eksi-template/images/AcıSozlukLogo.png"
+                                     style="width: 120px; height: 30px;" />
+                            </a>
+                        </div>
+                        <div class="d-flex col-7">
+                            <input class="input-eksi w-100 h-100" placeholder="ne yapsak bugün" />
+                            <button class="btn-eksi h-100" type="button"><i class="bi bi-search white"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 hidden-custom">
+
+                    @if (!isLoggedIn)
+                    {
+                        @*      giriş öncesi  *@
+                        <div class="d-flex container-fluid-custom justify-content-end mt-1">
+                            <a class="me-4 auth-link" href="/Auth/SignIn">giriş</a>
+                            <a class="me-4 auth-link" href="/Auth/Register">kayıt ol</a>
+                        </div>
+                        @* giriş öncesi bitiş *@
+
+                    }
+
+                    else
+                    {
+
+                        @*giriş sonrası *@
+                        <div class="col-12 d-flex justify-content-end">
+                            <div class="col-lg-6 col-md-12 d-flex">
+                                <div class="col d-flex justify-content-center align-items-center auth-entrance-link">
+
+
+
+
+                                    <a asp-controller="Profile" asp-action="Index" asp-route-username="@username" class="auth-entrance-link-text"><i class="bi bi-person"></i> ben</a>
+
+
+
+
+                                </div>
+                                <div class="col d-flex justify-content-center align-items-center auth-entrance-link-green me-1">
+                                    <a class="auth-entrance-link-green-text" href="#"><i class="bi bi-chat-right"></i> mesaj</a>
+                                </div>
+                                <div class="col d-flex justify-content-center align-items-center auth-entrance-link-green">
+                                    <a class="auth-entrance-link-green-text" href="#"><i class="bi bi-activity"></i> olay</a>
+                                </div>
+                                <div class="col d-flex justify-content-center align-items-center auth-entrance-link dropdown pe-2">
+                                    <a class="auth-entrance-link-text pb-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        ...
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><button class="dropdown-item" type="button">kanallar</button></li>
+                                        <li><button class="dropdown-item" type="button">çöp</button></li>
+                                        <li><button class="dropdown-item" type="button">ayarlar</button></li>
+                                        <li><button class="dropdown-item" type="button">gece modunu kapat</button></li>
+                                        <li><button class="dropdown-item" type="button">takip/engellemiş</button></li>
+                                        <li><a asp-action="Logout" asp-controller="Auth" class="dropdown-item" type="button">terk</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        @*giriş sonrası bitiş*@
+                    }
+
+                </div>
+            </div>
+            <div class="row mt-3 pt-2">
+                <div class="col-12 full">
+                    <ul class="d-flex justify-content-between ul-custom">
+                        @if (isLoggedIn)
+                        {
+                            <li class="col text-center">
+                                <a asp-controller="Home" asp-action="Index" asp-route-channelName="bugün" class="nav-link-custom pb-2">bugün</a>
+                            </li>
+                        }
+                        <li class="col text-center">
+                            <a asp-controller="Home" asp-action="Index" asp-route-channelName="gündem" class="nav-link-custom pb-2">gündem</a>
+                        </li>
+                        <li class="col text-center">
+                            <a asp-controller="Home" asp-action="Index" asp-route-channelName="debe" class="nav-link-custom pb-2">debe</a>
+                        </li>
+                        <li class="col text-center">
+                            <a asp-controller="Home" asp-action="Index" asp-route-channelName="sorunsallar" class="nav-link-custom pb-2">sorunsallar</a>
+                        </li>
+                        @if (isLoggedIn)
+                        {
+                            <li class="col text-center">
+                                <a asp-controller="Home" asp-action="Index" asp-route-channelName="takip" class="nav-link-custom pb-2">takip</a>
+                            </li>
+                            <li class="col text-center">
+                                <a asp-controller="Home" asp-action="Index" asp-route-channelName="son" class="nav-link-custom pb-2">son</a>
+                            </li>
+                            <li class="col text-center">
+                                <a asp-controller="Home" asp-action="Index" asp-route-channelName="kenar" class="nav-link-custom pb-2">kenar</a>
+                            </li>
+                            <li class="col text-center">
+                                <a asp-controller="Home" asp-action="Index" asp-route-channelName="çaylaklar" class="nav-link-custom pb-2">çaylaklar</a>
+                            </li>
+                        }
+                        <li class="col text-center">
+                            <a asp-controller="Home" asp-action="Index" asp-route-channelName="spor" class="nav-link-custom pb-2">#spor</a>
+                        </li>
+                        <li class="col text-center">
+                            <a asp-controller="Home" asp-action="Index" asp-route-channelName="iliskiler" class="nav-link-custom pb-2">#ilişkiler</a>
+                        </li>
+                        <li class="col text-center">
+                            <a asp-controller="Home" asp-action="Index" asp-route-channelName="siyaset" class="nav-link-custom pb-2">#siyaset</a>
+                        </li>
+                        <li class="col text-center">
+                            <div class="dropdown">
+                                <a class="nav-link-custom pb-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    ...
+                                </a>
+                                <ul class="dropdown-menu">
+
+                                    <li class="col text-center">
+                                        <a asp-controller="Home" asp-action="Index" asp-route-channelName="tarihte-bugün" class="dropdown-item pb-2">tarihte bugün</a>
+                                    </li>
+                                    <li class="col text-center">
+                                        <a asp-controller="Home" asp-action="Index" asp-route-channelName="seyahat" class="dropdown-item pb-2">#seyahat</a>
+                                    </li>
+                                    <li class="col text-center">
+                                        <a asp-controller="Home" asp-action="Index" asp-route-channelName="müzik" class="dropdown-item pb-2">#müzik</a>
+                                    </li>
+                                    <li class="col text-center">
+                                        <a asp-controller="Home" asp-action="Index" asp-route-channelName="tv" class="dropdown-item pb-2">#tv</a>
+                                    </li>
+                                    <li class="col text-center">
+                                        <a asp-controller="Home" asp-action="Index" asp-route-channelName="haber" class="dropdown-item pb-2">#haber</a>
+                                    </li>
+                                    <li class="col text-center">
+                                        <a asp-controller="Home" asp-action="Index" asp-route-channelName="bilim" class="dropdown-item pb-2">#bilim</a>
+                                    </li>
+                                    <li class="col text-center">
+                                        <a asp-controller="Home" asp-action="Index" asp-route-channelName="edebiyat" class="dropdown-item pb-2">#edebiyat</a>
+                                    </li>
+                                    <li class="col text-center">
+                                        <a asp-controller="Home" asp-action="Index" asp-route-channelName="egitim" class="dropdown-item pb-2">#eğitim</a>
+                                    </li>
+                                    <li class="col text-center">
+                                        <a asp-controller="Home" asp-action="Index" asp-route-channelName="ekonomi" class="dropdown-item pb-2">#ekonomi</a>
+                                    </li>
+                                    <li class="col text-center">
+                                        <a asp-controller="Home" asp-action="Index" asp-route-channelName="basiboslar" class="dropdown-item pb-2">başıboşlar</a>
+                                    </li>
+                                    <li class="col text-center">
+                                        <a asp-controller="Channel" asp-action="Index" class="dropdown-item pb-2">tüm kanallar</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="col">
+                            <a href="https://www.youtube.com/penavideo" target="_blank">
+                                <img id="pena-id"
+                                     class="pena ms-4" src="~/eksi-template/images/pena.png" alt="pena" />
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a href="https://eksiseyler.com/" target="_blank">
+                                <img id="eksi-seyler-id"
+                                     class="eksi-seyler me-4" src="~/eksi-template/images/eksi-seyler.png" alt="eksi-seyler" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="eksi-nav-bottom-line mb-4"></div>
+</section>

@@ -1,0 +1,52 @@
+﻿@model LoginDto
+@{
+    ViewData["Title"] = "SignIn";
+    Layout = "~/Views/UILayout/Index.cshtml";
+}
+<div class="container">
+    <div class="container-fluid m-4">
+        <div class="col-12 mb-4">
+            <div class="col-2 mb-4">
+                <h4>giriş</h4>
+            </div>
+            <form method="post" asp-action="SignIn">
+                <div class="col-10">
+                    <div class="col-lg-6">
+                        <div class="col-12 mb-2">
+                            <label class="col-12 mb-2 mt-2">e-mail adresi</label>
+                            <input class="col-12 py-1" type="text" name="Email"/>
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="col-12 mb-2">
+                            <label class="col-12 mb-2">şifre</label>
+                            <input class="col-12 py-1" type="password" name="Password" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="col-12 mb-4">
+                            <input name="remember-checkbox" type="checkbox" />
+                            <label for="remember-checkbox">unutma bunları sorucam sonra</label>
+                        </div>
+                        <div class="col-12">
+                            <button id="sign" class="btn btn-eksi white col-12 py-2">giriş yapmaya çabala</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-12">
+            <div class="col-2">
+                <h4>giremeyiş</h4>
+            </div>
+            <div class="col-12">
+                <a class="auth-link" href="#">şifremi unuttum</a>
+            </div>
+            <div class="col-12">
+                <a class="auth-link" href="/Auth/Register">kayıtlı kullanıcı olunası</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+

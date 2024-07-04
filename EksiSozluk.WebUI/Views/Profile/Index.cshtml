@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/UILayout/Index.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-9 full">
+
+            <!-- yazar adı  ve yazar istatistikleri ve simgeler   -->
+            @await Component.InvokeAsync("_UpsideProfilePageComponentPartial") 
+            <!--  yazar adı ve yazar istatisitkleri bitiş -->
+            <!--  simgeler  -->
+            <!-- entry-favori-istatistikler buton -->
+            @await Component.InvokeAsync("_TheMiddleSideStatsPageComponentPartial")
+            <!--    entry-favori-istatistikler buton  bitiş  -->
+            <!-- Entry başladığı yer  -->
+            @await Component.InvokeAsync("_BotttomSideEntryPageComponentPartial", new { myentries = ViewBag.myentries })
+            <!-- Entry bitişi  -->
+        </div>
+        <!-- col-9 bitişi  -->
+        @await Component.InvokeAsync("_TheSideNotePageComponentPartial")
+    </div>
+</div>
+

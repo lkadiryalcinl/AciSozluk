@@ -1,0 +1,150 @@
+@using Microsoft.AspNetCore.Http
+﻿@using System.Security.Claims
+@model TitleWithEntriesDto
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/UILayout/Index.cshtml";
+    var user = Context.User;
+    var userId = user.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+    var isLoggedIn = user.Identity.IsAuthenticated;
+
+}
+
+@if (Model != null)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-10 full">
+                <div class="row">
+
+                    <!-- Entry başladığı yer  -->
+                    <div class="container-fluid">
+                        <div class="row ms-2 mt-4">
+                            <div class="col mb-2">
+                                <h5>
+                                    <a href="#" type="button" class="entry-title">@Model.TitleName</a>
+                                </h5>
+                            </div>
+                            @foreach (var entry in Model.EntryList)
+                            {
+
+                                <div class="row">
+                                    <p>
+                                        @entry.EntryContent
+                                    </p>
+                                </div>
+                                <div class="row">
+                                    <!-- Sol taraftaki elemanlar -->
+                                    <div class="col-8 d-flex justify-content-start">
+                                        <div class="row">
+                                            <div class="col">
+                                                <a id="@(entry.Id + "like")" asp-controller="TitleDetail" asp-action="UpdateTransaction" asp-route-userId="@userId" asp-route-entryId="@entry.Id" asp-route-actionType="like" asp-route-ChannelName="@Model.ChannelName" asp-route-TitleId="@Model.Id"  type="button"><i class="bi @((entry.IsLikedByUser ? "bi-arrow-up-square-fill" : "bi-arrow-up-square")) up"></i></a>
+                                            </div>
+                                            <div class="col">
+                                                <a id="@(entry.Id + "dislike")" asp-controller="TitleDetail" asp-action="UpdateTransaction" asp-route-userId="@userId" asp-route-entryId="@entry.Id" asp-route-actionType="dislike" asp-route-ChannelName="@Model.ChannelName" asp-route-TitleId="@Model.Id" type="button"><i class="bi @((entry.IsDislikedByUser ? "bi-arrow-down-square-fill" : "bi-arrow-down-square")) down"></i></a>
+                                            </div>
+                                            @if (isLoggedIn)
+                                            {
+                                                <div class="col d-flex justify-content-between">
+                                                    <div class="col">
+                                                        <a id="@(entry.Id + "fav")" asp-controller="TitleDetail" asp-action="UpdateTransaction" asp-route-userId="@userId" asp-route-entryId="@entry.Id" asp-route-actionType="favorite" asp-route-ChannelName="@Model.ChannelName" asp-route-TitleId="@Model.Id" type="button" class="mx-1"><i class="bi @((entry.IsFavByUser ? "bi-droplet-fill" : "bi-droplet")) fav" id="icon"></i></a>
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="#" type="button" class="entry-number mx-1">@entry.FavoritedCount</a>
+                                                    </div>
+                                                </div>
+                                            }
+                                        </div>
+                                    </div>
+                                    <!-- Sağ taraftaki elemanlar -->
+                                    <div class="col-4 d-flex justify-content-end">
+                                        <div class="row">
+                                            <div class="col d-flex justify-content-center align-items-center auth-entrance-link dropdown pe-2">
+                                                <a class="auth-entrance-link-text pb-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    ⍏
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><button class="dropdown-item" type="button"><i class="bi bi-facebook"></i> facebook</button></li>
+                                                    <li><button class="dropdown-item" type="button"><i class="bi bi-twitter"></i> x'te paylaş</button></li>
+                                                    <li><button class="dropdown-item" type="button">entry link'ini kopyala</button></li>
+                                                    <li><button class="dropdown-item" type="button">entry no kopyala</button></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col d-flex justify-content-center align-items-center auth-entrance-link dropdown pe-2">
+                                                <a class="auth-entrance-link-text pb-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    ...
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><button class="dropdown-item" type="button">şikayet</button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <div class="row ">
+                                            <div class="col-9">
+                                                <div class="row">
+                                                    <div class="col d-flex justify-content-end">
+
+
+                                                        @*         <a href="#" type="button" class="person-name text-eksi">@entry.Username</a>
+                                                *@
+
+                                                        <a asp-controller="Profile" asp-action="Index" asp-route-username="@entry.Username" type="button" class="person-name text-eksi">@entry.Username</a>
+                                                        @*
+                                                asp-controller="TitleDetail" asp-action="Index
+                                                *@
+
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col d-flex justify-content-end">
+                                                        <a href="#" type="button" class="person-name text-eksi-gray">@entry.CreatedDate.Date</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <a asp-controller="Profile" asp-action="Index" asp-route-username="@entry.Username" type="button"><i class="bi bi-person-circle person-cycle"></i> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    <!-- Entry bitişi  -->
+                    @if (isLoggedIn)
+                    {
+                        <div class="col-12 container-fluid bg-light mt-4">
+                            <div class="col-12 d-flex">
+                                <button class="border create-entry-opt">(bkz: )</button>
+                                <button class="border create-entry-opt">hede</button>
+                                <button class="border create-entry-opt">*</button>
+                                <button class="border create-entry-opt">-spoiler-</button>
+                                <button class="border create-entry-opt">http://</button>
+                            </div>
+                            <form class="form" method="post" asp-action="CreateEntry">
+                                <input type="hidden" name="TitleId" value="@Model.Id" />
+                                <input type="hidden" name="ChannelName" value="@Model.ChannelName" />
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control create-entry-text-area" placeholder='"@Model.TitleName" hakkında bilgi verin' name="EntryContent"></textarea>
+                                        <span asp-for="EntryContent" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-12 my-2">
+                                    <a href="#" class="dropdown-toggle create-entry-opt">kenarda dursun</a>
+                                    <button type="submit" class="create-entry-button">yolla</button>
+                                </div>
+                            </form>
+                        </div>
+                    }
+                </div>
+            </div>
+            <!-- col-9 bitişi  -->
+        </div>
+
+    </div>
+}
